@@ -1,6 +1,7 @@
 # Installation
 
-To start you need to clone [this git repository](https://github.com/CodersCrew/coderscrew-website).
+To start you need to clone [this git repository](https://github.com/CodersCrew/coderscrew-website).  
+Run `npm install` and `npm run dev` for development environment.
 
 ## Requirements
 
