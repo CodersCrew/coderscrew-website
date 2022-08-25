@@ -15,7 +15,7 @@ Each change in this repository should be made by pull request. At least one appr
 Pull request should contain `Closes #<issue number>` text in description for pull request to be linked with issue, eg. `Closes #9` and be titled accordingly to the issue with number in square brackets before, eg. `[9] Add name's rules for PR to readme`. Make sure the linked issue contains all informations about pull request.  
 After merge process every temporary branch will be deleted.
 
-Commit messages should contain useful informations about what was done. Before committing changes make sure tests passed successfully and you used automatic code formatter [Prettier](https://prettier.io/).
+Commit messages should contain useful informations about what was done. Every commit will trigger test run, code linting and formatting using [Husky](https://github.com/typicode/husky). Do not use `--no-verify` flag for commits.
 
 Branch types:
 
