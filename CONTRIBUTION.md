@@ -12,7 +12,7 @@ Application requires few tools installed on your system
 # Development
 
 Each change in this repository should be made by pull request. At least one approval is required to merge. Pull requests are merged through `Squash and Merge` to present consistent merge history.  
-Pull request should contain `Closes #<issue number>` text in description for pull request to be linked with issue, eg. `Closes #9` and be titled accordingly to the issue with number in square brackets before, eg. `[9] Add name's rules for PR to readme`. Make sure the linked issue contains all informations about pull request.  
+Pull request should contain `Closes #<issue number>` text in description, eg. `Closes #9`, be titled accordingly to the issue with number in square brackets before, eg. `[9] Add name's rules for PR to readme` and be linked with issue through `Development` tab in pull request options. Make sure the linked issue contains all informations about pull request.  
 After merge process every temporary branch will be deleted.
 
 Commit messages should contain useful informations about what was done. Every commit will trigger test run, code linting and formatting using [Husky](https://github.com/typicode/husky). Do not use `--no-verify` flag for commits.
