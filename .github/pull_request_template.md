@@ -15,6 +15,7 @@ Checklist:
 - [ ] Does the Pull Request description contain `Closes #<issue number>` (eg. `Closes #9`)?
 - [ ] Did Husky run all jobs? (you didn't use the `no-verify` flag)
 - [ ] Did you describe the task in the linked issue? (AC, useful links, description)
+- [ ] Did you link the issue to pull request through `Development` tab in pull request options?
 
 Remainders:
 
