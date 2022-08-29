@@ -1,5 +1,3 @@
-const Index = () => {
-  return <div>🤖</div>
-}
-
-export default Index
+export const Index = () => {
+  return <div>🤖</div>;
+};
