@@ -20,3 +20,4 @@ Checklist:
 Remainders:
 
 - Make sure your commit messages contain useful information
+- Make sure to use pnpm and do not push other lock files
