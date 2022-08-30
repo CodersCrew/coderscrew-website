@@ -52,6 +52,10 @@ module.exports = {
         endOfLine: 'lf',
       },
     ],
+
+    // We need to be able to import devDependencies
+    'import/no-extraneous-dependencies': ['error', { optionalDependencies: false, peerDependencies: false }],
+
     // Prevents from writing functions that are too complex (in terms of cyclomatic complexity).
     complexity: [2, 10],
 
@@ -127,6 +131,14 @@ module.exports = {
 
         // In many cases undefined is considered a valid value for a prop.
         'react/require-default-props': 0,
+      },
+    },
+    {
+      // Storybook files
+      files: ['*.stories.tsx'],
+      rules: {
+        // Storybook uses default exports
+        'import/no-default-export': 'off',
       },
     },
   ],
