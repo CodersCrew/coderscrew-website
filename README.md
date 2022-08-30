@@ -1,7 +1,3 @@
-##CodersCrew website
+# CodersCrew website
 
-start project:
-
-```bash
-npm run dev
-```
+For installation and development instructions check [contribution guide](CONTRIBUTION.md).
