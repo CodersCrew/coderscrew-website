@@ -1,5 +1,7 @@
-const Index = () => {
-  return <div>🤖</div>
-}
+/* eslint-disable import/no-default-export */
 
-export default Index
+const Index = () => {
+  return <div>🤖</div>;
+};
+
+export default Index;

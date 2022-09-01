@@ -1,7 +1,9 @@
-import type { AppProps } from 'next/app'
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable import/no-default-export */
+import './index.css';
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-)
+import type { AppProps } from 'next/app';
 
-export default MyApp
+const MyApp = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />;
+
+export default MyApp;
