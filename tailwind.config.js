@@ -29,7 +29,11 @@ module.exports = {
       11: '48px',
       12: '52px',
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        button: '6px 6px 17px rgba(0, 117, 255, 0.25)',
+      },
+    },
   },
   plugins: [],
 };
