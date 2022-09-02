@@ -1,27 +1,13 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-
-  "typescript.tsdk": "node_modules/typescript/lib",
-  // enable emmet support for React
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  // decided the length of the line
-  "editor.rulers": [120],
-  // hide node_modules
-  "files.exclude": {
-    "**/node_modules": true
-  }
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "path": "Wnieboglosyv2/",
+      "problemMatcher": [],
+      "label": "start website in dev mode",
+      "detail": "run-p dev:*"
+    }
+  ]
 }
