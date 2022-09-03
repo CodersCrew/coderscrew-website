@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.18.13
-  '@commitlint/cli': ^17.1.2
-  '@commitlint/config-conventional': ^17.1.0
+  '@commitlint/cli': ^17.0.3
+  '@commitlint/config-conventional': ^17.0.3
   '@storybook/addon-a11y': ^6.5.10
   '@storybook/addon-actions': ^6.5.10
   '@storybook/addon-essentials': ^6.5.10
@@ -16,16 +16,16 @@ specifiers:
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^13.3.0
   '@testing-library/user-event': ^14.4.3
-  '@types/eslint': ^8.4.6
+  '@types/eslint': ^8.4.1
   '@types/node': 18.7.4
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
-  '@typescript-eslint/eslint-plugin': ^5.36.1
-  '@typescript-eslint/parser': ^5.36.1
+  '@typescript-eslint/eslint-plugin': ^5.36.0
+  '@typescript-eslint/parser': ^5.36.0
   '@vitejs/plugin-react': ^2.0.1
   autoprefixer: ^10.4.8
   babel-loader: ^8.2.5
-  cypress: ^10.7.0
+  cypress: ^10.6.0
   eslint: ^8.23.0
   eslint-config-airbnb: ^19.0.4
   eslint-config-airbnb-base: ^15.0.0
@@ -36,11 +36,11 @@ specifiers:
   eslint-plugin-import: ^2.26.0
   eslint-plugin-jsx-a11y: ^6.6.1
   eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-react: ^7.31.4
+  eslint-plugin-react: ^7.31.1
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-simple-import-sort: ^7.0.0
   eslint-plugin-storybook: ^0.5.13
-  eslint-plugin-tailwindcss: ^3.6.1
+  eslint-plugin-tailwindcss: ^3.6.0
   eslint-plugin-testing-library: ^5.6.0
   eslint-plugin-unused-imports: ^2.0.0
   eslint-plugin-vitest: ^0.0.8
@@ -3884,7 +3884,7 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.6
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.4.6:
