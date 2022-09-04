@@ -14,8 +14,10 @@ module.exports = {
       CodersCamp: '#FEC43D',
       white: '#FFF',
       'dark-white': '#FAFAFA',
+      transparent: 'transparent',
     },
     spacing: {
+      0: '0px',
       1: '8px',
       2: '12px',
       3: '16px',
