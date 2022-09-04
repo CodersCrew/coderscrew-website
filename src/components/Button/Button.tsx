@@ -10,7 +10,7 @@ type ButtonProps = {
 export const Button = ({ variant, text, onClick }: ButtonProps) => {
   return (
     <button
-      className={`m-8 flex h-10 w-[124px] flex-row items-center justify-center rounded p-1 text-[16px] font-bold leading-[19px] hover:shadow-button ${variant}`}
+      className={`m-8 flex flex-row items-center justify-center rounded py-3 px-5 text-base font-bold leading-[19px] hover:shadow-button ${variant}`}
       type="button"
       onClick={onClick}
     >
