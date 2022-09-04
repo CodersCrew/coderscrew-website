@@ -1,4 +1,4 @@
-import { Button, primaryBtn, secondaryBtn } from '@/components/Button/Button';
+import { Button, primaryBtn, secondaryBtn } from './Button';
 
 export default {
   title: 'Button',
