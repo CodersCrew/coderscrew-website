@@ -6,10 +6,11 @@ export const secondaryBtn = 'text-blue border hover:text-white hover:bg-blue';
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   variant: 'primary' | 'secondary';
   label: string;
-  onClick?: React.MouseEventHandler;
+  onClick: React.MouseEventHandler;
+  type: string;
 }
 
-export const Button = ({ variant, label, onClick, ...props }: ButtonProps) => {
+export const Button = ({ type, variant, label, onClick, ...props }: ButtonProps) => {
   return (
     <button
       {...props}
