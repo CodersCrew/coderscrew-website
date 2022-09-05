@@ -7,7 +7,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   variant: 'primary' | 'secondary';
   label: string;
   onClick: React.MouseEventHandler;
-  type: string;
+  type: 'button' | 'submit';
 }
 
 export const Button = ({ type, variant, label, onClick, ...props }: ButtonProps) => {
@@ -17,7 +17,7 @@ export const Button = ({ type, variant, label, onClick, ...props }: ButtonProps)
       className={`m-8 flex flex-row items-center justify-center rounded border-2 border-blue py-2 px-6 text-base font-bold leading-[19px] hover:shadow-button ${
         variant === 'primary' ? primaryBtn : secondaryBtn
       }`}
-      type="button"
+      type={type === 'button' ? 'button' : 'submit'}
       onClick={onClick}
     >
       {label}
