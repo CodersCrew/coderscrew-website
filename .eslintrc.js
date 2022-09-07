@@ -77,7 +77,7 @@ module.exports = {
         format: null,
       },
       { selector: 'function', format: ['camelCase', 'PascalCase'] },
-      { selector: 'parameter', format: ['camelCase'], leadingUnderscore: 'allow' },
+      { selector: 'parameter', format: ['camelCase', 'PascalCase'], leadingUnderscore: 'allow' },
       { selector: 'typeLike', format: ['PascalCase'] },
 
       // Interfaces shouldn't be prefixed with `I`.
@@ -134,10 +134,9 @@ module.exports = {
       },
     },
     {
-      // Storybook files
-      files: ['*.stories.tsx'],
+      // Files with necessary default exports
+      files: ['*.stories.tsx', 'src/pages/_app.tsx', 'src/pages/index.tsx', 'vitest.config.ts', 'cypress.config.ts'],
       rules: {
-        // Storybook uses default exports
         'import/no-default-export': 'off',
       },
     },
