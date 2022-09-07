@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { describe, expect, test } from 'vitest';
+import { expect } from 'vitest';
 
 import { Button } from '.';
 
@@ -8,6 +8,7 @@ describe('Button tests', () => {
     render(<Button type="button" variant="primary" label="Primary" onClick={() => {}} />);
     expect(screen.getByText(/primary/i)).toBeInTheDocument();
   });
+
   test('if secondary button is rendered', () => {
     render(<Button type="button" variant="secondary" label="Secondary" onClick={() => {}} />);
     expect(screen.getByText(/secondary/i)).toBeInTheDocument();

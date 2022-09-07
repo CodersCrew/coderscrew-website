@@ -6,9 +6,7 @@ export default {
   title: 'Button',
   component: Button,
   argTypes: {
-    label: {
-      defaultValue: 'Primary',
-    },
+    onClick: { action: 'clicked' },
   },
 };
 
@@ -19,6 +17,7 @@ Default.args = {
   variant: 'primary',
   label: 'Primary',
 };
+
 export const Secondary = Template.bind({});
 Secondary.args = {
   variant: 'secondary',

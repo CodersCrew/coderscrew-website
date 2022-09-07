@@ -23,5 +23,11 @@
   // hide node_modules
   "files.exclude": {
     "**/node_modules": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
   }
 }
