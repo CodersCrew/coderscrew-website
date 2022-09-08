@@ -1,5 +1,3 @@
-/* eslint-disable import/no-default-export */
-
 import { Hexagon } from './components/Haxagon/Hexagon';
 
 const Index = () => {
