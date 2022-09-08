@@ -108,6 +108,8 @@ module.exports = {
         ],
       },
     ],
+
+    'react/button-has-type': 'off',
   },
   overrides: [
     {
