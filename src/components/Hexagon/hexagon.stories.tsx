@@ -8,6 +8,6 @@ export default {
   argTypes: {},
 };
 
-const Template: Story = (args) => <Hexagon {...args} />;
+const Template: Story = (args) => <Hexagon hexColor="blue" {...args} />;
 
 export const Default = Template.bind({});
