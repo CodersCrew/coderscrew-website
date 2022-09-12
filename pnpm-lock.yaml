@@ -25,6 +25,7 @@ specifiers:
   '@vitejs/plugin-react': ^2.0.1
   autoprefixer: ^10.4.8
   babel-loader: ^8.2.5
+  chromatic: ^6.9.0
   cypress: ^10.6.0
   eslint: ^8.23.0
   eslint-config-airbnb: ^19.0.4
@@ -91,6 +92,7 @@ devDependencies:
   '@vitejs/plugin-react': 2.0.1_vite@3.0.9
   autoprefixer: 10.4.8_postcss@8.4.16
   babel-loader: 8.2.5_tb6moc662p5idmcg3l5ipbhpta
+  chromatic: 6.9.0
   cypress: 10.7.0
   eslint: 8.23.0
   eslint-config-airbnb: 19.0.4_x7sj655e4gpgoyckkqfvcymz3i
@@ -5784,6 +5786,14 @@ packages:
   /chownr/2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
+    dev: true
+
+  /chromatic/6.9.0:
+    resolution: {integrity: sha512-ykfUHLyznZTPi8djKMfrBoOpWinSUfa2HDLmvHgYc2e6Jc4Oqm5jYW9S7l92navSF+EOzov90L7W8rX2NpiBjQ==}
+    hasBin: true
+    dependencies:
+      '@discoveryjs/json-ext': 0.5.7
+      '@types/webpack-env': 1.18.0
     dev: true
 
   /chrome-trace-event/1.0.3:
