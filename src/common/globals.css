@@ -7,28 +7,14 @@
     font-family: "Lato", sans-serif;
   }
 }
-
-:root {
-  --hex-width: 200px;
-
-  --hex-height: calc(var(--hex-width) / 1.73);
-  --hex-margin: calc(var(--hex-width) / 2);
-  --hex-border: calc(var(--hex-margin) / 1.73);
-}
 .hexagon {
-  height: var(--hex-height);
-  margin: var(--hex-border) 0;
-  width: var(--hex-width);
-}
-
-.hexagon::after,
-.hexagon::before {
-  border-left: var(--hex-margin);
-  border-right: var(--hex-margin);
-}
-.hexagon::after {
-  border-top: var(--hex-border);
-}
-.hexagon::before {
-  border-bottom: var(--hex-border);
+  -webkit-clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }

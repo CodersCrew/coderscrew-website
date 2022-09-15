@@ -1,7 +1,17 @@
-export const Hexagon = ({ hexColor }: { hexColor: string }) => {
-  return (
-    <div
-      className={`hexagon relative justify-center bg-${hexColor} before:absolute before:bottom-full before:border-solid before:border-l-transparent before:border-r-transparent before:border-b-${hexColor} after:absolute after:top-full after:border-solid after:border-l-transparent after:border-r-transparent after:border-t-${hexColor}`}
-    />
-  );
+export interface HexProps {
+  hexColor: string;
+  hexSize: number;
+}
+
+export const Hexagon = ({ hexColor, hexSize }: HexProps) => {
+  const hexSizes: { [key: number]: string } = {
+    100: `h-[100px] w-[100px]`,
+  };
+  const hexColors: { [key: string]: string } = {
+    blue: `bg-blue`,
+  };
+  const sizeClasses = hexSizes[hexSize];
+  const colorClasses = hexColors[hexColor];
+
+  return <div className={`hexagon ${sizeClasses} ${colorClasses}`} />;
 };

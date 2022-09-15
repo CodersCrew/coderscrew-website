@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
 
-import { Hexagon } from '.';
+import { Hexagon, HexProps } from '.';
 
 export default {
   title: 'Hexagon',
@@ -8,6 +8,11 @@ export default {
   argTypes: {},
 };
 
-const Template: Story = (args) => <Hexagon hexColor="blue" {...args} />;
+const Template: Story<HexProps> = (args) => <Hexagon {...args} />;
 
 export const Default = Template.bind({});
+
+Default.args = {
+  hexColor: 'blue',
+  hexSize: 100,
+};
