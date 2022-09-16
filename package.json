@@ -14,9 +14,9 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext .js,.ts,.tsx --fix",
     "storybook": "start-storybook -p 6006",
-    "sb": "pnpm storybook",
+    "sb": "yarn storybook",
     "build-storybook": "build-storybook",
-    "chromatic": "pnpx chromatic"
+    "chromatic": "npx chromatic"
   },
   "dependencies": {
     "next": "12.2.5",

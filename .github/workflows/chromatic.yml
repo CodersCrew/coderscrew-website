@@ -8,12 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: latest
-
       - name: Install dependencies
-        run: pnpm i
+        run: yarn
 
       - name: Publish to Chromatic
         uses: chromaui/action@v1
