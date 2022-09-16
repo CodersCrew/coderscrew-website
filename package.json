@@ -82,5 +82,6 @@
     "vitest": "^0.22.1"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "coderscrew-website@0.1.0"
+  "_id": "coderscrew-website@0.1.0",
+  "packageManager": "yarn@3.2.3"
 }
