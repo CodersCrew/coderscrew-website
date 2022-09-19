@@ -35,6 +35,9 @@ module.exports = {
       boxShadow: {
         button: '6px 6px 17px rgba(0, 117, 255, 0.25)',
       },
+      dropShadow: {
+        hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F'],
+      },
     },
   },
   plugins: [],

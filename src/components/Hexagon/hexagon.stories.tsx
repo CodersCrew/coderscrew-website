@@ -15,5 +15,5 @@ const Template: Story<HexProps> = (args) => <Hexagon {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  hexColor: 'primary',
+  color: 'primary',
 };
