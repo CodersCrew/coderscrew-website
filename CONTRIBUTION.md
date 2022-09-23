@@ -8,7 +8,7 @@ Run `npm install` and `npm run dev` for development environment.
 Application requires few tools installed on your system
 
 - Node.js - **12.22.0 or later**
-- pnpm - **7.x**
+- yarn
 
 # Development
 
