@@ -1,1 +1,1 @@
-export {};
+export { contentApi } from './contentApi';

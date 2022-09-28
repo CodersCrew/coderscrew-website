@@ -38,8 +38,10 @@
       "@layouts/*": ["layouts/*"],
       "@pages/*": ["pages/*"],
       "@services/*": ["services/*"],
-      "@utils/*": ["utils/*"]
-    }
+      "@utils/*": ["utils/*"],
+      "@lib/*": ["../lib/*"]
+    },
+    "types": ["vitest/globals"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
