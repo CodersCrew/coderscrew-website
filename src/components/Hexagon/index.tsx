@@ -1,38 +1,28 @@
-import { ReactNode } from 'react';
+import { Icon } from '@components/Icon';
 
-export const hexColors: { [key: string]: string } = {
-  blue: `bg-[#1A90FF]`,
-  primary: 'bg-[#292929]',
-  secondary: 'bg-[#4B545C]',
-  'light-grey': 'bg-[#1A90FF]',
-  PM: 'bg-[#1BC55F]',
-  Marketing: 'bg-[#F0656F]',
-  'Web-dev': 'bg-[#0075FF]',
-  'UX-UI': 'bg-[#FA8A43]',
-  'Data-science': 'bg-[#AC6DE8]',
-  CodersCamp: 'bg-[#FEC43D]',
-  white: 'bg-[#FFF]',
-  'dark-white': 'bg-[#FAFAFA]',
-  transparent: 'bg-transparent',
-};
+import { hexColors, hexOpacity, hexShadowColor, hexVariants } from './lookup';
+
 export interface HexProps {
-  color: string;
-  shadow?: boolean;
-  opacity?: string;
-  children?: ReactNode;
+  color: keyof typeof hexColors;
+  opacity: keyof typeof hexOpacity;
+  icon?: boolean;
+  iconOrShadowColor: keyof typeof hexColors;
+  variant: keyof typeof hexVariants;
 }
 
-export const Hexagon = ({ color, shadow, children, opacity, ...props }: HexProps) => {
+export const Hexagon = ({ color, opacity, icon, iconOrShadowColor, variant, ...props }: HexProps) => {
   const colorClasses = hexColors[color];
-  const shadowColor = colorClasses?.slice(4, -1);
-  const hexOpacity = `opacity-${opacity}`;
-  const hexShadow = `drop-shadow-[6px_8px_33px_${shadowColor}]`;
+  const opacityClasses = hexOpacity[opacity];
+  const iconColorClasses = hexColors[iconOrShadowColor];
+  const shadowClasses = hexShadowColor[iconOrShadowColor];
   return (
-    <div className={`h-full w-full ${shadow ? hexShadow : null}`}>
-      <div className={`hexagon relative h-full w-full ${colorClasses} ${hexOpacity}`} {...props}>
-        <div className="caption absolute top-1/2 flex w-full -translate-y-1/2 items-center justify-center">
-          {children}
-        </div>
+    <div className={`h-full w-full ${variant === 'withShadow' ? shadowClasses : ''}`}>
+      <div className={`hexagon relative h-full w-full ${colorClasses} ${opacityClasses}`} {...props}>
+        {!!icon && (
+          <div className="caption absolute top-1/2 flex w-full -translate-y-1/2 items-center justify-center">
+            <Icon color={iconColorClasses} />
+          </div>
+        )}
       </div>
     </div>
   );

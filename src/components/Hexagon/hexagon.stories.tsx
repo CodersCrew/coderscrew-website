@@ -16,4 +16,5 @@ export const Default = Template.bind({});
 
 Default.args = {
   color: 'primary',
+  opacity: 100,
 };
