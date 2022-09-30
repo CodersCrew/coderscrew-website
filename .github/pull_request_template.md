@@ -16,7 +16,7 @@ Checklist:
 - [ ] Did Husky run all jobs? (you didn't use the `no-verify` flag)
 - [ ] Did you describe the task in the linked issue? (AC, useful links, description)
 - [ ] Did you link the issue to the pull request through the `Development` tab in the pull request options?
-- [ ] You didn't push any other lock files than `pnpm-lock.yaml`
+- [ ] You didn't push any other lock files than `yarn.lock`
 
 Remainders:
 
