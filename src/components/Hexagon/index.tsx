@@ -17,7 +17,11 @@ export const Hexagon = ({ color, opacity, icon, iconOrShadowColor, variant, ...p
   const shadowClasses = hexShadowColor[iconOrShadowColor];
   return (
     <div className={`h-full w-full ${variant === 'withShadow' ? shadowClasses : ''}`}>
-      <div className={`hexagon relative h-full w-full ${colorClasses} ${opacityClasses}`} {...props}>
+      <div
+        className={`hexagon relative h-full w-full ${colorClasses} ${opacityClasses}`}
+        data-testid="hexagon"
+        {...props}
+      >
         {!!icon && (
           <div className="caption absolute top-1/2 flex w-full -translate-y-1/2 items-center justify-center">
             <Icon color={iconColorClasses} />
