@@ -29,19 +29,18 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": "src",
     "paths": {
-      "@common/*": ["common/*"],
-      "@assets/*": ["common/assets/*"],
-      "@fonts/*": ["common/fonts/*"],
-      "@components/*": ["components/*"],
-      "@context/*": ["context/*"],
-      "@hooks/*": ["hooks/*"],
-      "@layouts/*": ["layouts/*"],
-      "@pages/*": ["pages/*"],
-      "@services/*": ["services/*"],
-      "@utils/*": ["utils/*"],
-      "@lib/*": ["../lib/*"]
-    },
-    "types": ["vitest/globals"]
+      "@common*": ["common", "common/*"],
+      "@assets*": ["common/assets", "common/assets/*"],
+      "@fonts*": ["common/fonts", "common/fonts/*"],
+      "@components*": ["components", "components/*"],
+      "@context*": ["context", "context/*"],
+      "@hooks*": ["hooks", "hooks/*"],
+      "@layouts*": ["layouts", "layouts/*"],
+      "@pages*": ["pages", "pages/*"],
+      "@services*": ["services", "services/*"],
+      "@utils*": ["utils", "utils/*"],
+      "@lib*": ["../lib", "../lib/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

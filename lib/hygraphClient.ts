@@ -1,3 +1,3 @@
 import { GraphQLClient } from 'graphql-request';
 
-export default new GraphQLClient(process.env.HYGRAPH_API_URL as string);
+export const hygraphClient = new GraphQLClient(process.env.HYGRAPH_API_URL as string);

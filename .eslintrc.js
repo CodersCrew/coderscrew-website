@@ -144,7 +144,6 @@ module.exports = {
         'src/pages/index.tsx',
         'vitest.config.ts',
         'cypress.config.ts',
-        'lib/*',
       ],
       rules: {
         'import/no-default-export': 'off',
