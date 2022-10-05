@@ -15,6 +15,7 @@ export const Hexagon = ({ color, opacity, icon, iconOrShadowColor, variant, ...p
   const opacityClasses = hexOpacity[opacity];
   const iconColorClasses = hexColors[iconOrShadowColor];
   const shadowClasses = hexShadowColor[iconOrShadowColor];
+
   return (
     <div className={`h-full w-full ${variant === 'withShadow' ? shadowClasses : ''}`}>
       <div
