@@ -9,6 +9,7 @@ describe('Hexagon tests', () => {
     const hexagon = screen.getByTestId('hexagon');
     expect(hexagon).toBeInTheDocument();
   });
+
   test('if hexagon with icon is rendered', () => {
     render(<Hexagon color="blue" opacity={100} iconOrShadowColor="blue" variant="default" icon />);
     const icon = screen.getByTestId('icon');
