@@ -1,5 +1,5 @@
 export const hexColors = {
-  blue: `bg-[#1A90FF]`,
+  blue: 'bg-[#1A90FF]',
   primary: 'bg-[#292929]',
   secondary: 'bg-[#4B545C]',
   'light-grey': 'bg-[#9A9999]',
@@ -29,11 +29,11 @@ export const hexOpacity = {
 };
 
 export const hexShadowColor = {
-  blue: `drop-shadow-[6px_8px_10px_#1A90FF]`,
+  blue: 'drop-shadow-[6px_8px_10px_#1A90FF]',
   primary: 'drop-shadow-[6px_8px_10px_#292929]',
   secondary: 'drop-shadow-[6px_8px_10px_#4B545C]',
   'light-grey': 'drop-shadow-[6px_8px_10px_#1A90FF]',
-  PM: 'drop-shadow-[6px_8px_10px_#1BC55F',
+  PM: 'drop-shadow-[6px_8px_10px_#1BC55F]',
   Marketing: 'drop-shadow-[6px_8px_10px_#F0656F]',
   'Web-dev': 'drop-shadow-[6px_8px_10px_#0075FF]',
   'UX-UI': 'drop-shadow-[6px_8px_10px_#FA8A43]',
