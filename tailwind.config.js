@@ -31,6 +31,9 @@ module.exports = {
       11: '48px',
       12: '52px',
     },
+    clipPath: {
+          hexPolygon: "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)",
+      },
     extend: {
       boxShadow: {
         button: '6px 6px 17px rgba(0, 117, 255, 0.25)',
@@ -40,5 +43,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [ require('tailwind-clip-path'),],
 };

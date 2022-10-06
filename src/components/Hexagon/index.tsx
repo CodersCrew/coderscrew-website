@@ -19,7 +19,7 @@ export const Hexagon = ({ color, opacity, icon, iconOrShadowColor, variant, ...p
   return (
     <div className={`h-full w-full ${variant === 'withShadow' ? shadowClasses : ''}`}>
       <div
-        className={`hexagon relative h-full w-full ${colorClasses} ${opacityClasses}`}
+        className={`clip-path-hexPolygon relative h-full w-full ${colorClasses} ${opacityClasses}`}
         data-testid="hexagon"
         {...props}
       >
