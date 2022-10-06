@@ -32,7 +32,7 @@ export const hexShadowColor = {
   blue: 'drop-shadow-[6px_8px_10px_#1A90FF]',
   primary: 'drop-shadow-[6px_8px_10px_#292929]',
   secondary: 'drop-shadow-[6px_8px_10px_#4B545C]',
-  'light-grey': 'drop-shadow-[6px_8px_10px_#1A90FF]',
+  'light-grey': 'drop-shadow-[6px_8px_10px_#9A9999]',
   PM: 'drop-shadow-[6px_8px_10px_#1BC55F]',
   Marketing: 'drop-shadow-[6px_8px_10px_#F0656F]',
   'Web-dev': 'drop-shadow-[6px_8px_10px_#0075FF]',
