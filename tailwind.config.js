@@ -32,6 +32,7 @@ module.exports = {
     extend: {
       boxShadow: {
         button: '6px 6px 17px rgba(0, 117, 255, 0.25)',
+        card: '17px 16px 33px rgba(0, 0, 0, 0.05)',
       },
     },
   },
