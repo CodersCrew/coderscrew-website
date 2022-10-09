@@ -14,6 +14,8 @@ module.exports = {
       CodersCamp: '#FEC43D',
       white: '#FFF',
       'dark-white': '#FAFAFA',
+      formInputs: 'rgba(196, 196, 196, 0.26)',
+      formColor: '#9A9999'
     },
     spacing: {
       1: '8px',
