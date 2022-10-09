@@ -19,7 +19,7 @@ Default.args = {
 
 export const TwoTitles = Template.bind({});
 TwoTitles.args = {
-  header: 'KIM JESTEŚMY?',
+  header: 'Jak działamy?',
   title: 'Online',
   text: 'Działamy głównie online, choć możemy też spotykać się stacjonarnie. Od czasów pandemii wielu naszych członków to osoby spoza Wrocławia. Nasz największy projekt, CodersCamp, przeprowadziliśmy w ostatnich edycjach całkowicie zdalnie.',
   secondTitle: 'Offline',
