@@ -13,7 +13,7 @@ describe('Card tests', () => {
         text="Najważniejszą rzeczą dla nas jest rozwój – tworzenie społeczności, w której osoby gotowe do działania mogą doskonalić swoje umiejętności."
       />,
     );
-    const hexagon = screen.getByTestId('card');
-    expect(hexagon).toBeInTheDocument();
+    const card = screen.getByTestId('card');
+    expect(card).toBeInTheDocument();
   });
 });
