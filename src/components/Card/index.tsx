@@ -1,21 +1,23 @@
-export interface CardProps {
-  header: string;
+export interface ArticleProps {
+  header?: string;
   title: string;
   text: string;
-  secondTitle?: string;
-  secondText?: string;
 }
 
-export const Card = ({ header, title, text, secondTitle, secondText }: CardProps) => {
+export interface CardProps {
+  articles: ArticleProps[];
+}
+
+export const Card = ({ articles }: CardProps) => {
   return (
     <div className="rounded-lg shadow-card" data-testid="card">
-      <article className="flex h-max w-full flex-col gap-3 p-5">
-        <p className="text-sm uppercase tracking-wider text-blue">{header}</p>
-        <h2 className="text-title font-medium tracking-wide text-primary">{title}</h2>
-        <p className="text-base leading-6 text-secondary">{text}</p>
-        {secondTitle ? <h2 className="pt-3 text-title font-medium text-primary">{secondTitle}</h2> : null}
-        {secondText ? <p className="text-base leading-6 text-secondary">{secondText}</p> : null}
-      </article>
+      {articles.map((article) => (
+        <article className="flex h-max w-full flex-col gap-3 p-5" key={article.title}>
+          {article.header ? <p className="text-sm uppercase tracking-wider text-blue">{article.header}</p> : null}
+          <h2 className="text-title font-medium tracking-wide text-primary">{article.title}</h2>
+          <p className="text-base leading-6 text-secondary">{article.text}</p>
+        </article>
+      ))}
     </div>
   );
 };
