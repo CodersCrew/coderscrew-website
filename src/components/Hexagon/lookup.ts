@@ -1,4 +1,4 @@
-export const hexColors = {
+export const colors = {
   blue: 'bg-[#1A90FF]',
   primary: 'bg-[#292929]',
   secondary: 'bg-[#4B545C]',
@@ -14,21 +14,7 @@ export const hexColors = {
   transparent: 'bg-[transparent]',
 };
 
-export const hexOpacity = {
-  5: 'bg-opacity-5',
-  10: 'bg-opacity-10',
-  20: 'bg-opacity-20',
-  30: 'bg-opacity-30',
-  40: 'bg-opacity-40',
-  50: 'bg-opacity-50',
-  60: 'bg-opacity-60',
-  70: 'bg-opacity-70',
-  80: 'bg-opacity-80',
-  90: 'bg-opacity-90',
-  100: 'bg-opacity-100',
-};
-
-export const hexShadowColor = {
+export const dropShadowColors = {
   blue: 'drop-shadow-[6px_8px_10px_#1A90FF]',
   primary: 'drop-shadow-[6px_8px_10px_#292929]',
   secondary: 'drop-shadow-[6px_8px_10px_#4B545C]',
@@ -44,7 +30,16 @@ export const hexShadowColor = {
   transparent: 'drop-shadow-[6px_8px_10px_transparent]',
 };
 
-export const hexVariants = {
-  default: '',
-  withShadow: '',
+export const opacities = {
+  5: 'bg-opacity-5',
+  10: 'bg-opacity-10',
+  20: 'bg-opacity-20',
+  30: 'bg-opacity-30',
+  40: 'bg-opacity-40',
+  50: 'bg-opacity-50',
+  60: 'bg-opacity-60',
+  70: 'bg-opacity-70',
+  80: 'bg-opacity-80',
+  90: 'bg-opacity-90',
+  100: 'bg-opacity-100',
 };
