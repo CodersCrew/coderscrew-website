@@ -18,6 +18,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
     "next": "12.2.5",
     "next-seo": "^5.5.0",
     "react": "18.2.0",

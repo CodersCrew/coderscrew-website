@@ -137,7 +137,14 @@ module.exports = {
     },
     {
       // Files with necessary default exports
-      files: ['*.stories.tsx', 'src/pages/_app.tsx', 'src/pages/index.tsx', 'vitest.config.ts', 'cypress.config.ts'],
+      files: [
+        'src/pages/*',
+        '*.stories.tsx',
+        'src/pages/_app.tsx',
+        'src/pages/index.tsx',
+        'vitest.config.ts',
+        'cypress.config.ts',
+      ],
       rules: {
         'import/no-default-export': 'off',
       },
