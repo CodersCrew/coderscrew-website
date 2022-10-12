@@ -6738,6 +6738,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     storybook-addon-next: ^1.6.7
+    tailwind-clip-path: ^1.0.0
     tailwindcss: ^3.1.8
     typescript: 4.7.4
     vite-tsconfig-paths: ^3.5.0
@@ -16395,6 +16396,13 @@ __metadata:
   version: 2.0.16
   resolution: "synchronous-promise@npm:2.0.16"
   checksum: 1a3e5dfa9e3b913452366e182d4cae5c2ffb9de8c9753ecb602539a298e82ab82de951a0b0ecd86b2e2e237b1236eb5e82964c8ce13b2d23f7ecd52767a2b74d
+  languageName: node
+  linkType: hard
+
+"tailwind-clip-path@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "tailwind-clip-path@npm:1.0.0"
+  checksum: 119424d851770dfa297fab45d309bd3a31724e3e7ebfa96ff838384d0a5076d8f2ad13b88f96bfadfe2c99ffe3838fa3cb8d619eae8cf0fc72400f572ad8ca3a
   languageName: node
   linkType: hard
 
