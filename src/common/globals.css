@@ -1,4 +1,4 @@
-@import url("../common/fonts/stylesheet.css");
+@import url("../common/fonts/fonts.css");
 
 @tailwind base;
 @tailwind components;
@@ -9,4 +9,3 @@
     font-family: "Lato", sans-serif;
   }
 }
-

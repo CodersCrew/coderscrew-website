@@ -3,7 +3,7 @@ import { expect } from 'vitest';
 
 import { Hexagon } from '.';
 
-describe('Hexagon tests', () => {
+describe('Hexagon', () => {
   it('should render without errors', () => {
     render(<Hexagon primaryColor="blue" opacity={100} secondaryColor="blue" variant="default" />);
     const hexagon = screen.getByTestId('hexagon');

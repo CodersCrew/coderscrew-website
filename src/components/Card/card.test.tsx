@@ -1,21 +1,12 @@
+import { cardArticleData } from '@common/testData';
 import { render, screen } from '@testing-library/react';
 import { expect } from 'vitest';
 
 import { Card } from '.';
 
-describe('Card tests', () => {
-  test('if card is rendered', () => {
-    render(
-      <Card
-        articles={[
-          {
-            header: 'Kim Jesteśmy ?',
-            title: 'Organizacja non-profit z Wrocławia',
-            text: 'Najważniejszą rzeczą dla nas jest rozwój – tworzenie społeczności, w której osoby gotowe do działania mogą doskonalić swoje umiejętności.',
-          },
-        ]}
-      />,
-    );
+describe('Card', () => {
+  it('should be rendered without errors', () => {
+    render(<Card articles={[cardArticleData]} />);
     const card = screen.getByTestId('card');
     expect(card).toBeInTheDocument();
   });
