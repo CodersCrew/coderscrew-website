@@ -1,12 +1,12 @@
-export interface ArticleProps {
+export type Article = {
   header?: string;
   title: string;
   text: string;
-}
+};
 
-export interface CardProps {
-  articles: ArticleProps[];
-}
+export type CardProps = {
+  articles: Article[];
+};
 
 export const Card = ({ articles }: CardProps) => {
   return (
