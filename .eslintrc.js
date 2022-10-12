@@ -149,6 +149,13 @@ module.exports = {
         'import/no-default-export': 'off',
       },
     },
+    {
+      // Files with necessary require()
+      files: ['tailwind.config.js'],
+      rules: {
+        'global-require': 'off',
+      },
+    },
   ],
   settings: {
     react: { version: 'detect' },
