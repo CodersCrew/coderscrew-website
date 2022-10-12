@@ -3,7 +3,7 @@ import { expect } from 'vitest';
 
 import { Button } from '.';
 
-describe('Button tests', () => {
+describe('Button', () => {
   test('if primary button is rendered', () => {
     render(<Button type="button" variant="primary" label="Primary" onClick={() => {}} />);
     expect(screen.getByText(/primary/i)).toBeInTheDocument();

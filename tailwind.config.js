@@ -37,6 +37,10 @@ module.exports = {
     extend: {
       boxShadow: {
         button: '6px 6px 17px rgba(0, 117, 255, 0.25)',
+        card: '17px 16px 33px rgba(0, 0, 0, 0.05)',
+      },
+      fontSize: {
+        title: '32px',
       },
       dropShadow: {
         hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F'],
