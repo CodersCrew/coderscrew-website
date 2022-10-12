@@ -4,14 +4,14 @@ import { expect } from 'vitest';
 import { Hexagon } from '.';
 
 describe('Hexagon tests', () => {
-  test('if hexagon is rendered', () => {
-    render(<Hexagon color="blue" opacity={100} iconOrShadowColor="blue" variant="default" />);
+  it('should render without errors', () => {
+    render(<Hexagon primaryColor="blue" opacity={100} secondaryColor="blue" variant="default" />);
     const hexagon = screen.getByTestId('hexagon');
     expect(hexagon).toBeInTheDocument();
   });
 
-  test('if hexagon with icon is rendered', () => {
-    render(<Hexagon color="blue" opacity={100} iconOrShadowColor="blue" variant="default" icon />);
+  it('should render with icon', () => {
+    render(<Hexagon primaryColor="blue" opacity={100} secondaryColor="PM" variant="default" icon />);
     const icon = screen.getByTestId('icon');
     expect(icon).toBeInTheDocument();
   });
