@@ -13,7 +13,7 @@ export const Comment = ({ text, name }: CommentProps) => {
       <div className="h-13 w-13">
         <Hexagon variant="default" primaryColor="blue" secondaryColor="blue" icon opacity={10} />
       </div>
-      <p className="px-[60px] text-center text-base font-semibold text-primary">{text}</p>
+      <p className="px-14 text-center text-base font-semibold text-primary">{text}</p>
       <p className="text-secondary">
         - <span className="font-normal">{name}</span>
       </p>
