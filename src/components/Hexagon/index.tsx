@@ -1,5 +1,4 @@
-import { Icon } from '@components/Icon';
-
+import { Icon } from '../Icon';
 import { colors, dropShadowColors, opacities } from './lookup';
 
 const variants = ['default', 'shadow'] as const;
