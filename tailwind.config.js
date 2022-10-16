@@ -15,7 +15,7 @@ module.exports = {
       white: '#FFF',
       'dark-white': '#FAFAFA',
       formInputs: 'rgba(196, 196, 196, 0.26)',
-      formColor: '#9A9999'
+      formColor: '#9A9999',
     },
     spacing: {
       1: '8px',
