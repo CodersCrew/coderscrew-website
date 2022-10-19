@@ -11,6 +11,7 @@ export default {
 };
 
 const Template: Story<CardProps> = (args: JSX.IntrinsicAttributes & CardProps) => <Card {...args} />;
+
 export const Default = Template.bind({});
 Default.args = {
   articles: [cardArticleData],

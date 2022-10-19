@@ -1,8 +1,7 @@
+import ArrowDown from '@assets/arrow.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { MouseEvent, useCallback } from 'react';
-
-import ArrowDown from '../../common/assets/arrow.svg';
 
 export type NavItemProps = {
   item: NavElement;
