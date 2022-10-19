@@ -1,5 +1,5 @@
-import { CommentTextData } from '@commontestData';
-import { Comment, CommentProps } from '@componentsComment';
+import { CommentTextData } from '@common/testData';
+import { Comment, CommentProps } from '@components/Comment';
 import { Story } from '@storybook/react';
 import { ReactNode } from 'react';
 
