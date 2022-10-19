@@ -6,8 +6,7 @@ import { Comment } from '.';
 
 describe('Comment', () => {
   it('should be rendered without errors', () => {
-    render(<Comment text={CommentTextData.text} name={CommentTextData.name} />);
-    const comment = screen.getByTestId('comment');
-    expect(comment).toBeInTheDocument();
+    const { getByTestId } = render(<Comment text={CommentTextData.text} name={CommentTextData.name} />);
+    expect(getByTestId('comment')).toBeInTheDocument();
   });
 });
