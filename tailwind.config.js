@@ -16,7 +16,7 @@ module.exports = {
       'dark-white': '#FAFAFA',
       formInputs: 'rgba(196, 196, 196, 0.26)',
       formColor: '#9A9999',
-      transparent: 'transparent'
+      transparent: 'transparent',
     },
     spacing: {
       0: '0px',

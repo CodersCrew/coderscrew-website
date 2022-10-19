@@ -15,9 +15,9 @@ const Template: Story<SelectProps> = (args) => <Select {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   options: [
-    { label: 'UX/UI', value: 1 },
-    { label: 'WebDevelopment', value: 2 },
-    { label: 'HR', value: 3 },
-    { label: 'SEO', value: 4 },
+    { label: 'UX/UI', value: 'ux-ui' },
+    { label: 'WebDevelopment', value: 'web-development' },
+    { label: 'HR', value: 'hr' },
+    { label: 'SEO', value: 'seo' },
   ],
 };
