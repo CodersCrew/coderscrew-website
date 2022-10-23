@@ -11,6 +11,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "sb": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "cypress": "cypress open",
     "postinstall": "husky install"
   },
