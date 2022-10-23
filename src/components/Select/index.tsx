@@ -1,6 +1,6 @@
 import Arrow from '@assets/form-arrow-down.svg';
 import Image from 'next/image';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 type SelectOption = {
   value: string;
@@ -11,16 +11,29 @@ export type SelectProps = {
   options: SelectOption[];
 };
 
-const CurrentOptionField = ({ currentOptionLabel }) => {
+type OptionField = {
+  currentOptionLabel?: string
+}
+
+type SelectListProps = {
+  options: SelectOption[];
+  handleChooseOption: () => void;
+  openClass: string;
+
+}
+
+const CurrentOptionField = ({ currentOptionLabel }: OptionField) => {
   return (
-    <span className="mb-2 flex h-[68px] cursor-pointer items-center justify-between rounded-2xl bg-formInputs pl-2 pr-3 text-formColor hover:bg-primary">
-      {currentOptionLabel}
-      <Image width={20} height={20} src={Arrow} alt="Form arrow" />
-    </span>
+  <>
+      <span className="mb-2 flex h-[68px] cursor-pointer items-center justify-between rounded-2xl bg-formInputs pl-2 pr-3 text-formColor hover:bg-primary">
+        {currentOptionLabel}
+        <Image width={20} height={20} src={Arrow} alt="Form arrow" />
+      </span>
+    </>
   );
 };
 
-const SelectableList = ({ options, handleChooseOption, openClass }) => {
+const SelectableList = ({ options, handleChooseOption, openClass }: SelectListProps) => {
   return (
     <ul className={`cursor-pointer overflow-hidden rounded-2xl bg-formInputs text-formColor ${openClass}`}>
       {options.map(({ value, label }) => (
@@ -53,7 +66,7 @@ export const Select = ({ options }: SelectProps) => {
     setOpen(false);
   };
 
-  const handleChooseOption = (e) => {
+  const handleChooseOption = (e: React.MouseEventHandler<HTMLLIElement>) => {
     e.stopPropagation();
 
     const selectedOptionValue = e.target.dataset.value;
