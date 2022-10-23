@@ -1,6 +1,7 @@
 module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    // TODO: Ensure project uses new naming system for colors
     colors: {
       text: {
         primary: '#292929',

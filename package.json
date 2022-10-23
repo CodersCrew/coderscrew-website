@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --write . && next lint --fix",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "sb": "start-storybook -p 6006",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "graphql": "^16.6.0",
@@ -22,8 +24,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@storybook/addon-a11y": "^6.5.10",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
@@ -57,6 +59,7 @@
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-storybook": "^0.6.6",
     "eslint-plugin-testing-library": "^5.9.1",
+    "husky": "^8.0.0",
     "jsdom": "^20.0.0",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
