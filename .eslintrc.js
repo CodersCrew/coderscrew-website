@@ -9,7 +9,7 @@ module.exports = {
     project: TSCONFIG_PROJECTS,
     tsconfigRootDir: __dirname
   },
-  plugins: ['@typescript-eslint', 'react', 'testing-library', 'simple-import-sort'],
+  plugins: ['@typescript-eslint', 'testing-library', 'simple-import-sort'],
   extends: [
     'next/core-web-vitals',
     'eslint:recommended',
