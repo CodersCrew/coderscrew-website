@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .next/
+.yarn/
 coverage/
 next-env.d.ts
 README.md
