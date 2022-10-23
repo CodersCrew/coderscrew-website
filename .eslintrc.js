@@ -77,7 +77,7 @@ module.exports = {
         format: null,
       },
       { selector: 'function', format: ['camelCase', 'PascalCase'] },
-      { selector: 'parameter', format: ['camelCase'], leadingUnderscore: 'allow' },
+      { selector: 'parameter', format: ['camelCase', 'PascalCase'], leadingUnderscore: 'allow' },
       { selector: 'typeLike', format: ['PascalCase'] },
 
       // Interfaces shouldn't be prefixed with `I`.
@@ -108,6 +108,8 @@ module.exports = {
         ],
       },
     ],
+
+    'react/button-has-type': 'off',
   },
   overrides: [
     {
@@ -134,11 +136,24 @@ module.exports = {
       },
     },
     {
-      // Storybook files
-      files: ['*.stories.tsx'],
+      // Files with necessary default exports
+      files: [
+        'src/pages/*',
+        '*.stories.tsx',
+        'src/pages/_app.tsx',
+        'src/pages/index.tsx',
+        'vitest.config.ts',
+        'cypress.config.ts',
+      ],
       rules: {
-        // Storybook uses default exports
         'import/no-default-export': 'off',
+      },
+    },
+    {
+      // Files with necessary require()
+      files: ['tailwind.config.js'],
+      rules: {
+        'global-require': 'off',
       },
     },
   ],

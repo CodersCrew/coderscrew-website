@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-/* eslint-disable import/no-default-export */
-import './index.css';
+import '@common/globals.css';
 
 import type { AppProps } from 'next/app';
 

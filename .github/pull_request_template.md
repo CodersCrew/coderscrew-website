@@ -16,8 +16,8 @@ Checklist:
 - [ ] Did Husky run all jobs? (you didn't use the `no-verify` flag)
 - [ ] Did you describe the task in the linked issue? (AC, useful links, description)
 - [ ] Did you link the issue to the pull request through the `Development` tab in the pull request options?
+- [ ] You didn't push any other lock files than `yarn.lock`
 
 Remainders:
 
-- Make sure your commit messages contain useful information
-- Make sure to use pnpm and do not push other lock files
+- Make sure to use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)

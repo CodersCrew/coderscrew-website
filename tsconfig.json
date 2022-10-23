@@ -27,10 +27,19 @@
     "allowUnreachableCode": false,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"]
+      "@common*": ["common", "common/*"],
+      "@assets*": ["common/assets", "common/assets/*"],
+      "@fonts*": ["common/fonts", "common/fonts/*"],
+      "@components*": ["components", "components/*"],
+      "@context*": ["context", "context/*"],
+      "@hooks*": ["hooks", "hooks/*"],
+      "@layouts*": ["layouts", "layouts/*"],
+      "@pages*": ["pages", "pages/*"],
+      "@services*": ["services", "services/*"],
+      "@utils*": ["utils", "utils/*"],
+      "@lib*": ["../lib", "../lib/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
