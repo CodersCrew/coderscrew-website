@@ -1,7 +1,3 @@
-/**
- * @type {import('@types/eslint').Linter.BaseConfig}
- * */
-
 const TSCONFIG_PROJECTS = ['tsconfig.eslint.json'];
 
 module.exports = {
@@ -11,48 +7,40 @@ module.exports = {
     ecmaVersion: 2022,
     sourceType: 'module',
     project: TSCONFIG_PROJECTS,
-    tsconfigRootDir: __dirname,
+    tsconfigRootDir: __dirname
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'prettier',
-    'simple-import-sort',
-    'testing-library',
-    'vitest',
-  ],
+  plugins: ['@typescript-eslint', 'react', 'testing-library', 'simple-import-sort'],
   extends: [
-    'prettier',
-    'plugin:storybook/recommended',
+    'next/core-web-vitals',
     'eslint:recommended',
     'airbnb',
     'airbnb-typescript',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:prettier/recommended',
-    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:storybook/recommended',
+    'plugin:testing-library/react',
+    'prettier'
   ],
-  rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 120,
-        tabWidth: 2,
-        useTabs: false,
-        semi: true,
-        singleQuote: true,
-        quoteProps: 'as-needed',
-        jsxSingleQuote: false,
-        trailingComma: 'all',
-        bracketSpacing: true,
-        jsxBracketSameLine: false,
-        arrowParens: 'always',
-        parser: 'typescript',
-        endOfLine: 'lf',
+  settings: {
+    // Tells eslint-plugin-react to automatically detect the version of React to use.
+    react: {
+      version: 'detect'
+    },
+    // Tells eslint how to resolve imports
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
       },
-    ],
-
+      typescript: {
+        project: TSCONFIG_PROJECTS
+      }
+    }
+  },
+  rules: {
     // We need to be able to import devDependencies
     'import/no-extraneous-dependencies': ['error', { optionalDependencies: false, peerDependencies: false }],
 
@@ -60,21 +48,36 @@ module.exports = {
     complexity: [2, 10],
 
     // Disabled as we're using simple-import-sort plugin.
-    'sort-imports': 0,
+    'sort-imports': 'off',
+    'import/order': 'off',
 
-    // Use only internal Next Links
-    'jsx-a11y/anchor-is-valid': 'off',
+    // To make imports better searchable we always use named exports.
+    'import/prefer-default-export': 'off',
+    'import/no-default-export': 'error',
+
+    // Automatically sorts imports to ensure their consistency.
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+
+    // Configure Next Link component
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['to']
+      }
+    ],
 
     // In many cases TS infers return type of a function so we don't need to provide it explicitly.
-    '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     // Enforces some naming conventions across the codebase.
     '@typescript-eslint/naming-convention': [
-      2,
+      'error',
       {
         selector: 'default',
         leadingUnderscore: 'allow',
-        format: null,
+        format: null
       },
       { selector: 'function', format: ['camelCase', 'PascalCase'] },
       { selector: 'parameter', format: ['camelCase', 'PascalCase'], leadingUnderscore: 'allow' },
@@ -87,29 +90,14 @@ module.exports = {
       { selector: 'typeAlias', format: ['PascalCase'], custom: { regex: '^T[A-Z]', match: false } },
 
       // Generics should have meaningful names instead of one-letters.
-      { selector: 'typeParameter', format: ['PascalCase'], custom: { regex: '[a-zA-Z]{2,}', match: true } },
+      { selector: 'typeParameter', format: ['PascalCase'], custom: { regex: '[a-zA-Z]{2,}', match: true } }
     ],
 
-    // Disabled as we're using simple-import-sort plugin.
-    'import/order': 0,
-
-    // To make imports better searchable we always use named exports.
-    'import/prefer-default-export': 0,
-    'import/no-default-export': 2,
-
-    // Automatically sorts imports to ensure their consistency.
-    'simple-import-sort/imports': [
-      2,
-      {
-        groups: [
-          ['^\\u0000'], // Side effects.
-          ['^[^.]'], // Absolute imports.
-          ['^\\.'], // Relative imports.
-        ],
-      },
-    ],
-
+    // This rule is having issues with setting button type dynamically.
     'react/button-has-type': 'off',
+
+    // It is simpler to destructure render
+    'testing-library/prefer-screen-queries': 'off'
   },
   overrides: [
     {
@@ -132,8 +120,8 @@ module.exports = {
         'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
 
         // In many cases undefined is considered a valid value for a prop.
-        'react/require-default-props': 0,
-      },
+        'react/require-default-props': 0
+      }
     },
     {
       // Files with necessary default exports
@@ -143,30 +131,18 @@ module.exports = {
         'src/pages/_app.tsx',
         'src/pages/index.tsx',
         'vitest.config.ts',
-        'cypress.config.ts',
+        'cypress.config.ts'
       ],
       rules: {
-        'import/no-default-export': 'off',
-      },
+        'import/no-default-export': 'off'
+      }
     },
     {
       // Files with necessary require()
       files: ['tailwind.config.js'],
       rules: {
-        'global-require': 'off',
-      },
-    },
-  ],
-  settings: {
-    react: { version: 'detect' },
-    'import/resolver': {
-      node: {
-        paths: ['src'],
-        extensions: ['.js', '.ts', '.tsx'],
-      },
-      typescript: {
-        project: TSCONFIG_PROJECTS,
-      },
-    },
-  },
+        'global-require': 'off'
+      }
+    }
+  ]
 };

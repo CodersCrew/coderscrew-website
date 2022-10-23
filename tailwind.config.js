@@ -6,7 +6,7 @@ module.exports = {
         primary: '#292929',
         secondary: '#4B545C',
         tetriary: '#9A9999',
-        quaternary: '#1A90FF',
+        quaternary: '#1A90FF'
       },
       guild: {
         pm: '#1BC55F',
@@ -14,12 +14,12 @@ module.exports = {
         webDev: '#0075FF',
         ux: '#FA8A43',
         dataScience: '#AC6DE8',
-        codersCamp: '#FEC43D',
+        codersCamp: '#FEC43D'
       },
       addditional: {
         white: '#FFFFFF',
-        darkWhite: '#F5F5F5',
-      },
+        darkWhite: '#F5F5F5'
+      }
     },
     spacing: {
       0: '0px',
@@ -64,23 +64,23 @@ module.exports = {
       39: '156px',
       40: '160px',
       41: '164px',
-      42: '168px',
+      42: '168px'
     },
     clipPath: {
-      hexPolygon: 'polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)',
+      hexPolygon: 'polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)'
     },
     extend: {
       boxShadow: {
         button: '6px 6px 17px rgba(0, 117, 255, 0.25)',
-        card: '17px 16px 33px rgba(0, 0, 0, 0.05)',
+        card: '17px 16px 33px rgba(0, 0, 0, 0.05)'
       },
       fontSize: {
-        title: '32px',
+        title: '32px'
       },
       dropShadow: {
-        hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F'],
-      },
-    },
+        hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F']
+      }
+    }
   },
-  plugins: [require('tailwind-clip-path')],
+  plugins: [require('tailwind-clip-path')]
 };

@@ -3,7 +3,7 @@ import { gql } from 'graphql-request';
 
 export const fetchText = async ({ locale, resourceName }: { locale: string; resourceName: string }) => {
   const {
-    textContent: { text },
+    textContent: { text }
   } = await hygraphClient.request(
     gql`
       query TextContent($locale: Locale!, $resourceName: String!) {
@@ -12,7 +12,7 @@ export const fetchText = async ({ locale, resourceName }: { locale: string; reso
         }
       }
     `,
-    { locale, resourceName },
+    { locale, resourceName }
   );
 
   return text;

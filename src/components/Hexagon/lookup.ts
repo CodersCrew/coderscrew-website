@@ -11,7 +11,7 @@ export const colors = {
   CodersCamp: 'bg-[#FEC43D]',
   white: 'bg-[#FFF]',
   'dark-white': 'bg-[#FAFAFA]',
-  transparent: 'bg-[transparent]',
+  transparent: 'bg-[transparent]'
 };
 
 export const dropShadowColors = {
@@ -27,7 +27,7 @@ export const dropShadowColors = {
   CodersCamp: 'drop-shadow-[6px_8px_10px_#FEC43D]',
   white: 'drop-shadow-[6px_8px_10px_#FFF]',
   'dark-white': 'drop-shadow-[6px_8px_10px_#FAFAFA]',
-  transparent: 'drop-shadow-[6px_8px_10px_transparent]',
+  transparent: 'drop-shadow-[6px_8px_10px_transparent]'
 };
 
 export const opacities = {
@@ -41,5 +41,5 @@ export const opacities = {
   70: 'bg-opacity-70',
   80: 'bg-opacity-80',
   90: 'bg-opacity-90',
-  100: 'bg-opacity-100',
+  100: 'bg-opacity-100'
 };
