@@ -10,8 +10,7 @@ export const colors = {
   dataScience: 'bg-guild-dataScience',
   codersCamp: 'bg-guild-codersCamp',
   white: 'bg-addditional-white',
-  darkWhite: 'bg-addditional-darkWhite',
-  transparent: 'bg-transparent'
+  darkWhite: 'bg-addditional-darkWhite'
 };
 
 export const dropShadowColors = {
@@ -26,11 +25,11 @@ export const dropShadowColors = {
   dataScience: 'drop-shadow-[6px_8px_10px_#AC6DE8]',
   codersCamp: 'drop-shadow-[6px_8px_10px_#FEC43D]',
   white: 'drop-shadow-[6px_8px_10px_#FFFFFF]',
-  darkWhite: 'drop-shadow-[6px_8px_10px_#FAFAFA]',
-  transparent: 'drop-shadow-[6px_8px_10px_transparent]'
+  darkWhite: 'drop-shadow-[6px_8px_10px_#FAFAFA]'
 };
 
 export const opacities = {
+  0: 'bg-opacity-0',
   5: 'bg-opacity-5',
   10: 'bg-opacity-10',
   20: 'bg-opacity-20',
