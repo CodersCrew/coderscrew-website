@@ -1,14 +1,11 @@
 module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    // TODO: Ensure project uses new naming system for colors
     colors: {
-      text: {
-        primary: '#292929',
-        secondary: '#4B545C',
-        tetriary: '#9A9999',
-        quaternary: '#1A90FF'
-      },
+      primary: '#292929',
+      secondary: '#4B545C',
+      tetriary: '#9A9999',
+      quaternary: '#1A90FF',
       guild: {
         pm: '#1BC55F',
         marketing: '#F0656F',
@@ -19,8 +16,9 @@ module.exports = {
       },
       addditional: {
         white: '#FFFFFF',
-        darkWhite: '#F5F5F5'
-      }
+        darkWhite: '#FAFAFA'
+      },
+      transparent: 'transparent'
     },
     spacing: {
       0: '0px',
