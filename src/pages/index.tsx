@@ -1,3 +1,5 @@
-const Index = () => <div className="bg-green-100">sdffsdfsdf</div>;
+const Index = () => {
+  return <div>🤖</div>;
+};
 
 export default Index;
