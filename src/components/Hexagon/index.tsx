@@ -19,7 +19,7 @@ export const Hexagon = ({ variant, primaryColor, secondaryColor, opacity, icon, 
 
   const variantClasses = {
     shadow: dropShadowColorClass,
-    default: '',
+    default: ''
   };
 
   return (

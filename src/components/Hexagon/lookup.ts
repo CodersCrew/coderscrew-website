@@ -1,36 +1,35 @@
 export const colors = {
-  blue: 'bg-[#1A90FF]',
-  primary: 'bg-[#292929]',
-  secondary: 'bg-[#4B545C]',
-  'light-grey': 'bg-[#9A9999]',
-  PM: 'bg-[#1BC55F]',
-  Marketing: 'bg-[#F0656F]',
-  'Web-dev': 'bg-[#0075FF]',
-  'UX-UI': 'bg-[#FA8A43]',
-  'Data-science': 'bg-[#AC6DE8]',
-  CodersCamp: 'bg-[#FEC43D]',
-  white: 'bg-[#FFF]',
-  'dark-white': 'bg-[#FAFAFA]',
-  transparent: 'bg-[transparent]',
+  primary: 'bg-primary',
+  secondary: 'bg-secondary',
+  tetriary: 'bg-tetriary',
+  quaternary: 'bg-quaternary',
+  pm: 'bg-guild-pm',
+  marketing: 'bg-guild-marketing',
+  webDev: 'bg-guild-webDev',
+  ux: 'bg-guild-ux',
+  dataScience: 'bg-guild-dataScience',
+  codersCamp: 'bg-guild-codersCamp',
+  white: 'bg-addditional-white',
+  darkWhite: 'bg-addditional-darkWhite'
 };
 
 export const dropShadowColors = {
-  blue: 'drop-shadow-[6px_8px_10px_#1A90FF]',
   primary: 'drop-shadow-[6px_8px_10px_#292929]',
   secondary: 'drop-shadow-[6px_8px_10px_#4B545C]',
-  'light-grey': 'drop-shadow-[6px_8px_10px_#9A9999]',
-  PM: 'drop-shadow-[6px_8px_10px_#1BC55F]',
-  Marketing: 'drop-shadow-[6px_8px_10px_#F0656F]',
-  'Web-dev': 'drop-shadow-[6px_8px_10px_#0075FF]',
-  'UX-UI': 'drop-shadow-[6px_8px_10px_#FA8A43]',
-  'Data-science': 'drop-shadow-[6px_8px_10px_#AC6DE8]',
-  CodersCamp: 'drop-shadow-[6px_8px_10px_#FEC43D]',
-  white: 'drop-shadow-[6px_8px_10px_#FFF]',
-  'dark-white': 'drop-shadow-[6px_8px_10px_#FAFAFA]',
-  transparent: 'drop-shadow-[6px_8px_10px_transparent]',
+  tetriary: 'drop-shadow-[6px_8px_10px_#9A9999]',
+  quaternary: 'drop-shadow-[6px_8px_10px_#1A90FF]',
+  pm: 'drop-shadow-[6px_8px_10px_#1BC55F]',
+  marketing: 'drop-shadow-[6px_8px_10px_#F0656F]',
+  webDev: 'drop-shadow-[6px_8px_10px_#0075FF]',
+  ux: 'drop-shadow-[6px_8px_10px_#FA8A43]',
+  dataScience: 'drop-shadow-[6px_8px_10px_#AC6DE8]',
+  codersCamp: 'drop-shadow-[6px_8px_10px_#FEC43D]',
+  white: 'drop-shadow-[6px_8px_10px_#FFFFFF]',
+  darkWhite: 'drop-shadow-[6px_8px_10px_#FAFAFA]'
 };
 
 export const opacities = {
+  0: 'bg-opacity-0',
   5: 'bg-opacity-5',
   10: 'bg-opacity-10',
   20: 'bg-opacity-20',
@@ -41,5 +40,5 @@ export const opacities = {
   70: 'bg-opacity-70',
   80: 'bg-opacity-80',
   90: 'bg-opacity-90',
-  100: 'bg-opacity-100',
+  100: 'bg-opacity-100'
 };
