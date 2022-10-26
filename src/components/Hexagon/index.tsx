@@ -25,12 +25,12 @@ export const Hexagon = ({ variant, primaryColor, secondaryColor, opacity, icon, 
   return (
     <div className={`h-full w-full ${variantClasses[variant]}`}>
       <div
-        className={`relative h-full w-full clip-path-hexPolygon ${colorClass} ${opacityClass}`}
+        className={`relative h-full w-full clip-path-hexPolygon ${colorClass} ${opacityClass} rotate-90`}
         data-testid="hexagon"
         {...props}
       >
         {!!icon && (
-          <div className="caption absolute top-1/2 flex w-full -translate-y-1/2 items-center justify-center">
+          <div className="caption absolute top-1/2 flex w-full -translate-y-1/2 -rotate-90 items-center justify-center">
             <Icon color={iconColorClass} />
           </div>
         )}
