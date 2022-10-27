@@ -1,3 +1,4 @@
+import { NavElement } from '../components/NavItem/index';
 // Card Component mock data
 
 export const cardArticleData = {
@@ -24,3 +25,32 @@ export const CommentTextData = {
   text: 'Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam!',
   name: 'Kornelia'
 };
+
+// NavItem Component mock data
+
+export const navItemArr: NavElement[] = [
+  {
+    label: 'O nas',
+    dropdownItems: [
+      { dropdownItemLabel: 'Misja i wartości', path: '/mission' },
+      { dropdownItemLabel: 'Gildie', path: '/guilds' },
+      { dropdownItemLabel: 'Osiągnęcia', path: '/achievements' },
+      { dropdownItemLabel: 'Nasza Historia', path: '/history' }
+    ]
+  },
+  {
+    label: 'Nasz Zespół',
+    dropdownItems: [
+      { dropdownItemLabel: 'Matylda Borutka', path: '/matylda' },
+      { dropdownItemLabel: 'Zosia Samosia', path: '/zosia' },
+      { dropdownItemLabel: 'Artur Twardoręki', path: '/artur' }
+    ]
+  },
+  {
+    label: 'Nasze Projekty',
+    dropdownItems: [
+      { dropdownItemLabel: 'CC website', path: '/ccweb' },
+      { dropdownItemLabel: 'Coders Camp', path: '/camp' }
+    ]
+  }
+];
