@@ -5,7 +5,7 @@ import { ReactNode } from 'react';
 export default {
   title: 'NavItem',
   component: NavItem,
-  decorators: [(story: () => ReactNode) => <div style={{ width: '200px', height: '1000px' }}>{story()}</div>],
+  decorators: [(story: () => ReactNode) => <div style={{ width: '200px', height: '1000px' }}>{story()}</div>]
 };
 
 const Template: Story = (args) => <NavItem item={{ label: '', path: NavItemPath.PROJECTS }} {...args} />;

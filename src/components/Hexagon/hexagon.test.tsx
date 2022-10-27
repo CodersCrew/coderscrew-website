@@ -6,7 +6,7 @@ import { Hexagon } from '.';
 describe('Hexagon', () => {
   it('should render without errors', () => {
     const { getByTestId } = render(
-      <Hexagon primaryColor="blue" opacity={100} secondaryColor="blue" variant="default" />,
+      <Hexagon primaryColor="primary" opacity={100} secondaryColor="secondary" variant="default" />
     );
 
     expect(getByTestId('hexagon')).toBeInTheDocument();
@@ -14,7 +14,7 @@ describe('Hexagon', () => {
 
   it('should render with icon', () => {
     const { getByTestId } = render(
-      <Hexagon primaryColor="blue" opacity={100} secondaryColor="PM" variant="default" icon />,
+      <Hexagon primaryColor="primary" opacity={100} secondaryColor="secondary" variant="default" icon />
     );
 
     expect(getByTestId('icon')).toBeInTheDocument();

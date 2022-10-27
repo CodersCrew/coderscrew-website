@@ -7,7 +7,7 @@ export default {
   title: 'Hexagon',
   component: Hexagon,
   decorators: [(story: () => ReactNode) => <div style={{ width: '200px', height: '200px' }}>{story()}</div>],
-  argTypes: {},
+  argTypes: {}
 };
 
 const Template: Story<HexagonProps> = (args) => <Hexagon {...args} />;
@@ -18,5 +18,5 @@ Default.args = {
   primaryColor: 'primary',
   secondaryColor: undefined,
   opacity: 100,
-  icon: false,
+  icon: false
 };

@@ -15,22 +15,22 @@ export type NavElement = {
 export enum NavItemPath {
   PROJECTS = 'projects',
   TEAM = 'team',
-  ABOUT = 'about',
+  ABOUT = 'about'
 }
 
 export const NavItemArr: NavElement[] = [
   {
     path: NavItemPath.PROJECTS,
-    label: 'Nasze Projekty',
+    label: 'Nasze Projekty'
   },
   {
     path: NavItemPath.TEAM,
-    label: 'Nasz Zespół',
+    label: 'Nasz Zespół'
   },
   {
     path: NavItemPath.ABOUT,
-    label: 'O nas',
-  },
+    label: 'O nas'
+  }
 ];
 
 export const NavItem = ({ item: { path, label } }: NavItemProps) => {
@@ -40,22 +40,20 @@ export const NavItem = ({ item: { path, label } }: NavItemProps) => {
       const destination = document.querySelector(`#${path}`);
       if (destination) {
         destination.scrollIntoView({
-          behavior: 'smooth',
+          behavior: 'smooth'
         });
       }
     },
-    [path],
+    [path]
   );
   return (
     <Link href={path}>
-      <a onClick={handleClick} aria-hidden="true">
-        <p className="w-full cursor-pointer text-sm font-semibold text-primary" data-testid="navItem">
-          {label}{' '}
-          <span className="pl-[4px]">
-            <Image width={12} height={12} src={ArrowDown} alt="arrow" />
-          </span>
-        </p>
-      </a>
+      <p className="w-full cursor-pointer text-sm font-semibold text-primary" data-testid="navItem">
+        {label}{' '}
+        <span className="pl-[4px]">
+          <Image width={12} height={12} src={ArrowDown} alt="arrow" />
+        </span>
+      </p>
     </Link>
   );
 };
