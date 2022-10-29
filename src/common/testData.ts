@@ -34,7 +34,7 @@ export const navItemArr: NavElement[] = [
     dropdownItems: [
       { dropdownItemLabel: 'Misja i wartości', path: '/mission' },
       { dropdownItemLabel: 'Gildie', path: '/guilds' },
-      { dropdownItemLabel: 'Osiągnęcia', path: '/achievements' },
+      { dropdownItemLabel: 'Osiągnięcia', path: '/achievements' },
       { dropdownItemLabel: 'Nasza Historia', path: '/history' }
     ]
   },

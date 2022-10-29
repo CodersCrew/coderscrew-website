@@ -1,7 +1,7 @@
 import arrow from '@assets/arrow.svg';
 import arrowUp from '@assets/arrowUp.svg';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 export type NavItemProps = {
@@ -19,11 +19,12 @@ export type DropdownItemsProps = {
 };
 
 export const NavItem = ({ item: { dropdownItems, label } }: NavItemProps) => {
+  const router = useRouter();
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const buttonClasses = showDropdown ? 'text-quaternary inline' : 'text-primary';
+  const buttonClasses = showDropdown ? 'inline text-quaternary' : 'text-primary';
   const dropdownItemClasses =
-    'hover:text-quaternary hover:bg-additional-darkWhite px-5 leading-5 py-3 last:rounded-b-[4px]';
+    'px-5 py-3 text-left leading-5 last:rounded-b-[4px] hover:bg-additional-darkWhite  hover:text-quaternary';
 
   const handleShowDropdown = () => setShowDropdown((prev) => !prev);
 
@@ -43,19 +44,25 @@ export const NavItem = ({ item: { dropdownItems, label } }: NavItemProps) => {
           )}
         </span>
       </button>
-      <ul
-        className={`flex w-auto cursor-pointer flex-col rounded-[4px] text-left text-base font-normal text-primary shadow-card ${
+      <div
+        className={`flex w-auto cursor-pointer flex-col rounded-[4px] text-base font-normal text-primary shadow-card ${
           showDropdown ? 'visible' : 'hidden'
         }`}
       >
         {dropdownItems?.map(({ dropdownItemLabel, path }) => (
-          <li key={dropdownItemLabel} className={dropdownItemClasses}>
-            <Link href={path} onClick={handleShowDropdown}>
-              {dropdownItemLabel}
-            </Link>
-          </li>
+          <button
+            role="link"
+            onClick={() => {
+              router.push(path);
+              handleShowDropdown();
+            }}
+            key={dropdownItemLabel}
+            className={dropdownItemClasses}
+          >
+            <p>{dropdownItemLabel}</p>
+          </button>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
