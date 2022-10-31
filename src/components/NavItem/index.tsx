@@ -5,61 +5,57 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 
 export type NavItemProps = {
-  item: NavElement;
+  navItemLabel: string;
+  dropdownItems?: DropdownItemsType[];
 };
 
-export type NavElement = {
+export type DropdownItemsType = {
   label: string;
-  dropdownItems?: DropdownItemsProps[];
-};
-
-export type DropdownItemsProps = {
-  dropdownItemLabel: string;
   path: string;
 };
 
-export const NavItem = ({ item: { dropdownItems, label } }: NavItemProps) => {
+export const NavItem = ({ dropdownItems, navItemLabel }: NavItemProps) => {
   const router = useRouter();
   const [showDropdown, setShowDropdown] = useState(false);
 
   const buttonClasses = showDropdown ? 'inline text-quaternary' : 'text-primary';
   const dropdownItemClasses =
     'px-5 py-3 text-left leading-5 last:rounded-b-[4px] hover:bg-additional-darkWhite  hover:text-quaternary';
+  const showDropdownClasses = showDropdown ? 'visible' : 'hidden';
+  const dropdownIndicatorIcon = showDropdown ? arrowUp : arrow;
 
-  const handleShowDropdown = () => setShowDropdown((prev) => !prev);
+  const toggleDropdown = () => setShowDropdown((prev) => !prev);
+
+  const onItemClick = (path: string) => {
+    router.push(path);
+    toggleDropdown();
+  };
 
   return (
     <div className="flex flex-col items-center gap-3">
       <button
         className={`w-full cursor-pointer text-sm font-bold ${buttonClasses}`}
         data-testid="navItem"
-        onClick={handleShowDropdown}
+        onClick={toggleDropdown}
       >
-        {label}{' '}
-        <span className={`pl-1 ${buttonClasses}`}>
-          {showDropdown ? (
-            <Image width={12} height={12} src={arrowUp} alt="arrowUp" />
-          ) : (
-            <Image width={12} height={12} src={arrow} alt="arrow" />
-          )}
+        {navItemLabel}
+        <span className={`pl-2 ${buttonClasses}`}>
+          <Image width={12} height={12} src={dropdownIndicatorIcon} alt="Dropdown indicator" />
         </span>
       </button>
       <div
-        className={`flex w-auto cursor-pointer flex-col rounded-[4px] text-base font-normal text-primary shadow-card ${
-          showDropdown ? 'visible' : 'hidden'
-        }`}
+        className={`flex w-auto cursor-pointer flex-col rounded-[4px] text-base font-normal text-primary shadow-card ${showDropdownClasses}`}
       >
-        {dropdownItems?.map(({ dropdownItemLabel, path }) => (
+        {dropdownItems?.map(({ label, path }) => (
           <button
             role="link"
             onClick={() => {
-              router.push(path);
-              handleShowDropdown();
+              onItemClick(path);
             }}
-            key={dropdownItemLabel}
+            key={label}
             className={dropdownItemClasses}
           >
-            <p>{dropdownItemLabel}</p>
+            <p>{label}</p>
           </button>
         ))}
       </div>

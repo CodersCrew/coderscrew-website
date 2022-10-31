@@ -9,8 +9,8 @@ export const colors = {
   ux: 'bg-guild-ux',
   dataScience: 'bg-guild-dataScience',
   codersCamp: 'bg-guild-codersCamp',
-  white: 'bg-addditional-white',
-  darkWhite: 'bg-addditional-darkWhite'
+  white: 'bg-additional-white',
+  darkWhite: 'bg-additional-darkWhite'
 };
 
 export const dropShadowColors = {

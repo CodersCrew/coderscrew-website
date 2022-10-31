@@ -1,4 +1,3 @@
-import { NavElement } from '../components/NavItem/index';
 // Card Component mock data
 
 export const cardArticleData = {
@@ -28,29 +27,29 @@ export const CommentTextData = {
 
 // NavItem Component mock data
 
-export const navItemArr: NavElement[] = [
+export const navItemArr = [
   {
     label: 'O nas',
     dropdownItems: [
-      { dropdownItemLabel: 'Misja i wartości', path: '/mission' },
-      { dropdownItemLabel: 'Gildie', path: '/guilds' },
-      { dropdownItemLabel: 'Osiągnięcia', path: '/achievements' },
-      { dropdownItemLabel: 'Nasza Historia', path: '/history' }
+      { label: 'Misja i wartości', path: '/mission' },
+      { label: 'Gildie', path: '/guilds' },
+      { label: 'Osiągnięcia', path: '/achievements' },
+      { label: 'Nasza Historia', path: '/history' }
     ]
   },
   {
     label: 'Nasz Zespół',
     dropdownItems: [
-      { dropdownItemLabel: 'Matylda Borutka', path: '/matylda' },
-      { dropdownItemLabel: 'Zosia Samosia', path: '/zosia' },
-      { dropdownItemLabel: 'Artur Twardoręki', path: '/artur' }
+      { label: 'Matylda Borutka', path: '/matylda' },
+      { label: 'Zosia Samosia', path: '/zosia' },
+      { label: 'Artur Twardoręki', path: '/artur' }
     ]
   },
   {
     label: 'Nasze Projekty',
     dropdownItems: [
-      { dropdownItemLabel: 'CC website', path: '/ccweb' },
-      { dropdownItemLabel: 'Coders Camp', path: '/camp' }
+      { label: 'CC website', path: '/ccweb' },
+      { label: 'Coders Camp', path: '/camp' }
     ]
   }
 ];

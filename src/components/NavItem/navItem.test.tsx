@@ -18,7 +18,7 @@ const mockDataItems = navItemArr[0]?.dropdownItems;
 
 describe('NavItem', () => {
   it('should be rendered without errors and push navigation route', () => {
-    const { getByTestId, getByText } = render(<NavItem item={{ label: 'O nas', dropdownItems: mockDataItems }} />);
+    const { getByTestId, getByText } = render(<NavItem navItemLabel="O nas" dropdownItems={mockDataItems} />);
 
     expect(getByTestId('navItem')).toBeInTheDocument();
     expect(getByText('Osiągnięcia')).toBeInTheDocument();
