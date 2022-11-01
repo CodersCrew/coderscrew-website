@@ -1,8 +1,9 @@
 import arrow from '@assets/arrow.svg';
 import arrowUp from '@assets/arrowUp.svg';
+import { useClickOutside } from '@hooks/useClickOutside';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 export type NavItemProps = {
   navItemLabel: string;
@@ -15,6 +16,8 @@ export type DropdownItemsType = {
 };
 
 export const NavItem = ({ dropdownItems, navItemLabel }: NavItemProps) => {
+  const clickRef = useRef<HTMLDivElement>(null);
+
   const router = useRouter();
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -25,14 +28,17 @@ export const NavItem = ({ dropdownItems, navItemLabel }: NavItemProps) => {
   const dropdownIndicatorIcon = showDropdown ? arrowUp : arrow;
 
   const toggleDropdown = () => setShowDropdown((prev) => !prev);
+  const closeDropdown = () => setShowDropdown(false);
 
   const onItemClick = (path: string) => {
     router.push(path);
     toggleDropdown();
   };
 
+  useClickOutside(clickRef, closeDropdown, showDropdown);
+
   return (
-    <div className="flex flex-col items-center gap-3">
+    <div ref={clickRef} className="flex flex-col items-center gap-3">
       <button
         className={`w-full cursor-pointer text-sm font-bold ${buttonClasses}`}
         data-testid="navItem"
