@@ -1,29 +1,16 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
 
+  // TODO: Check if we need those
   "typescript.tsdk": "node_modules/typescript/lib",
-  // enable emmet support for React
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  // decided the length of the line
   "editor.rulers": [120],
-  // hide node_modules
-  "files.exclude": {
-    "**/node_modules": true
-  },
   "files.associations": {
     "*.css": "tailwindcss"
   },

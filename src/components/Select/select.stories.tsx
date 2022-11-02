@@ -6,8 +6,8 @@ export default {
   title: 'Select',
   component: Select,
   argTypes: {
-    selectOptions: { action: 'clicked' },
-  },
+    selectOptions: { action: 'clicked' }
+  }
 };
 
 const Template: Story<SelectProps> = (args) => <Select {...args} />;
@@ -18,6 +18,6 @@ Default.args = {
     { label: 'UX/UI', value: 'ux-ui' },
     { label: 'WebDevelopment', value: 'web-development' },
     { label: 'HR', value: 'hr' },
-    { label: 'SEO', value: 'seo' },
-  ],
+    { label: 'SEO', value: 'seo' }
+  ]
 };
