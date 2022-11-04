@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 
 const variants = {
-  primary: 'bg-quaternary text-addditional-white hover:bg-guild-webDev hover:border-guild-webDev',
+  primary: 'bg-quaternary text-additional-white hover:bg-guild-webDev hover:border-guild-webDev',
   secondary: 'text-quaternary border hover:text-white hover:bg-quaternary'
 };
 
