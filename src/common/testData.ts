@@ -24,3 +24,32 @@ export const CommentTextData = {
   text: 'Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam!',
   name: 'Kornelia'
 };
+
+// NavItem Component mock data
+
+export const navItemArr = [
+  {
+    label: 'O nas',
+    dropdownItems: [
+      { label: 'Misja i wartości', path: '/mission' },
+      { label: 'Gildie', path: '/guilds' },
+      { label: 'Osiągnięcia', path: '/achievements' },
+      { label: 'Nasza Historia', path: '/history' }
+    ]
+  },
+  {
+    label: 'Nasz Zespół',
+    dropdownItems: [
+      { label: 'Matylda Borutka', path: '/matylda' },
+      { label: 'Zosia Samosia', path: '/zosia' },
+      { label: 'Artur Twardoręki', path: '/artur' }
+    ]
+  },
+  {
+    label: 'Nasze Projekty',
+    dropdownItems: [
+      { label: 'CC website', path: '/ccweb' },
+      { label: 'Coders Camp', path: '/camp' }
+    ]
+  }
+];
