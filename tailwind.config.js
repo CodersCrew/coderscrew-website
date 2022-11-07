@@ -24,7 +24,9 @@ module.exports = {
       },
       addditional: {
         white: '#FFFFFF',
-        darkWhite: '#FAFAFA'
+        darkWhite: '#FAFAFA',
+        bgLogotypesFrom: '#545454',
+        bgLogotypesTo: '#292929'
       },
       transparent: 'transparent'
     },
@@ -86,8 +88,21 @@ module.exports = {
       },
       dropShadow: {
         hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F']
+      },
+      animation: {
+        scroll: 'scroll 15s linear infinite'
+      },
+      keyframes: {
+        scroll: {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(-100%)' }
+        }
       }
     }
   },
   plugins: [require('tailwind-clip-path')]
 };
+// scroll: {
+//   '0%': { transform: 'translateX(0)' },
+//   '100%': { transform: 'translateX(-100%)' },
+// }

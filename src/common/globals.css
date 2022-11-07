@@ -9,3 +9,12 @@
     font-family: 'Lato', sans-serif;
   }
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+  .slider-delay {
+    animation-delay: 5s;
+  }
+}

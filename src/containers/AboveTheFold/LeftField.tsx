@@ -1,7 +1,7 @@
 import { Button, Hexagon } from '@componentsindex';
 
 export const LeftField = () => (
-  <div className="relative">
+  <div className="relative pr-10">
     <div className="mt-30 pl-10 lg:pl-35">
       <h1 className="mb-[38px] pr-3 text-5xl font-bold">Odkryj swoją ścieżkę kariery w branży IT</h1>
       <p className="mb-[38px] text-base">
