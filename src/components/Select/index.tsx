@@ -1,6 +1,6 @@
 import Arrow from '@assets/form-arrow-down.svg';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { SyntheticEvent, useState } from 'react';
 
 type SelectOption = {
   value: string;
@@ -17,7 +17,7 @@ type OptionField = {
 
 type SelectListProps = {
   options: SelectOption[];
-  handleChooseOption: () => void;
+  handleChooseOption: React.MouseEventHandler<HTMLLIElement>;
   openClass: string;
 };
 
@@ -60,7 +60,7 @@ export const Select = ({ options }: SelectProps) => {
     setOpen(false);
   };
 
-  const handleChooseOption = (e: React.MouseEventHandler<HTMLLIElement>) => {
+  const handleChooseOption = (e: SyntheticEvent) => {
     e.stopPropagation();
 
     const selectedOptionValue = e.target.dataset.value;
