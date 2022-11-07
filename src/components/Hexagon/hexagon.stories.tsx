@@ -13,7 +13,6 @@ export default {
 const Template: Story<HexagonProps> = (args) => <Hexagon {...args} />;
 
 export const Default = Template.bind({});
-
 Default.args = {
   variant: 'default',
   primaryColor: 'primary',
