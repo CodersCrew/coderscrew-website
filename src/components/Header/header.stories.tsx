@@ -5,8 +5,7 @@ import { Header } from '.';
 
 export default {
   title: 'Header',
-  component: Header,
-  decorators: [(story: () => ReactNode) => <div style={{ width: '1440px', height: '128px' }}>{story()}</div>]
+  component: Header
 };
 
 const Template: Story = (args) => <Header {...args} />;
