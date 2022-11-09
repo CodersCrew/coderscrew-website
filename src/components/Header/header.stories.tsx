@@ -1,5 +1,4 @@
 import { Story } from '@storybook/react';
-import { ReactNode } from 'react';
 
 import { Header } from '.';
 
