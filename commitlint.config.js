@@ -1,4 +1,3 @@
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
-  formatter: '@commitlint/format',
+  extends: ['@commitlint/config-conventional']
 };

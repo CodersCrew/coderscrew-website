@@ -6,8 +6,8 @@ export default {
   title: 'Button',
   component: Button,
   argTypes: {
-    onClick: { action: 'clicked' },
-  },
+    onClick: { action: 'clicked' }
+  }
 };
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
@@ -15,11 +15,11 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   variant: 'primary',
-  label: 'Primary',
+  label: 'Primary'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   variant: 'secondary',
-  label: 'Secondary',
+  label: 'Secondary'
 };

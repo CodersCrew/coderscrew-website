@@ -1,12 +1,11 @@
+import CloudOffline from '@assets/cloudOffline.svg';
+import CloudOnline from '@assets/cloudOnline.svg';
+import HumanResources from '@assets/humanResources.svg';
+import OnlineMarketing from '@assets/onlineMarketing.svg';
+import ProjectManagement from '@assets/projectManagement.svg';
+import UxDesign from '@assets/uxDesign.svg';
+import WebDevelopement from '@assets/webDevelopment.svg';
 import { ReactElement, SVGProps } from 'react';
-
-import CloudOffline from '../../common/assets/cloudOffline.svg';
-import CloudOnline from '../../common/assets/cloudOnline.svg';
-import OnlineMarketing from '../../common/assets/onlineMarketing.svg';
-import ProjectManagement from '../../common/assets/projectManagement.svg';
-import HumanResources from '../../common/assets/svg/humanResources.svg';
-import Ux_uiDesign from '../../common/assets/ux_uiDesign.svg';
-import WebDevelopement from '../../common/assets/webDevelopement.svg';
 
 const svgIcons = {
   HumanResources,
@@ -14,11 +13,11 @@ const svgIcons = {
   CloudOnline,
   OnlineMarketing,
   ProjectManagement,
-  Ux_uiDesign,
-  WebDevelopement,
+  UxDesign,
+  WebDevelopement
 };
 
-type IconName = keyof typeof svgIcons;
+export type IconName = keyof typeof svgIcons;
 type ReactComponent = (props: SVGProps<SVGElement>) => ReactElement;
 export const Icon = svgIcons as Record<IconName, ReactComponent>;
 
