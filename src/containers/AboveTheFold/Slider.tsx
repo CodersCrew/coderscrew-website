@@ -1,13 +1,21 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
-interface Logotype {
+type Logotype = {
   id: number;
-  src: string;
-}
+  src: string | StaticImageData;
+  alt: string;
+};
 
-export const Slider = ({ logotypesList }) =>
-  logotypesList.map((logotype: Logotype) => (
-    <li className="px-8" key={logotype.id}>
-      <Image src={logotype.src} layout="fixed" />
-    </li>
-  ));
+type LogotypesList = {
+  logotypesList: Logotype[];
+};
+
+export const Slider = ({ logotypesList }: LogotypesList) => (
+  <>
+    {logotypesList.map((logotype: Logotype) => (
+      <li className="px-8" key={logotype.id}>
+        <Image src={logotype.src} alt={logotype.alt} layout="fixed" />
+      </li>
+    ))}
+  </>
+);

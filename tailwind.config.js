@@ -102,7 +102,3 @@ module.exports = {
   },
   plugins: [require('tailwind-clip-path')]
 };
-// scroll: {
-//   '0%': { transform: 'translateX(0)' },
-//   '100%': { transform: 'translateX(-100%)' },
-// }

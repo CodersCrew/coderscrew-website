@@ -6,19 +6,19 @@ import livechat from '../../common/assets/logotypes/livechat logo.png';
 import { Slider } from './Slider';
 
 const logotypes = [
-  { id: '1', src: challengeRocket },
-  { id: '2', src: deviniti },
-  { id: '3', src: divante },
-  { id: '4', src: freshmail },
-  { id: '5', src: livechat }
+  { id: 1, src: challengeRocket, alt: 'logo challenge Rocket' },
+  { id: 2, src: deviniti, alt: 'logo deviniti' },
+  { id: 3, src: divante, alt: 'logo divante' },
+  { id: 4, src: freshmail, alt: 'logo freshmail' },
+  { id: 5, src: livechat, alt: 'logo livechat' }
 ];
 
 export const BottomField = () => (
-  <div className="flex h-[100px] w-[100vw] items-center justify-between bg-gradient-to-br  from-addditional-bgLogotypesFrom to-addditional-bgLogotypesTo">
+  <div className="flex h-[100px] w-[100vw] items-center justify-between bg-gradient-to-br from-additional-bgLogotypesFrom to-additional-bgLogotypesTo ">
     <div>
-      <p className="whitespace-nowrap px-10 pl-5 text-white">Nasi partnerzy</p>
+      <p className="whitespace-nowrap px-5 text-white">Nasi partnerzy</p>
     </div>
-    <div className="hover:pause flex overflow-hidden pr-40">
+    <div className="flex overflow-hidden pr-40">
       <ul className="hover:pause flex animate-scroll justify-between ">
         <Slider logotypesList={logotypes} />
       </ul>
