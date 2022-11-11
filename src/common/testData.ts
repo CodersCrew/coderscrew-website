@@ -1,10 +1,10 @@
 // Card Component mock data
 
-import challengeRocket from "./assets/logotypes/challenge rocket logo.png";
-import deviniti from "./assets/logotypes/deviniti logo.png";
-import divante from "./assets/logotypes/divante logo.png";
-import freshmail from "./assets/logotypes/freshmail-logo-dark 1.png";
-import livechat from "./assets/logotypes/livechat logo.png";
+import challengeRocket from './assets/logotypes/challenge rocket logo.png';
+import deviniti from './assets/logotypes/deviniti logo.png';
+import divante from './assets/logotypes/divante logo.png';
+import freshmail from './assets/logotypes/freshmail-logo-dark 1.png';
+import livechat from './assets/logotypes/livechat logo.png';
 
 export const cardArticleData = {
   header: 'Kim Jesteśmy ?',
