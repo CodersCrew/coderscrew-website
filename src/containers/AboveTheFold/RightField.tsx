@@ -4,7 +4,7 @@ import Image from 'next/image';
 import BuisnessPeople from '../../common/assets/businesspeople-office-meeting 3.png';
 
 export const RightField = () => (
-  <div className="relative ml-5 mt-[6em] flex justify-start md:mt-[16em]">
+  <div className="container relative ml-5 mt-[6em] flex justify-start md:mt-[16em]">
     <div className="flex">
       <div className="mt-5 mb-[8em] h-[9em] w-[10em] md:mt-10 md:mb-[14.5em] md:h-[18em] md:w-[19em]">
         <Hexagon opacity={100} variant="default" primaryColor="codersCamp" />
@@ -15,7 +15,7 @@ export const RightField = () => (
     </div>
 
     <div className="absolute bottom-0 w-[20em] md:w-[39em] ">
-      <Image objectFit="scale-down" sizes="10" src={BuisnessPeople} />
+      <Image objectFit="contain" sizes="10" width="130%" height="100%" src={BuisnessPeople} />
     </div>
   </div>
 );

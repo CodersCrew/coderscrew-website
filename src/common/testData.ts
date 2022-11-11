@@ -1,5 +1,11 @@
 // Card Component mock data
 
+import challengeRocket from "./assets/logotypes/challenge rocket logo.png";
+import deviniti from "./assets/logotypes/deviniti logo.png";
+import divante from "./assets/logotypes/divante logo.png";
+import freshmail from "./assets/logotypes/freshmail-logo-dark 1.png";
+import livechat from "./assets/logotypes/livechat logo.png";
+
 export const cardArticleData = {
   header: 'Kim Jesteśmy ?',
   title: 'Organizacja non-profit z Wrocławia',
@@ -52,4 +58,12 @@ export const navItemArr = [
       { label: 'Coders Camp', path: '/camp' }
     ]
   }
+];
+
+export const logotypes = [
+  { id: 1, src: challengeRocket, alt: 'logo challenge Rocket' },
+  { id: 2, src: deviniti, alt: 'logo deviniti' },
+  { id: 3, src: divante, alt: 'logo divante' },
+  { id: 4, src: freshmail, alt: 'logo freshmail' },
+  { id: 5, src: livechat, alt: 'logo livechat' }
 ];

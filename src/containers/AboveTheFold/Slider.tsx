@@ -13,8 +13,8 @@ type LogotypesList = {
 export const Slider = ({ logotypesList }: LogotypesList) => (
   <>
     {logotypesList.map((logotype: Logotype) => (
-      <li className="px-8" key={logotype.id}>
-        <Image src={logotype.src} alt={logotype.alt} layout="fixed" />
+      <li className="relative px-10" key={logotype.id}>
+        <Image src={logotype.src} alt={logotype.alt} width={100} height={35} layout="fixed" />
       </li>
     ))}
   </>
