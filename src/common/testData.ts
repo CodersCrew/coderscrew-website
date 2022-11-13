@@ -1,4 +1,6 @@
 // Card Component mock data
+import hackathon from './assets/hackathon.jpg';
+import workingPeople from './assets/working-people.jpg';
 
 export const cardArticleData = {
   header: 'Kim Jesteśmy ?',
@@ -53,3 +55,18 @@ export const navItemArr = [
     ]
   }
 ];
+
+export const whoWeAreSection = {
+  topQuestion: 'Kim jesteśmy?',
+  topTitle: 'Organizacja non-profit z Wrocławia',
+  topContent:
+    'Najważniejszą rzeczą dla nas jest rozwój – tworzenie społeczności, w której osoby gotowe do działania mogą doskonalić swoje umiejętności.',
+  topButton: 'Poznaj nas lepiej',
+  topImage: workingPeople,
+  bottomQuestion: 'ODKRYJ NAJLEPSZĄ ŚCIEŻKĘ DLA SIEBE',
+  bottomTitle: 'Poznaj branżę IT w praktyce',
+  bottomContent:
+    'Wyróżnij się na rynku pracy unikalnym portfolio projektowym, rozwijając się w takich działach, jak web development, project management, online marketing oraz UX/UI design.',
+  bottomButton: 'Poznaj nas lepiej',
+  bottomImage: hackathon
+};
