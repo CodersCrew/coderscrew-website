@@ -16,10 +16,12 @@ Default.args = {
   topTitle: whoWeAreSection.topTitle,
   topContent: whoWeAreSection.topContent,
   topImage: whoWeAreSection.topImage,
+  topImageAlt: whoWeAreSection.topImageAlt,
   topButton: whoWeAreSection.topButton,
   bottomQuestion: whoWeAreSection.bottomQuestion,
   bottomTitle: whoWeAreSection.bottomTitle,
   bottomContent: whoWeAreSection.bottomContent,
   bottomImage: whoWeAreSection.bottomImage,
+  bottomImageAlt: whoWeAreSection.bottomImageAlt,
   bottomButton: whoWeAreSection.bottomButton
 };

@@ -63,10 +63,12 @@ export const whoWeAreSection = {
     'Najważniejszą rzeczą dla nas jest rozwój – tworzenie społeczności, w której osoby gotowe do działania mogą doskonalić swoje umiejętności.',
   topButton: 'Poznaj nas lepiej',
   topImage: workingPeople,
+  topImageAlt: 'People working as programmer',
   bottomQuestion: 'ODKRYJ NAJLEPSZĄ ŚCIEŻKĘ DLA SIEBE',
   bottomTitle: 'Poznaj branżę IT w praktyce',
   bottomContent:
     'Wyróżnij się na rynku pracy unikalnym portfolio projektowym, rozwijając się w takich działach, jak web development, project management, online marketing oraz UX/UI design.',
   bottomButton: 'Poznaj nas lepiej',
-  bottomImage: hackathon
+  bottomImage: hackathon,
+  bottomImageAlt: 'Man speaking in the auditorium'
 };

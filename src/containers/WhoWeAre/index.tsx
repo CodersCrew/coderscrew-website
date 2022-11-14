@@ -8,11 +8,13 @@ export type WhoWeAreProps = {
   topContent: string;
   topButton: string;
   topImage: string | StaticImageData;
+  topImageAlt: string;
   bottomQuestion: string;
   bottomTitle: string;
   bottomContent: string;
   bottomButton: string;
   bottomImage: string | StaticImageData;
+  bottomImageAlt: string;
 };
 
 export const WhoWeAre = ({
@@ -21,15 +23,18 @@ export const WhoWeAre = ({
   topContent,
   topButton,
   topImage,
+  topImageAlt,
   bottomQuestion,
   bottomTitle,
   bottomContent,
   bottomButton,
-  bottomImage
+  bottomImage,
+  bottomImageAlt
 }: WhoWeAreProps) => (
   <section className="mx-auto flex max-w-[1180px] flex-col">
     <Field
       imageSrc={topImage}
+      imageAlt={topImageAlt}
       imageClassName="justify-start"
       contentClassName="lg:ml-12 xl:pl-10"
       questionField={topQuestion}
@@ -40,6 +45,7 @@ export const WhoWeAre = ({
     />
     <Field
       imageSrc={bottomImage}
+      imageAlt={bottomImageAlt}
       className="mt-25 justify-end lg:flex-row-reverse"
       contentClassName="justify-start"
       imageClassName="lg:justify-end"
