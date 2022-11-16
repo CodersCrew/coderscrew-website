@@ -38,7 +38,7 @@ export const NavItem = ({ dropdownItems, navItemLabel }: NavItemProps) => {
   useClickOutside(clickRef, closeDropdown, showDropdown);
 
   return (
-    <div ref={clickRef} className="flex flex-col items-center gap-3">
+    <div ref={clickRef} className="relative flex flex-col items-center">
       <button
         className={`w-full cursor-pointer text-sm font-bold ${buttonClasses}`}
         data-testid="navItem"
@@ -50,7 +50,7 @@ export const NavItem = ({ dropdownItems, navItemLabel }: NavItemProps) => {
         </span>
       </button>
       <div
-        className={`flex w-auto cursor-pointer flex-col rounded-[4px] text-base font-normal text-primary shadow-card ${showDropdownClasses}`}
+        className={`absolute top-9 flex w-max cursor-pointer flex-col rounded-[4px] text-base font-normal text-primary shadow-card ${showDropdownClasses}`}
       >
         {dropdownItems?.map(({ label, path }) => (
           <button
