@@ -60,6 +60,6 @@ export const aboveTheFoldData = {
   imageAlt: 'Men with laptops',
   title: 'Odkryj swoją ścieżkę kariery w branży IT',
   content:
-    'Ucz się, przekładając wiedzę na praktykę i wyróżnij się unikalnym portfolio! fffjsjsjskksfsdfsdvfr sfdf fsdfs sfdfsdfsdfwtrf  fsfsdfwegwg  fdsfawe grwa gregaqreg grea',
+    'Ucz się, przekładając wiedzę na praktykę i wyróżnij się unikalnym portfolio! fffjsjsjskksfsdfsdvfr sfdf fsdfs sfdfsdfsdfwtrf fsfsdfwegwg fdsfawe grwa gregaqreg grea',
   buttonContent: 'Dowiedz się więcej'
 };
