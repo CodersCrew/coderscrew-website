@@ -3,7 +3,10 @@ import { Story } from '@storybook/react';
 import { aboveTheFoldData } from '../../common/testData';
 import { AboveTheFold, AboveTheFoldProps } from '.';
 
-export default {};
+export default {
+title: 'Above the fold',
+component: AboveTheFold
+};
 
 const Template: Story<AboveTheFoldProps> = (args: AboveTheFoldProps) => <AboveTheFold {...args} />;
 
