@@ -1,4 +1,4 @@
-import menWithLaptops from "./assets/men with laptops.png";
+import menWithLaptops from './assets/men with laptops.png';
 // Card Component mock data
 
 export const cardArticleData = {
@@ -61,5 +61,5 @@ export const aboveTheFoldData = {
   title: 'Odkryj swoją ścieżkę kariery w branży IT',
   content:
     'Ucz się, przekładając wiedzę na praktykę i wyróżnij się unikalnym portfolio! fffjsjsjskksfsdfsdvfr sfdf fsdfs sfdfsdfsdfwtrf  fsfsdfwegwg  fdsfawe grwa gregaqreg grea',
-  buttonContent: 'Dowiedz się więcej' 
+  buttonContent: 'Dowiedz się więcej'
 };

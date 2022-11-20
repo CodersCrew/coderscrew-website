@@ -1,6 +1,6 @@
-import { aboveTheFoldData } from '@commontestData';
 import { Story } from '@storybook/react';
 
+import { aboveTheFoldData } from '../../common/testData';
 import { AboveTheFold, AboveTheFoldProps } from '.';
 
 export default {};
