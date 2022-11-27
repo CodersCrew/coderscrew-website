@@ -53,3 +53,66 @@ export const navItemArr = [
     ]
   }
 ];
+
+// Guilds Text Container mock Data
+
+export const guildsTextContainerData = {
+  title: 'Wybierz ścieżkę rozwoju dla siebie',
+  content: 'Czekają na Ciebie interesujące wyzwania i ciekawe projekty, podczas których przełożysz teorię na praktykę.',
+  buttonContent: 'Dołącz do nas'
+};
+
+// Guild Cards mock Data
+
+export const guildCardsArray = [
+  {
+    primaryColor: 'webDev',
+    secondaryColor: 'webDev',
+    label: 'Web development',
+    text: 'Twórz unikalne strony i aplikacje mobilne',
+    descriptionLabel:
+      'Nasz najstarszy, największy i sztandarowy dział. W jego ramach będziesz przygotowywać strony i aplikacje webowe.',
+    description:
+      'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
+  },
+  {
+    primaryColor: 'pm',
+    secondaryColor: 'pm',
+    label: 'Project management',
+    text: 'Zarządzaj projektami używając nowoczesnych metod',
+    descriptionLabel:
+      'Żaden projekt nie ma prawa się udać, jeśli ktoś nim nie zarządza. Jeśli chcesz zostać ogarniaczem wszystkiego, PM zaprasza!',
+    description:
+      'W tym dziale poznasz najnowocześniejsze metody zarządzania. Będziesz mógł także sprawdzić, co dokładnie jest Twoją ścieżką w zarządzaniu projektami. Product Owner? A może Scrum Master?'
+  },
+  {
+    primaryColor: 'marketing',
+    secondaryColor: 'marketing',
+    label: 'Online marketing',
+    text: 'Zgłębiaj techniki digital marketingu',
+    descriptionLabel:
+      'Nasz najstarszy, największy i sztandarowy dział. W jego ramach będziesz przygotowywać strony i aplikacje webowe.',
+    description:
+      'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
+  },
+  {
+    primaryColor: 'ux',
+    secondaryColor: 'ux',
+    label: 'UX/UI design',
+    text: 'Twórz projekty graficzne w oparciu o potrzeby użytkownika',
+    descriptionLabel:
+      'Nasz najstarszy, największy i sztandarowy dział. W jego ramach będziesz przygotowywać strony i aplikacje webowe.',
+    description:
+      'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
+  },
+  {
+    primaryColor: 'dataScience',
+    secondaryColor: 'dataScience',
+    label: 'Human Resources',
+    text: 'Zarządzaj naszymi zasobami ludzkimi',
+    descriptionLabel:
+      'Nasz najstarszy, największy i sztandarowy dział. W jego ramach będziesz przygotowywać strony i aplikacje webowe.',
+    description:
+      'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
+  }
+];
