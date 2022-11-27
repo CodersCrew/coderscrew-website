@@ -50,7 +50,7 @@ export const NavItem = ({ dropdownItems, navItemLabel }: NavItemProps) => {
         </span>
       </button>
       <div
-        className={`absolute top-9 flex w-max cursor-pointer flex-col rounded-[4px] text-base font-normal text-primary shadow-card ${showDropdownClasses}`}
+        className={`text-primary absolute top-9 flex w-max cursor-pointer flex-col rounded-[4px] text-base font-normal shadow-card ${showDropdownClasses}`}
       >
         {dropdownItems?.map(({ label, path }) => (
           <button
