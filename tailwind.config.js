@@ -1,6 +1,14 @@
 module.exports = {
-  content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/containers/**/*.{js,ts,jsx,tsx}'
+  ],
   theme: {
+    textColor: {
+      white: '#ffffff',
+      quaternary: '#1A90FF'
+    },
     colors: {
       primary: '#292929',
       secondary: '#4B545C',
