@@ -6,6 +6,8 @@ import { Guilds } from '.';
 
 const { title, content, buttonContent } = guildsTextContainerData;
 
+// TODO: types of guilds refactor
+
 describe('Guilds', () => {
   it('should render without errors', () => {
     const { getByTestId } = render(

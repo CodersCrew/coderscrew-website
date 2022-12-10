@@ -9,7 +9,7 @@ export default {
 };
 
 const Template: Story = (args) => (
-  <Guilds onClick={() => {}} title="" content="" buttonContent="" guilds={[]} {...args} />
+  <Guilds openModal={() => {}} title="" content="" buttonContent="" guilds={[]} {...args} />
 );
 export const Default = Template.bind({});
 

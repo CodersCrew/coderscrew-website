@@ -66,6 +66,7 @@ export const guildsTextContainerData = {
 
 export const guildCardsArray = [
   {
+    id: '1',
     primaryColor: 'webDev',
     secondaryColor: 'webDev',
     label: 'Web development',
@@ -76,6 +77,7 @@ export const guildCardsArray = [
       'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
   },
   {
+    id: '2',
     primaryColor: 'pm',
     secondaryColor: 'pm',
     label: 'Project management',
@@ -86,6 +88,7 @@ export const guildCardsArray = [
       'W tym dziale poznasz najnowocześniejsze metody zarządzania. Będziesz mógł także sprawdzić, co dokładnie jest Twoją ścieżką w zarządzaniu projektami. Product Owner? A może Scrum Master?'
   },
   {
+    id: '3',
     primaryColor: 'marketing',
     secondaryColor: 'marketing',
     label: 'Online marketing',
@@ -96,6 +99,7 @@ export const guildCardsArray = [
       'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
   },
   {
+    id: '4',
     primaryColor: 'ux',
     secondaryColor: 'ux',
     label: 'UX/UI design',
@@ -106,6 +110,7 @@ export const guildCardsArray = [
       'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
   },
   {
+    id: '5',
     primaryColor: 'dataScience',
     secondaryColor: 'dataScience',
     label: 'Human Resources',

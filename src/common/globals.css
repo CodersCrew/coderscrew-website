@@ -23,6 +23,3 @@
     --guildCard-delay: 500;
   }
 }
-.card-box:last-child .card-line {
-  display: none;
-}
