@@ -14,7 +14,7 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 
 export const Button = ({ label, variant, onClick, type, ...props }: ButtonProps) => (
   <button
-    className={`flex flex-row items-center justify-center rounded border-2 border-quaternary py-2 px-5 text-base font-bold leading-[19px] hover:shadow-button ${variants[variant]}`}
+    className={`flex w-full flex-row items-center justify-center rounded border-2 border-quaternary py-2 px-5 text-base font-bold leading-[19px] hover:shadow-button ${variants[variant]}`}
     onClick={onClick}
     type={type}
     {...props}

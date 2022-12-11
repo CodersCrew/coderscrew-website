@@ -39,22 +39,22 @@ export const GuildCard = ({
   return !modal ? (
     <article
       id={id}
-      className="flex h-39 w-[436px] cursor-pointer items-center justify-center rounded-xl bg-gradient-to-r from-[#383838] to-[#38383833] drop-shadow-md"
+      className="mx-2 flex h-[180px] w-[358px] cursor-pointer items-center justify-center rounded-xl bg-gradient-to-r from-[#383838] to-[#38383833] drop-shadow-md md:mx-0 md:h-39 md:w-[436px]"
       onClick={onClick}
       aria-hidden="true"
     >
-      <div className="ml-10 h-23 w-24">
+      <div className="ml-6 h-19 w-21 md:ml-10 md:h-23 md:w-24">
         <Hexagon variant="default" primaryColor="white" secondaryColor={secondaryColor} opacity={100} icon />
       </div>
-      <div className="ml-7 flex w-2/3 flex-col gap-2 pr-10 text-additional-darkWhite">
-        <h3 className="text-2xl font-bold tracking-wide">{label}</h3>
-        <p className="text-base font-semibold">{text}</p>
+      <div className="ml-5 flex w-2/3 flex-col gap-2 pr-10  text-additional-darkWhite md:ml-7">
+        <h3 className="text-xl font-semibold tracking-wide md:text-2xl">{label}</h3>
+        <p className="text-base font-normal">{text}</p>
       </div>
     </article>
   ) : (
     <article
       id={id}
-      className="container relative flex h-[356px] w-[488px] overflow-hidden rounded-xl bg-additional-darkWhite"
+      className="container relative mx-4 flex w-[400px] overflow-hidden rounded-xl bg-additional-darkWhite sm:h-[356px]  sm:w-[488px]"
     >
       <section className="flex flex-col items-start py-8 pl-15">
         <div className="flex h-max w-[70%] justify-start py-2">
@@ -65,8 +65,8 @@ export const GuildCard = ({
         <p className={modalCardPClasses}>{description}</p>
       </section>
 
-      <section className="mx-8 flex w-1/5 flex-col items-center justify-start gap-12 px-2 py-11 ">
-        <button className="h-8 w-8 cursor-pointer" onClick={onClick} aria-hidden="true">
+      <section className="mx-8 hidden w-1/5 flex-col items-center justify-start gap-12 px-2 py-11 sm:visible sm:flex">
+        <button className="absolute h-8 w-8 cursor-pointer sm:static" onClick={onClick} aria-hidden="true">
           <Image sizes="32px" src={close} alt="Close Button" />
         </button>
         <div className="mb-2 rotate-180 cursor-pointer">

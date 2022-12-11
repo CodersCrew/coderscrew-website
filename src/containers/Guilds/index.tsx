@@ -51,11 +51,12 @@ export const Guilds = ({ guilds, title, content, buttonContent }: GuildsProps) =
   };
 
   return (
-    <section className="mx-0 flex h-screen items-center bg-primary" data-testid="guilds">
-      <div className="mx-auto flex max-w-[1440px] items-center md:grid md:grid-flow-dense md:grid-cols-2">
-        <GuildsTextContainer title={title} content={content} buttonContent={buttonContent} />
-        <GuildsListContainer guilds={guilds} openModal={openModal} />
-      </div>
+    <section
+      className="mx-auto flex max-w-[1440px] flex-col bg-primary lg:grid lg:h-[1170px] lg:grid-flow-dense lg:grid-cols-2"
+      data-testid="guilds"
+    >
+      <GuildsTextContainer title={title} content={content} buttonContent={buttonContent} />
+      <GuildsListContainer guilds={guilds} openModal={openModal} />
       {modalDataSourceId && (
         <Modal
           onXclick={closeModal}
