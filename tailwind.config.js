@@ -5,10 +5,6 @@ module.exports = {
     './src/containers/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    textColor: {
-      white: '#ffffff',
-      quaternary: '#1A90FF'
-    },
     colors: {
       primary: '#292929',
       secondary: '#4B545C',
