@@ -1,30 +1,52 @@
 import { navItemArr } from '@common/testData';
-import { NavItem, NavItemProps } from '@components/NavItem';
+import { NavItem, NavItemPath, NavItemProps } from '@components/NavItem';
 import { Story } from '@storybook/react';
 import { ReactNode } from 'react';
 
 export default {
   title: 'NavItem',
   component: NavItem,
-  decorators: [(story: () => ReactNode) => <div style={{ width: '200px', height: '1000px' }}>{story()}</div>]
+  decorators: [
+    (story: () => ReactNode) => (
+      <div>
+        {story()}
+        {Object.values(NavItemPath).map((path) => (
+          <div
+            id={path}
+            style={{
+              height: 1000,
+              border: '5px solid black',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              fontSize: '35px'
+            }}
+            key={path}
+          >
+            {path}
+          </div>
+        ))}
+      </div>
+    )
+  ]
 };
 
 const Template: Story<NavItemProps> = (args) => <NavItem {...args} />;
 
-export const About = Template.bind({});
-About.args = {
-  navItemLabel: navItemArr[0]?.label,
-  dropdownItems: navItemArr[0]?.dropdownItems
+export const Teams = Template.bind({});
+Teams.args = {
+  label: navItemArr[0]?.label,
+  path: NavItemPath.TEAMS
 };
 
-export const Team = Template.bind({});
-Team.args = {
-  navItemLabel: navItemArr[1]?.label,
-  dropdownItems: navItemArr[1]?.dropdownItems
+export const Partners = Template.bind({});
+Partners.args = {
+  label: navItemArr[1]?.label,
+  path: NavItemPath.PARTNERS
 };
 
 export const Projects = Template.bind({});
 Projects.args = {
-  navItemLabel: navItemArr[2]?.label,
-  dropdownItems: navItemArr[2]?.dropdownItems
+  label: navItemArr[2]?.label,
+  path: NavItemPath.PROJECTS
 };

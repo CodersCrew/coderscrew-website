@@ -1,4 +1,6 @@
+import { NavItemPath } from '../components/NavItem';
 import menWithLaptops from './assets/men with laptops.png';
+
 // Card Component mock data
 
 export const cardArticleData = {
@@ -30,28 +32,16 @@ export const CommentTextData = {
 
 export const navItemArr = [
   {
-    label: 'O nas',
-    dropdownItems: [
-      { label: 'Misja i wartości', path: '/mission' },
-      { label: 'Gildie', path: '/guilds' },
-      { label: 'Osiągnięcia', path: '/achievements' },
-      { label: 'Nasza Historia', path: '/history' }
-    ]
+    path: NavItemPath.TEAMS,
+    label: 'Zespoły'
   },
   {
-    label: 'Nasz Zespół',
-    dropdownItems: [
-      { label: 'Matylda Borutka', path: '/matylda' },
-      { label: 'Zosia Samosia', path: '/zosia' },
-      { label: 'Artur Twardoręki', path: '/artur' }
-    ]
+    path: NavItemPath.PARTNERS,
+    label: 'Partnerzy'
   },
   {
-    label: 'Nasze Projekty',
-    dropdownItems: [
-      { label: 'CC website', path: '/ccweb' },
-      { label: 'Coders Camp', path: '/camp' }
-    ]
+    path: NavItemPath.PROJECTS,
+    label: 'Projekty'
   }
 ];
 
