@@ -1,7 +1,8 @@
-import { navItemArr } from '@common/testData';
-import { NavItem, NavItemPath, NavItemProps } from '@components/NavItem';
 import { Story } from '@storybook/react';
 import { ReactNode } from 'react';
+
+import { navItemArr } from '@/common/testData';
+import { NavItem, NavItemPath, NavItemProps } from '@/components/NavItem';
 
 export default {
   title: 'NavItem',

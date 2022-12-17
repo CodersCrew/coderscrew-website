@@ -1,6 +1,7 @@
-import { cardArticleData, cardDataArticlesArray } from '@common/testData';
 import { Story } from '@storybook/react';
 import { ReactNode } from 'react';
+
+import { cardArticleData, cardDataArticlesArray } from '@/common/testData';
 
 import { Card, CardProps } from '.';
 

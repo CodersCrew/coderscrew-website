@@ -1,4 +1,4 @@
-import { Button } from '../../components/Button/index';
+import { Button } from '@/components/Button';
 
 export type TextContainerProps = {
   title: string;

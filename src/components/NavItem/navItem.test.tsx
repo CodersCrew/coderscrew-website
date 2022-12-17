@@ -1,6 +1,7 @@
-import { NavItem, NavItemPath } from '@components/NavItem';
 import { render } from '@testing-library/react';
 import { expect } from 'vitest';
+
+import { NavItem, NavItemPath } from '@/components/NavItem';
 
 describe('NavItem', () => {
   it('should be rendered without errors', () => {

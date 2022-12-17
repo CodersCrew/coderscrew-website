@@ -1,8 +1,9 @@
-import cclogo from '@assets/cclogo.svg';
 import Image from 'next/image';
 import React from 'react';
 
-import { navItemArr } from '../../common/testData';
+import cclogo from '@/common/assets/cclogo.svg';
+import { navItemArr } from '@/common/testData';
+
 import { Button } from '../Button';
 import { NavItem } from '../NavItem';
 

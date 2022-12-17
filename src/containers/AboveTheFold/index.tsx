@@ -1,4 +1,5 @@
-import { ImageContainer, ImageContainerProps } from '../../components/ImageContainer';
+import { ImageContainer, ImageContainerProps } from '@/components/ImageContainer';
+
 import { TextContainer, TextContainerProps } from './TextContainer';
 
 export type AboveTheFoldProps = ImageContainerProps & TextContainerProps;

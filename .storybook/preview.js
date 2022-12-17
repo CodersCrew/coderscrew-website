@@ -1,4 +1,4 @@
-import '@common/globals.css';
+import '@/common/globals.css';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
