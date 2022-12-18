@@ -81,7 +81,21 @@ module.exports = {
         title: '32px'
       },
       dropShadow: {
-        hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F']
+        hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F'],
+        guildCard: ['0px 4px 4px rgba(0, 0, 0, 0.15)']
+      },
+      animation: {
+        appear: 'appear 3s linear forwards'
+      },
+      keyframes: {
+        appear: {
+          from: {
+            opacity: 0
+          },
+          to: {
+            opacity: 1
+          }
+        }
       }
     }
   },
