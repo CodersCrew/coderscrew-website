@@ -11,12 +11,12 @@ export const GuildsListContainer = ({ openModal, guilds }: GuildsListContainerPr
 
   return (
     <div className="flex items-center justify-center">
-      <div className="no-scrollbar mb-10 flex flex-col overflow-y-scroll md:w-full md:items-center">
+      <div className="no-scrollbar flex h-4/5 flex-col items-center overflow-y-scroll">
         {guilds.map(({ primaryColor, secondaryColor, label, text, id, onIconDownClick, onIconUpClick }, index) => (
           <div
             key={label}
             style={{ animationDelay: `${index * delayTime}ms` }}
-            className="card-box group flex animate-appear flex-col items-center opacity-0 md:block"
+            className="card-box group animate-appear opacity-0"
           >
             <GuildCard
               id={id}
@@ -29,7 +29,7 @@ export const GuildsListContainer = ({ openModal, guilds }: GuildsListContainerPr
               text={text}
               key={label}
             />
-            <div className="card-line mt-2 h-10 w-[1px] bg-gradient-to-b from-[#878788] via-[#383838] to-[#292929] shadow-md group-last:hidden md:ml-21" />
+            <div className="card-line ml-21 mt-2 h-10 w-[1px] bg-gradient-to-b from-[#878788] via-[#383838] to-[#292929] shadow-md group-last:hidden" />
           </div>
         ))}
       </div>

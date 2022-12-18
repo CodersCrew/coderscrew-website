@@ -1,5 +1,6 @@
-import { guildCardsArray } from '@commontestData';
 import { useMemo, useState } from 'react';
+
+import { guildCardsArray } from '@/common/testData';
 
 import { colors } from '../../components/Hexagon/lookup';
 import { GuildsListContainer, GuildsListContainerProps } from './GuildsListContainer';
@@ -52,7 +53,7 @@ export const Guilds = ({ guilds, title, content, buttonContent }: GuildsProps) =
 
   return (
     <section
-      className="mx-auto flex max-w-[1440px] flex-col bg-primary lg:grid lg:h-[1170px] lg:grid-flow-dense lg:grid-cols-2"
+      className="mx-auto flex h-[1170px] max-w-[1440px] flex-col bg-primary md:grid md:grid-flow-dense md:grid-cols-2"
       data-testid="guilds"
     >
       <GuildsTextContainer title={title} content={content} buttonContent={buttonContent} />

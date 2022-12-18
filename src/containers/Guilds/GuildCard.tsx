@@ -1,8 +1,9 @@
-import arrow from '@assets/arrow.svg';
-import close from '@assets/Close.svg';
-import { Icon } from '@componentsIcon';
 import Image from 'next/image';
 import React, { MouseEventHandler } from 'react';
+
+import arrow from '@/common/assets/arrow.svg';
+import close from '@/common/assets/Close.svg';
+import { Icon } from '@/components/Icon';
 
 import { Hexagon, HexagonProps } from '../../components/Hexagon';
 import { colors } from '../../components/Hexagon/lookup';
