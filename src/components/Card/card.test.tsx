@@ -1,6 +1,7 @@
-import { cardArticleData } from '@common/testData';
 import { render } from '@testing-library/react';
 import { expect } from 'vitest';
+
+import { cardArticleData } from '@/common/testData';
 
 import { Card } from '.';
 

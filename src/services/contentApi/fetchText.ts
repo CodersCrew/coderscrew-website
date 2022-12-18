@@ -1,5 +1,6 @@
-import { hygraphClient } from '@lib';
 import { gql } from 'graphql-request';
+
+import { hygraphClient } from '@/lib';
 
 export const fetchText = async ({ locale, resourceName }: { locale: string; resourceName: string }) => {
   const {

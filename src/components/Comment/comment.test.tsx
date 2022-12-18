@@ -1,6 +1,7 @@
-import { CommentTextData } from '@common/testData';
 import { render } from '@testing-library/react';
 import { expect } from 'vitest';
+
+import { CommentTextData } from '@/common/testData';
 
 import { Comment } from '.';
 

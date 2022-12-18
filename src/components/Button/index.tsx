@@ -1,8 +1,8 @@
 import { HTMLAttributes } from 'react';
 
 const variants = {
-  primary: 'bg-quaternary text-white hover:bg-guild-webDev hover:border-guild-webDev',
-  secondary: 'text-quaternary border hover:text-white hover:bg-quaternary'
+  primary: 'bg-quaternary text-additional-white hover:bg-guild-webDev hover:border-guild-webDev',
+  secondary: 'text-quaternary border hover:text-additional-white hover:bg-quaternary'
 };
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {

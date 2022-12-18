@@ -1,6 +1,7 @@
-import { aboveTheFoldData } from '@commontestData';
 import { Story } from '@storybook/react';
 import React from 'react';
+
+import { aboveTheFoldData } from '@/common/testData';
 
 import { ImageContainer, ImageContainerProps } from './index';
 
