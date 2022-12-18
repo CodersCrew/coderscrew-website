@@ -1,5 +1,6 @@
-import { guildCardsArray, guildsTextContainerData } from '@common/testData';
 import { Story } from '@storybook/react';
+
+import { guildCardsArray, guildsTextContainerData } from '@/common/testData';
 
 import { Guilds } from '.';
 
