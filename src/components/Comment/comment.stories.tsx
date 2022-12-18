@@ -1,7 +1,8 @@
-import { CommentTextData } from '@common/testData';
-import { Comment, CommentProps } from '@components/Comment';
 import { Story } from '@storybook/react';
 import { ReactNode } from 'react';
+
+import { CommentTextData } from '@/common/testData';
+import { Comment, CommentProps } from '@/components/Comment';
 
 export default {
   title: 'Comment',

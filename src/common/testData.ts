@@ -1,3 +1,6 @@
+import { NavItemPath } from '../components/NavItem';
+import menWithLaptops from './assets/men with laptops.png';
+
 // Card Component mock data
 
 export const cardArticleData = {
@@ -29,28 +32,16 @@ export const CommentTextData = {
 
 export const navItemArr = [
   {
-    label: 'O nas',
-    dropdownItems: [
-      { label: 'Misja i wartości', path: '/mission' },
-      { label: 'Gildie', path: '/guilds' },
-      { label: 'Osiągnięcia', path: '/achievements' },
-      { label: 'Nasza Historia', path: '/history' }
-    ]
+    path: NavItemPath.TEAMS,
+    label: 'Zespoły'
   },
   {
-    label: 'Nasz Zespół',
-    dropdownItems: [
-      { label: 'Matylda Borutka', path: '/matylda' },
-      { label: 'Zosia Samosia', path: '/zosia' },
-      { label: 'Artur Twardoręki', path: '/artur' }
-    ]
+    path: NavItemPath.PARTNERS,
+    label: 'Partnerzy'
   },
   {
-    label: 'Nasze Projekty',
-    dropdownItems: [
-      { label: 'CC website', path: '/ccweb' },
-      { label: 'Coders Camp', path: '/camp' }
-    ]
+    path: NavItemPath.PROJECTS,
+    label: 'Projekty'
   }
 ];
 
@@ -121,3 +112,11 @@ export const guildCardsArray = [
       'Ponadto zyskasz możliwość uczenia innych swojego fachu poprzez prowadzenie warsztatów i prelekcji. Masz do wyboru ścieżkę front-endu, to jest projektowania aspektu wizualnego. Drugą opcją jest back-end, czyli to, czego nie widać.'
   }
 ];
+export const aboveTheFoldData = {
+  imageSrc: menWithLaptops,
+  imageAlt: 'Men with laptops',
+  title: 'Odkryj swoją ścieżkę kariery w branży IT',
+  content:
+    'Ucz się, przekładając wiedzę na praktykę i wyróżnij się unikalnym portfolio! fffjsjsjskksfsdfsdvfr sfdf fsdfs sfdfsdfsdfwtrf fsfsdfwegwg fdsfawe grwa gregaqreg grea',
+  buttonContent: 'Dowiedz się więcej'
+};
