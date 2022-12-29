@@ -4,8 +4,8 @@ const Index = () => (
   <div className="bg-additional-darkWhite">
     <Header />
     <Introduction />
-
     <About />
+
     <Guilds />
     <Projects />
     <Opinions />

@@ -85,6 +85,9 @@ module.exports = {
       },
       lineHeight: {
         tight: '1.2'
+      },
+      screens: {
+        xs: '425px'
       }
     }
   },

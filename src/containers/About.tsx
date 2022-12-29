@@ -2,9 +2,9 @@ import PeopleWithMobiles from '@/common/assets/peopleWithMobiles.svg';
 import { Card } from '@/components';
 
 export const About = () => (
-  <div className="grid grid-cols-[50%_min-content] items-center justify-between px-30 py-24">
-    <PeopleWithMobiles />
-    <div className="flex flex-col gap-10">
+  <div className="mx-auto grid max-w-screen-2xl items-center px-4 py-18 md:grid-cols-[1fr,min-content] lg:px-15 lg:py-24 xl:px-30">
+    <PeopleWithMobiles className="hidden max-w-[689px] pr-7 md:block" />
+    <div className="m-auto flex flex-col gap-y-10">
       <Card
         header="Kim jesteśmy?"
         title="Organizacja non-profit z Wrocławia"
