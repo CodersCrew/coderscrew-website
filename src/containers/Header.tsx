@@ -1,10 +1,11 @@
+import BurgerMenu from '@/common/assets/burgerMenu.svg';
 import Logo from '@/common/assets/logo.svg';
 import { Link } from '@/components';
 
 export const Header = () => (
-  <div className="flex items-center justify-between px-30 py-10">
+  <div className="m-auto flex max-w-screen-2xl items-center justify-between p-4 lg:py-10 lg:px-15 xl:px-30">
     <Logo className="h-6" />
-    <div className="flex gap-4">
+    <div className="hidden gap-4 lg:flex">
       <Link variant="bare" href="#">
         Zespoły
       </Link>
@@ -21,5 +22,6 @@ export const Header = () => (
         Dołącz do nas
       </Link>
     </div>
+    <BurgerMenu className="lg:hidden" />
   </div>
 );

@@ -18,7 +18,7 @@ interface LinkProps {
 export const Link = ({ children, href, variant, className, ...props }: LinkProps) => (
   <NextLink href={href} passHref>
     <a
-      className={`w-max rounded-lg py-3 px-6 text-base font-bold leading-tight ${variants[variant]} ${className}`}
+      className={`flex w-max items-center rounded-lg py-3 px-6 text-base font-bold leading-tight ${variants[variant]} ${className}`}
       {...props}
     >
       {children}
