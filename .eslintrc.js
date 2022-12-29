@@ -41,6 +41,9 @@ module.exports = {
     }
   },
   rules: {
+    'import/no-named-default': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+
     // We need to be able to import devDependencies
     'import/no-extraneous-dependencies': ['error', { optionalDependencies: false, peerDependencies: false }],
 
@@ -58,15 +61,6 @@ module.exports = {
     // Automatically sorts imports to ensure their consistency.
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-
-    // Configure Next Link component
-    'jsx-a11y/anchor-is-valid': [
-      'error',
-      {
-        components: ['Link'],
-        specialLink: ['to']
-      }
-    ],
 
     // In many cases TS infers return type of a function so we don't need to provide it explicitly.
     '@typescript-eslint/explicit-module-boundary-types': 'off',

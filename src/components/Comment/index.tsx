@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Hexagon } from '../Hexagon';
 
 export type CommentProps = { text: string; name: string };
