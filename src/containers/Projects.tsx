@@ -6,7 +6,7 @@ import Untitled3 from '@/common/assets/Untitled3.png';
 import { Link } from '@/components';
 
 export const Projects = () => (
-  <div className="flex flex-col items-center gap-15 lg:px-30 px-5 py-24 lg:gap-30">
+  <div className="flex flex-col items-center gap-15 lg:px-30 px-5 py-24 lg:gap-30 max-w-screen-2xl mx-auto">
     <div className="max-w-lg xl:max-w-2xl">
       <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">Nasze projekty</h2>
       <p className="text-center text-xl leading-normal">

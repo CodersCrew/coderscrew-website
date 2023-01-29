@@ -12,7 +12,7 @@ import Zaven from '@/common/assets/partners/zaven.svg';
 import { Link } from '@/components';
 
 export const Partnerships = () => (
-  <div className="flex flex-col items-center bg-primary px-30 py-24">
+  <div className="flex flex-col items-center bg-primary px-30 lg:py-24 py-10 mx-auto">
     <h2 className="mb-12 text-center text-2xl font-bold uppercase text-quaternary">Z kim współpracujemy</h2>
     <div className="mb-18 flex max-w-3xl flex-wrap items-center justify-evenly gap-12">
       <LiveChat />

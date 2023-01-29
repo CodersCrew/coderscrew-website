@@ -13,6 +13,6 @@ export const Introduction = () => (
         Dowiedz się więcej
       </Link>
     </div>
-    <MenWithLaptops className="row-start-1 mx-auto mb-8 max-w-[300px] md:col-start-2 md:mb-0 md:mr-0 md:ml-7 md:max-w-[470px]" />
+    <MenWithLaptops className="row-start-1 mx-auto mb-8 max-w-[300px] md:col-start-2 md:mb-0 md:mr-0 md:max-w-[470px]" />
   </div>
 );
