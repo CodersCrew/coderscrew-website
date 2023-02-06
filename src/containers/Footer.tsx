@@ -5,29 +5,29 @@ export const Footer = () => (
     <div className="mx-auto flex max-w-screen-2xl flex-col justify-between gap-y-5">
       <div className="flex flex-col gap-4">
         <Logo className="h-6" />
-        <p className="text-center text-lg leading-normal md:text-start md:text-xl lg:text-xs">
+        <p className="text-center md:text-left text-md leading-normal lg:text-start md:text-xl lg:text-xs">
           Rozwijamy pasję do działania i wspieramy w rozwoju w wybranej ścieżce kariery z branży IT.
         </p>
       </div>
-      <p className="text-center text-xs lg:text-start">kontakt@coderscrew.pl</p>
+      <p className="text-center md:text-left text-xs lg:text-start">kontakt@coderscrew.pl</p>
     </div>
     <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:items-stretch ">
       <div className="flex flex-col items-center gap-4 md:items-stretch">
-        <h3 className="font-bold">Poznaj nas</h3>
-        <p className="text-lg md:text-sm">Zespoły</p>
-        <p className="text-lg md:text-sm">Partnerzy</p>
-        <p className="text-lg md:text-sm">Projekty</p>
-        <p className="text-lg md:text-sm">FAQ</p>
+        <h3 className="font-bold text-[20px]">Poznaj nas</h3>
+        <p className="text-md md:text-sm">Zespoły</p>
+        <p className="text-md md:text-sm">Partnerzy</p>
+        <p className="text-md md:text-sm">Projekty</p>
+        <p className="text-md md:text-sm">FAQ</p>
       </div>
       <div className="flex flex-col items-center gap-4 md:items-stretch">
-        <h3 className="font-bold">Działajmy razem</h3>
-        <p className="text-lg md:text-sm">Współpraca</p>
-        <p className="text-lg md:text-sm">Dołącz do nas</p>
+        <h3 className="font-bold text-[20px]">Działajmy razem</h3>
+        <p className="text-md md:text-sm">Współpraca</p>
+        <p className="text-md md:text-sm">Dołącz do nas</p>
       </div>
       <div className="flex flex-col items-center gap-4 md:items-stretch">
-        <h3 className="font-bold">Do pobrania</h3>
-        <p className="text-lg md:text-sm">Presspack</p>
-        <p className="text-lg md:text-sm">Polityka prywatności</p>
+        <h3 className="font-bold text-[20px]">Do pobrania</h3>
+        <p className="text-md md:text-sm">Presspack</p>
+        <p className="text-md md:text-sm">Polityka prywatności</p>
       </div>
     </div>
     <div className="flex flex-col items-center justify-between gap-y-8 lg:items-end">

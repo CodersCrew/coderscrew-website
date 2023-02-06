@@ -4,7 +4,7 @@ import { Link } from '@/components';
 
 export const Header = () => (
   <div className="m-auto flex max-w-screen-2xl items-center justify-between p-4 lg:py-10 lg:px-15 xl:px-30">
-    <Logo className="h-6 pl-1" />
+    <Logo className="h-6" />
     <div className="hidden gap-4 lg:flex">
       <Link variant="bare" href="#">
         Zespoły
