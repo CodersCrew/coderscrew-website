@@ -1,10 +1,11 @@
 import BurgerMenu from '@/common/assets/burgerMenu.svg';
 import Logo from '@/common/assets/logo.svg';
 import { Link } from '@/components';
+import { SectionWrapper } from '@/components/PageWrapper';
 
 export const Header = () => (
-  <div className="m-auto flex max-w-screen-2xl items-center justify-between p-4 lg:py-10 lg:px-15 xl:px-30">
-    <Logo className="h-6 pl-1" />
+  <SectionWrapper small className="flex items-center justify-between">
+    <Logo className="h-4.5 sm:h-6" />
     <div className="hidden gap-4 lg:flex">
       <Link variant="bare" href="#">
         Zespoły
@@ -22,6 +23,6 @@ export const Header = () => (
         Dołącz do nas
       </Link>
     </div>
-    <BurgerMenu className="lg:hidden" />
-  </div>
+    <BurgerMenu className="h-6 sm:h-8 lg:hidden" />
+  </SectionWrapper>
 );
