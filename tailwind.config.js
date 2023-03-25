@@ -18,6 +18,8 @@ module.exports = {
         dataScience: '#AC6DE8',
         codersCamp: '#FEC43D'
       },
+      white: '#FFFFFF',
+      darkWhite: '#FAFAFA',
       additional: {
         white: '#FFFFFF',
         darkWhite: '#FAFAFA'
