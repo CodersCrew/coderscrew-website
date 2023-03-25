@@ -1,10 +1,11 @@
 import PeopleWithMobiles from '@/common/assets/peopleWithMobiles.svg';
 import { Card } from '@/components';
+import { SectionWrapper } from '@/components/PageWrapper';
 
 export const About = () => (
-  <div className="mx-auto grid max-w-screen-2xl items-center px-15 py-18 md:grid-cols-[1fr,min-content] lg:px-15 lg:py-24 xl:px-30">
-    <PeopleWithMobiles className="hidden max-w-[689px] pr-7 md:block" />
-    <div className="m-auto flex flex-col gap-y-10">
+  <SectionWrapper className="grid items-center justify-center gap-18 lg:grid-cols-[1fr,min-content]">
+    <PeopleWithMobiles className="hidden max-w-2xl lg:block" />
+    <div className="flex flex-col gap-y-10">
       <Card
         header="Kim jesteśmy?"
         title="Organizacja non-profit z Wrocławia"
@@ -16,5 +17,5 @@ export const About = () => (
         text="Wyróżnij się na rynku pracy unikalnym portfolio projektowym, rozwijając się w takich działach, jak web development, project management, online marketing oraz UX/UI design."
       />
     </div>
-  </div>
+  </SectionWrapper>
 );
