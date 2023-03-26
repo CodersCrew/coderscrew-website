@@ -1,4 +1,6 @@
 import { default as NextLink } from 'next/link';
+import { ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 const variants = {
   outlined:
@@ -8,17 +10,21 @@ const variants = {
   bare: 'font-semibold hover:underline'
 };
 
-interface LinkProps {
-  children: React.ReactNode;
+type LinkProps = {
+  children: ReactNode;
   href: string;
   variant: keyof typeof variants;
   className?: string;
-}
+};
 
 export const Link = ({ children, href, variant, className, ...props }: LinkProps) => (
   <NextLink href={href} passHref>
     <a
-      className={`flex w-max items-center rounded-lg py-3 px-6 text-base leading-tight ${variants[variant]} ${className}`}
+      className={twMerge(
+        'flex w-max items-center rounded-lg py-3 px-6 text-base leading-tight',
+        variants[variant],
+        className
+      )}
       {...props}
     >
       {children}
