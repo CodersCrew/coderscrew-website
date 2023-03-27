@@ -1,6 +1,6 @@
 {
   "*.{js,jsx,ts,tsx}": [
     "prettier --write",
-    "next lint --fix"
+    "eslint --fix"
   ]
 }

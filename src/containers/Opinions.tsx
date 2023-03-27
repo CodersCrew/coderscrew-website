@@ -1,34 +1,88 @@
-import { Link } from '@/components';
+import { useState } from 'react';
 
-export const Opinions = () => (
-  <div className="relative z-10 flex flex-col items-center px-4 py-24">
-    <div className="mb-12 max-w-sm lg:max-w-2xl">
-      <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">Mówią o nas</h2>
-      <p className="text-center text-xl leading-normal text-additional-white">
-        Dołącz do ponad 100 członków CodersCrew, którzy rozwijają swoje pasje. Zostań naszym partnerem, jeśli interesuje
-        Cię to, co robimy.
-      </p>
-    </div>
-    <div className="mb-18">
-      <div className="flex w-[290px] flex-col items-center bg-additional-white p-6 shadow-card md:w-[510px]">
-        <div className="mb-6 h-[56px] w-[56px] bg-primary" />
-        <div className="mb-4 text-center text-base font-semibold leading-normal">
-          “ Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi
-          możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał
-          do działania nieustannie podziwiam! ”
-        </div>
-        <div className="text-center text-base text-secondary">– Kornelia</div>
+import { Carousel, Link, SectionWrapper } from '@/components';
+
+const opinions = [
+  {
+    content:
+      'Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam!',
+    author: 'Kornelia',
+    id: 0
+  },
+  {
+    content:
+      'To świetne miejsce na znalezienie tego, co chce się robić w życiu i rozwijanie się w tym. Cieszę się, że mogłam tu zdobyć wiele doświadczenia i rozwijać się w ciekawych projektach, a do tego poznawać interesujące osoby, z którymi można współpracować.',
+    author: 'Karina',
+    id: 1
+  },
+  {
+    content:
+      'Działanie w CodersCrew dało mi ogrom wiedzy, możliwość dzielenia się pasją z innymi, możliwość realizacji ciekawych projektów, wyjazdy integracyjne i branżowe, liczne szkolenia.',
+    author: 'Bartek',
+    id: 2
+  },
+  {
+    content:
+      'Nie spotkałam się jeszcze z tak zgranymi i otwartymi na kolejne osoby zespołami jak w CodersCrew. Nie ma tu niezdrowych relacji i wyścigu, gramy razem do jednej bramki.',
+    author: 'Patrycja',
+    id: 3
+  },
+  {
+    content:
+      'CodersCrew daje niesamowite szanse na rozwój, jednocześnie nie ograniczając, ale doceniając włożony wysiłek i pokazane zaangażowanie. To miejsce, a raczej społeczność, w której chce się być i działać!',
+    author: 'Magda',
+    id: 4
+  },
+  {
+    content:
+      'Dzięki dołączeniu do CodersCrew miałam okazję nie tylko wykorzystać wiedzę zdobytą na studiach w praktyce, ale także wzbogacić wachlarz umiejętności o nowe, wartościowe pozycje, które już dziś pomagają mi podczas tworzenia kolejnych projektów.',
+    author: 'Ania',
+    id: 5
+  }
+];
+
+export const Opinions = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentSlide === 0;
+    const newSlide = isFirstSlide ? opinions.length - 1 : currentSlide - 1;
+
+    setCurrentSlide(newSlide);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentSlide === opinions.length - 1;
+    const newSlide = isLastSlide ? 0 : currentSlide + 1;
+
+    setCurrentSlide(newSlide);
+  };
+
+  return (
+    <SectionWrapper className="relative z-10 flex max-w-none flex-col items-center gap-12">
+      <div className="absolute inset-0 bottom-[40%] -z-50 bg-primary" />
+      <div className="max-w-2xl">
+        <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">Mówią o nas</h2>
+        <p className="text-center text-xl leading-normal text-white">
+          Dołącz do ponad 100 członków CodersCrew, którzy rozwijają swoje pasje. Zostań naszym partnerem, jeśli
+          interesuje Cię to, co robimy.
+        </p>
       </div>
-      <div />
-    </div>
-    <div className="flex flex-col items-center gap-4 md:flex-row md:items-stretch">
-      <Link href="#" variant="outlined">
-        Zostań partnerem
-      </Link>
-      <Link href="#" variant="filled">
-        Dołącz do nas
-      </Link>
-    </div>
-    <div className="absolute top-0 left-0 right-0 bottom-[43%] -z-10 bg-primary" />
-  </div>
-);
+      <Carousel
+        currentSlide={currentSlide}
+        nextSlide={nextSlide}
+        prevSlide={prevSlide}
+        setCurrentSlide={setCurrentSlide}
+        slides={opinions}
+      />
+      <div className="flex flex-col items-center gap-4 xs:flex-row">
+        <Link href="#" variant="outlined">
+          Zostań partnerem
+        </Link>
+        <Link href="#" variant="filled">
+          Dołącz do nas
+        </Link>
+      </div>
+    </SectionWrapper>
+  );
+};

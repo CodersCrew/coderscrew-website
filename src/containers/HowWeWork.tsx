@@ -9,10 +9,12 @@ export const HowWeWork = () => (
           Jak działamy?
         </h2>
         <Card
+          header=""
           title="Online"
           text="Od czasów pandemii wielu naszych członków to osoby spoza Wrocławia. Nasz największy projekt, CodersCamp, przeprowadziliśmy w ostatnich edycjach całkowicie zdalnie."
         />
         <Card
+          header=""
           title="Offline"
           text="Organizujemy hackathon offline z Livechat. Zespoły mogą i spotykają się stacjonarnie, dodatkowo mamy własną, wyposażoną siedzibę. "
         />
