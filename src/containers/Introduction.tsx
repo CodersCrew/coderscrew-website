@@ -1,6 +1,5 @@
 import MenWithLaptops from '@/common/assets/menWithLaptops.svg';
-import { Link } from '@/components';
-import { SectionWrapper } from '@/components/PageWrapper';
+import { Link, SectionWrapper } from '@/components';
 
 export const Introduction = () => (
   <SectionWrapper className="grid items-center gap-18 md:grid-cols-2">

@@ -1,7 +1,6 @@
 import BurgerMenu from '@/common/assets/burgerMenu.svg';
 import Logo from '@/common/assets/logo.svg';
-import { Link } from '@/components';
-import { SectionWrapper } from '@/components/PageWrapper';
+import { Link, SectionWrapper } from '@/components';
 
 export const Header = () => (
   <SectionWrapper small className="flex items-center justify-between">

@@ -3,8 +3,7 @@ import Image from 'next/image';
 import Untitled1 from '@/common/assets/Untitled1.png';
 import Untitled2 from '@/common/assets/Untitled2.png';
 import Untitled3 from '@/common/assets/Untitled3.png';
-import { Link } from '@/components';
-import { SectionWrapper } from '@/components/PageWrapper';
+import { Link, SectionWrapper } from '@/components';
 
 export const Projects = () => (
   <SectionWrapper className="flex flex-col items-center gap-12 lg:gap-30">
