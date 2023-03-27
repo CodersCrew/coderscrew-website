@@ -78,10 +78,16 @@ module.exports = {
         card: '17px 16px 33px rgba(0, 0, 0, 0.05)'
       },
       fontSize: {
-        title: '32px'
+        '3.5xl': '2rem'
       },
       dropShadow: {
         hex: ['15px 20px 17px rgba(50, 50, 0, 0.15)', '15px 20px 20px #1BC55F']
+      },
+      lineHeight: {
+        tight: '1.2'
+      },
+      screens: {
+        xs: '425px'
       }
     }
   },

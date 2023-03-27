@@ -1,6 +1,3 @@
-import { NavItemPath } from '../components/NavItem';
-import menWithLaptops from './assets/men with laptops.png';
-
 // Card Component mock data
 
 export const cardArticleData = {
@@ -26,30 +23,4 @@ export const cardDataArticlesArray = [
 export const CommentTextData = {
   text: 'Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam!',
   name: 'Kornelia'
-};
-
-// NavItem Component mock data
-
-export const navItemArr = [
-  {
-    path: NavItemPath.TEAMS,
-    label: 'Zespoły'
-  },
-  {
-    path: NavItemPath.PARTNERS,
-    label: 'Partnerzy'
-  },
-  {
-    path: NavItemPath.PROJECTS,
-    label: 'Projekty'
-  }
-];
-
-export const aboveTheFoldData = {
-  imageSrc: menWithLaptops,
-  imageAlt: 'Men with laptops',
-  title: 'Odkryj swoją ścieżkę kariery w branży IT',
-  content:
-    'Ucz się, przekładając wiedzę na praktykę i wyróżnij się unikalnym portfolio! fffjsjsjskksfsdfsdvfr sfdf fsdfs sfdfsdfsdfwtrf fsfsdfwegwg fdsfawe grwa gregaqreg grea',
-  buttonContent: 'Dowiedz się więcej'
 };
