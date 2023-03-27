@@ -20,6 +20,7 @@ module.exports = {
       },
       white: '#FFFFFF',
       darkWhite: '#FAFAFA',
+      dotIndicator: '#666666',
       additional: {
         white: '#FFFFFF',
         darkWhite: '#FAFAFA'

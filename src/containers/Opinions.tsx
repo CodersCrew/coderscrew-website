@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import { Carousel, Link, SectionWrapper } from '@/components';
 
 const opinions = [
@@ -41,48 +39,24 @@ const opinions = [
   }
 ];
 
-export const Opinions = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const prevSlide = () => {
-    const isFirstSlide = currentSlide === 0;
-    const newSlide = isFirstSlide ? opinions.length - 1 : currentSlide - 1;
-
-    setCurrentSlide(newSlide);
-  };
-
-  const nextSlide = () => {
-    const isLastSlide = currentSlide === opinions.length - 1;
-    const newSlide = isLastSlide ? 0 : currentSlide + 1;
-
-    setCurrentSlide(newSlide);
-  };
-
-  return (
-    <SectionWrapper className="relative z-10 flex max-w-none flex-col items-center gap-12">
-      <div className="absolute inset-0 bottom-[40%] -z-50 bg-primary" />
-      <div className="max-w-2xl">
-        <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">Mówią o nas</h2>
-        <p className="text-center text-xl leading-normal text-white">
-          Dołącz do ponad 100 członków CodersCrew, którzy rozwijają swoje pasje. Zostań naszym partnerem, jeśli
-          interesuje Cię to, co robimy.
-        </p>
-      </div>
-      <Carousel
-        currentSlide={currentSlide}
-        nextSlide={nextSlide}
-        prevSlide={prevSlide}
-        setCurrentSlide={setCurrentSlide}
-        slides={opinions}
-      />
-      <div className="flex flex-col items-center gap-4 xs:flex-row">
-        <Link href="#" variant="outlined">
-          Zostań partnerem
-        </Link>
-        <Link href="#" variant="filled">
-          Dołącz do nas
-        </Link>
-      </div>
-    </SectionWrapper>
-  );
-};
+export const Opinions = () => (
+  <SectionWrapper className="relative z-10 flex max-w-none flex-col items-center gap-12">
+    <div className="absolute inset-0 bottom-[40%] -z-50 bg-primary" />
+    <div className="max-w-2xl">
+      <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">Mówią o nas</h2>
+      <p className="text-center text-xl leading-normal text-white">
+        Dołącz do ponad 100 członków CodersCrew, którzy rozwijają swoje pasje. Zostań naszym partnerem, jeśli interesuje
+        Cię to, co robimy.
+      </p>
+    </div>
+    <Carousel slides={opinions} />
+    <div className="flex flex-col items-center gap-4 xs:flex-row">
+      <Link href="#" variant="outlined">
+        Zostań partnerem
+      </Link>
+      <Link href="#" variant="filled">
+        Dołącz do nas
+      </Link>
+    </div>
+  </SectionWrapper>
+);
