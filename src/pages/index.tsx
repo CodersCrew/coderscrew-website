@@ -5,8 +5,7 @@ const Index = () => (
     <Header />
     <Introduction />
     <About />
-
-    <Guilds />
+    {/* <Guilds /> */}
     <Projects />
     <Opinions />
     <HowWeWork />
