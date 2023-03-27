@@ -1,4 +1,4 @@
-import { About, Footer, Guilds, Header, HowWeWork, Introduction, Opinions, Partnerships, Projects } from '@/containers';
+import { About, Footer, Header, HowWeWork, Introduction, Opinions, Partnerships, Projects } from '@/containers';
 
 const Index = () => (
   <div className="bg-additional-darkWhite">
@@ -7,7 +7,9 @@ const Index = () => (
     <About />
     {/* <Guilds /> */}
     <Projects />
+
     <Opinions />
+
     <HowWeWork />
     <Partnerships />
     <Footer />
