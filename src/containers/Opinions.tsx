@@ -1,117 +1,81 @@
 import { useState } from 'react';
 
-import { Link } from '@/components';
+import { Carousel, Link, SectionWrapper } from '@/components';
 
-import ArrowSlider from '../common/assets/arrowSlider.svg';
-import DotSliderSvg from '../common/assets/dotSlider.svg';
-
-const carouselData = [
+const opinions = [
   {
     content:
-      '“ Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam! ”',
-    author: 'Patrycja',
+      'Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam!',
+    author: 'Kornelia',
+    id: 0
+  },
+  {
+    content:
+      'To świetne miejsce na znalezienie tego, co chce się robić w życiu i rozwijanie się w tym. Cieszę się, że mogłam tu zdobyć wiele doświadczenia i rozwijać się w ciekawych projektach, a do tego poznawać interesujące osoby, z którymi można współpracować.',
+    author: 'Karina',
     id: 1
   },
   {
     content:
-      '“ Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam! ”',
-    author: 'Maira',
+      'Działanie w CodersCrew dało mi ogrom wiedzy, możliwość dzielenia się pasją z innymi, możliwość realizacji ciekawych projektów, wyjazdy integracyjne i branżowe, liczne szkolenia.',
+    author: 'Bartek',
     id: 2
   },
   {
     content:
-      '“ Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam! ”',
-    author: 'Sylwia',
+      'Nie spotkałam się jeszcze z tak zgranymi i otwartymi na kolejne osoby zespołami jak w CodersCrew. Nie ma tu niezdrowych relacji i wyścigu, gramy razem do jednej bramki.',
+    author: 'Patrycja',
     id: 3
   },
   {
     content:
-      '“ Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam! ”',
-    author: 'Nikoletta',
+      'CodersCrew daje niesamowite szanse na rozwój, jednocześnie nie ograniczając, ale doceniając włożony wysiłek i pokazane zaangażowanie. To miejsce, a raczej społeczność, w której chce się być i działać!',
+    author: 'Magda',
     id: 4
   },
   {
     content:
-      '“ Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam! ”',
-    author: 'Kornelia',
+      'Dzięki dołączeniu do CodersCrew miałam okazję nie tylko wykorzystać wiedzę zdobytą na studiach w praktyce, ale także wzbogacić wachlarz umiejętności o nowe, wartościowe pozycje, które już dziś pomagają mi podczas tworzenia kolejnych projektów.',
+    author: 'Ania',
     id: 5
   }
 ];
 
-type CarouselSlideProps = {
-  content: string;
-  author: string;
-  className?: string;
-};
-
-const CarouselSlide = ({ content, author, className }: CarouselSlideProps) => (
-  <div
-    className={`flex w-[290px] cursor-pointer flex-col items-center rounded-md bg-additional-white p-6 shadow-card lg:w-[510px] ${className}`}
-  >
-    <div className="mb-6 h-[56px] w-[56px] bg-primary" />
-    <div className="mb-4 text-center text-base font-semibold leading-normal">{content}</div>
-    <div className="text-center text-base text-secondary">– {author}</div>
-  </div>
-);
-
 export const Opinions = () => {
-  const [activeSlide, setActiveSlide] = useState(1);
-
-  const goToSlide = (id: number) => {
-    setActiveSlide(id);
-  };
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const prevSlide = () => {
-    const isFirstSlide = activeSlide === 1;
-    const newSlide = isFirstSlide ? carouselData.length : activeSlide - 1;
-    setActiveSlide(newSlide);
+    const isFirstSlide = currentSlide === 0;
+    const newSlide = isFirstSlide ? opinions.length - 1 : currentSlide - 1;
+
+    setCurrentSlide(newSlide);
   };
 
   const nextSlide = () => {
-    const isLastSlide = activeSlide === carouselData.length;
-    const newSlide = isLastSlide ? 1 : activeSlide + 1;
-    setActiveSlide(newSlide);
+    const isLastSlide = currentSlide === opinions.length - 1;
+    const newSlide = isLastSlide ? 0 : currentSlide + 1;
+
+    setCurrentSlide(newSlide);
   };
 
   return (
-    <div className="relative z-10 flex flex-col items-center overflow-x-hidden py-24">
-      <div className="mb-12 max-w-sm lg:max-w-2xl">
+    <SectionWrapper className="relative z-10 flex max-w-none flex-col items-center gap-12">
+      <div className="absolute inset-0 bottom-[40%] -z-50 bg-primary" />
+      <div className="max-w-2xl">
         <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">Mówią o nas</h2>
-        <p className="text-center text-xl leading-normal text-additional-white">
+        <p className="text-center text-xl leading-normal text-white">
           Dołącz do ponad 100 członków CodersCrew, którzy rozwijają swoje pasje. Zostań naszym partnerem, jeśli
           interesuje Cię to, co robimy.
         </p>
       </div>
-      <div className="flex pb-10">
-        {carouselData.map((slide) => (
-          <div key={slide.id} className={activeSlide === slide.id ? 'flex items-center justify-between' : 'hidden'}>
-            <button onClick={prevSlide}>
-              <ArrowSlider className="mr-8" />
-            </button>
-
-            <CarouselSlide author={slide.author} content={slide.content} key={slide.id} />
-
-            <button className="ml-8 rotate-180 " onClick={nextSlide}>
-              <ArrowSlider />
-            </button>
-          </div>
-        ))}
-      </div>
-      <div className="mx-auto mb-9 flex space-x-4">
-        {carouselData.map((slide) => (
-          <div
-            onClick={() => goToSlide(slide.id)}
-            onKeyUp={() => goToSlide(slide.id)}
-            role="button"
-            tabIndex={0}
-            key={slide.id}
-          >
-            <DotSliderSvg className={activeSlide === slide.id ? 'rounded bg-quaternary' : ''} />
-          </div>
-        ))}
-      </div>
-      <div />
-      <div className="flex gap-4">
+      <Carousel
+        currentSlide={currentSlide}
+        nextSlide={nextSlide}
+        prevSlide={prevSlide}
+        setCurrentSlide={setCurrentSlide}
+        slides={opinions}
+      />
+      <div className="flex flex-col items-center gap-4 xs:flex-row">
         <Link href="#" variant="outlined">
           Zostań partnerem
         </Link>
@@ -119,7 +83,6 @@ export const Opinions = () => {
           Dołącz do nas
         </Link>
       </div>
-      <div className="absolute top-0 left-0 right-0 bottom-[43%] -z-10 bg-primary" />
-    </div>
+    </SectionWrapper>
   );
 };
