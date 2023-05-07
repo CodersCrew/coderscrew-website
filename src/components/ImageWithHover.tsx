@@ -18,7 +18,7 @@ export const ImageWithHover = ({ title, text, link, ...props }: ImageWithHoverPr
     <div className="relative flex cursor-pointer">
       <Image {...props} />
       <div className="absolute inset-0 flex select-none flex-col items-center bg-black/70 px-9 text-center text-white transition duration-300 sm:px-12 lg:px-8 lg:opacity-0 lg:hover:opacity-100">
-        <p className="mt-auto grow-0 self-stretch text-3xl font-bold leading-[1.2] tracking-wide lg:text-2xl 2xl:text-3xl">
+        <p className="mt-auto grow-0 self-stretch text-3xl font-bold leading-tight tracking-wide lg:text-2xl 2xl:text-3xl">
           {title}
         </p>
         <p className="mt-5 font-medium sm:mt-6 lg:mt-3 xl:mt-6 2xl:mt-6">{text}</p>
