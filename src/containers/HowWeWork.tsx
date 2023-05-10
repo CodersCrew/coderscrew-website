@@ -21,7 +21,7 @@ export const HowWeWork = () => (
       </div>
       <UndrawWorld className="px-7" />
     </div>
-    <Link href="#" variant="filled" className="self-center">
+    <Link href="/jak-dzialamy" variant="filled" className="self-center">
       Zobacz więcej
     </Link>
   </div>

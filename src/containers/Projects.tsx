@@ -19,7 +19,7 @@ export const Projects = () => (
       <Image src={Untitled1} alt="Project 2" width={430} height={280} objectFit="cover" />
       <Image src={Untitled3} alt="Project 3" width={430} height={280} objectFit="cover" />
     </div>
-    <Link href="#" variant="filled">
+    <Link href="/projekty" variant="filled">
       Wszystkie projekty
     </Link>
   </SectionWrapper>
