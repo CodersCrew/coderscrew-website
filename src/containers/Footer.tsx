@@ -1,4 +1,9 @@
 import Logo from '@/common/assets/logoWhite.svg';
+import Facebook from '@/common/assets/socials/facebook.svg';
+import Github from '@/common/assets/socials/github.svg';
+import Instagram from '@/common/assets/socials/instagram.svg';
+import LinkedIn from '@/common/assets/socials/linkedin.svg';
+import { IconHexagon } from '@/components/Hexagons/IconHexagon/IconHexagon';
 
 export const Footer = () => (
   <div className="mx-auto grid grid-flow-row gap-10 bg-primary py-10 px-15 text-additional-white md:px-30 lg:grid-cols-[170px,1fr,min-content] lg:gap-26">
@@ -32,10 +37,18 @@ export const Footer = () => (
     </div>
     <div className="flex flex-col items-center justify-between gap-y-8 lg:items-end">
       <div className="flex gap-2">
-        <div className="h-10 w-10 bg-quaternary" />
-        <div className="h-10 w-10 bg-quaternary" />
-        <div className="h-10 w-10 bg-quaternary" />
-        <div className="h-10 w-10 bg-quaternary" />
+        <a href="#" className="transition-transform hover:scale-105">
+          <IconHexagon variant="social" Icon={<Facebook className="-rotate-90 scale-75" />} />
+        </a>
+        <a href="#" className="transition-transform hover:scale-105">
+          <IconHexagon variant="social" Icon={<Instagram className="-rotate-90 scale-75" />} />
+        </a>
+        <a href="#" className="transition-transform hover:scale-105">
+          <IconHexagon variant="social" Icon={<LinkedIn className="relative right-[2px] -rotate-90 scale-75" />} />
+        </a>
+        <a href="#" className="transition-transform hover:scale-105">
+          <IconHexagon variant="social" Icon={<Github className="-rotate-90 scale-75" />} />
+        </a>
       </div>
       <p className="text-sm">&copy; CodersCrew 2022</p>
     </div>

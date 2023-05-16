@@ -26,7 +26,9 @@ module.exports = {
         white: '#FFFFFF',
         darkWhite: '#FAFAFA'
       },
-      transparent: 'transparent'
+      transparent: 'transparent',
+      eerieBlack: '#1C1C1C',
+      linkWater: '#D1E9FF'
     },
     spacing: {
       0: '0px',

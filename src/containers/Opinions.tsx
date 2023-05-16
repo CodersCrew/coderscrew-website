@@ -1,4 +1,5 @@
 import { Carousel, Link, SectionWrapper } from '@/components';
+import { BackgroundHexagon } from '@/components/Hexagons/BackgroundHexagon.tsx/BackgroundHexagon';
 
 const opinions = [
   {
@@ -41,7 +42,10 @@ const opinions = [
 
 export const Opinions = () => (
   <SectionWrapper className="relative z-10 flex max-w-none flex-col items-center gap-12">
-    <div className="absolute inset-0 bottom-[40%] -z-50 bg-primary" />
+    <div className="absolute inset-0 bottom-[40%] -z-50 overflow-hidden bg-primary">
+      <BackgroundHexagon className=" bg-eerieBlack xl:right-5 xl:-bottom-20 xl:h-[210px] xl:w-[226px] 2xl:right-25" />
+      <BackgroundHexagon className=" bg-dotIndicator opacity-40 xl:right-[174px] xl:bottom-9 xl:h-[100px] xl:w-[106px] 2xl:right-[254px]" />
+    </div>
     <div className="max-w-2xl">
       <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">Mówią o nas</h2>
       <p className="text-center text-xl leading-normal text-white">
