@@ -9,8 +9,7 @@ import LiveChat from '@/common/assets/partners/liveChat.svg';
 import Rst from '@/common/assets/partners/rst.svg';
 import Vm from '@/common/assets/partners/vm.svg';
 import Zaven from '@/common/assets/partners/zaven.svg';
-import { Link } from '@/components';
-import { BackgroundHexagon } from '@/components/Hexagons/BackgroundHexagon.tsx/BackgroundHexagon';
+import { BackgroundHexagon,Link  } from '@/components';
 
 export const Partnerships = () => (
   <div className="relative mx-auto flex flex-col items-center overflow-hidden bg-primary px-30 py-10 lg:py-24">

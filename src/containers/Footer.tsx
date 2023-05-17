@@ -3,7 +3,7 @@ import Facebook from '@/common/assets/socials/facebook.svg';
 import Github from '@/common/assets/socials/github.svg';
 import Instagram from '@/common/assets/socials/instagram.svg';
 import LinkedIn from '@/common/assets/socials/linkedin.svg';
-import { IconHexagon } from '@/components/Hexagons/IconHexagon/IconHexagon';
+import { IconHexagon } from '@/components';
 
 export const Footer = () => (
   <div className="mx-auto grid grid-flow-row gap-10 bg-primary py-10 px-15 text-additional-white md:px-30 lg:grid-cols-[170px,1fr,min-content] lg:gap-26">

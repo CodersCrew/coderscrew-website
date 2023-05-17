@@ -1,4 +1,4 @@
-import { HexagonBase } from '../HexagonBase/HexagonBase';
+import { HexagonBase } from './HexagonBase';
 
 interface BackgroundHexagonProps {
   className: string;

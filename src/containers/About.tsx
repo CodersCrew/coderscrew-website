@@ -1,6 +1,5 @@
 import PeopleWithMobiles from '@/common/assets/peopleWithMobiles.svg';
-import { Card, SectionWrapper } from '@/components';
-import { BackgroundHexagon } from '@/components/Hexagons/BackgroundHexagon.tsx/BackgroundHexagon';
+import { BackgroundHexagon,Card, SectionWrapper  } from '@/components';
 
 export const About = () => (
   <SectionWrapper className="grid items-center justify-center gap-18 overflow-hidden lg:grid-cols-[1fr,min-content]">

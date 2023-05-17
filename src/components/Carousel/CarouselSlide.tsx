@@ -1,5 +1,5 @@
 import QuotationMark from '@/common/assets/quotationMark.svg';
-import { IconHexagon } from '@/components/Hexagons/IconHexagon/IconHexagon';
+import { IconHexagon } from '@/components/Hexagons';
 
 export type CarouselSlideProps = {
   content: string;
