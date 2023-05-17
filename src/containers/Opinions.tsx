@@ -51,10 +51,10 @@ export const Opinions = () => (
     </div>
     <Carousel slides={opinions} />
     <div className="flex flex-col items-center gap-4 xs:flex-row">
-      <Link href="#" variant="outlined">
+      <Link href="/partnerzy" variant="outlined">
         Zostań partnerem
       </Link>
-      <Link href="#" variant="filled">
+      <Link href="/rekrutacja" variant="filled">
         Dołącz do nas
       </Link>
     </div>

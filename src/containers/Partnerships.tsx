@@ -27,7 +27,7 @@ export const Partnerships = () => (
       <Vm />
       <BetterSoftware />
     </div>
-    <Link variant="filled" href="#">
+    <Link variant="filled" href="/partnerzy">
       Poznaj wszystkich partnerów
     </Link>
   </div>
