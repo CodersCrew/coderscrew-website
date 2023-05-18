@@ -1,8 +1,8 @@
 import { HexagonBase } from './HexagonBase';
 
-interface BackgroundHexagonProps {
+type BackgroundHexagonProps = {
   className: string;
-}
+};
 
 export const BackgroundHexagon = ({ className }: BackgroundHexagonProps) => (
   <HexagonBase className={`absolute ${className}`} />

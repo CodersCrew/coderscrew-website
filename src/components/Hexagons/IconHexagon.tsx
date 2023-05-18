@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 import { HexagonBase } from './HexagonBase';
 import { variantMap } from './lookup';
