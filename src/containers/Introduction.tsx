@@ -9,7 +9,7 @@ export const Introduction = () => (
         Ucz się, przekładając wiedzę na praktykę i wyróżnij się unikalnym portfolio! Rozwijamy pasję do działania i
         wspieramy w rozwoju w wybranej ścieżce kariery z branży IT.
       </p>
-      <Link href="#" variant="outlined">
+      <Link href="#about-us" variant="outlined">
         Dowiedz się więcej
       </Link>
     </div>

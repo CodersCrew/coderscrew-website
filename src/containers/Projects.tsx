@@ -45,7 +45,7 @@ export const Projects = () => (
         link="#"
       />
     </div>
-    <Link href="#" variant="filled">
+    <Link href="/projekty" variant="filled">
       Wszystkie projekty
     </Link>
   </SectionWrapper>

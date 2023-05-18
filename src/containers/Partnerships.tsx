@@ -27,7 +27,7 @@ export const Partnerships = () => (
       <Vm />
       <BetterSoftware />
     </div>
-    <Link variant="filled" href="#">
+    <Link variant="filled" href="/partnerzy">
       Poznaj wszystkich partnerów
     </Link>
     <BackgroundHexagon className="-top-12 -right-8 h-[115px] w-[120px] bg-eerieBlack lg:-top-19 lg:-right-18 lg:h-[245px] lg:w-[257px]" />
