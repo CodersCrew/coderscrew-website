@@ -23,7 +23,7 @@ export const SideMenu = () => {
         )}
       />
       <div
-        className={`fixed inset-y-0 left-0 w-70 bg-primary text-tetriary transition-all lg:hidden ${
+        className={`fixed inset-y-0 left-0 z-50 w-70 bg-primary text-tetriary transition-all lg:hidden ${
           !isOpen ? '-translate-x-70' : ''
         }`}
       >
