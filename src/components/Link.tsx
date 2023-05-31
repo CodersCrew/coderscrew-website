@@ -1,4 +1,4 @@
-import { default as NextLink } from 'next/link';
+import NextLink from 'next/link';
 import { ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 
@@ -17,17 +17,23 @@ type LinkProps = {
   className?: string;
 };
 
-export const Link = ({ children, href, variant, className, ...props }: LinkProps) => (
+export const Link = ({
+  children,
+  href,
+  variant,
+  className,
+  ...props
+}: LinkProps) => (
   <NextLink href={href} passHref>
-    <a
+    <span
       className={twMerge(
-        'flex w-max items-center rounded-lg py-3 px-6 text-base leading-tight transition-colors duration-200',
+        'flex w-max items-center rounded-lg px-6 py-3 text-base leading-tight transition-colors duration-200',
         variants[variant],
         className
       )}
       {...props}
     >
       {children}
-    </a>
+    </span>
   </NextLink>
 );
