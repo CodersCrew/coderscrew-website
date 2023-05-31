@@ -11,7 +11,7 @@ export const fetchText = async ({
 }) => {
   const {
     textContent: { text }
-  } = await hygraphClient.request(
+  } = (await hygraphClient.request(
     gql`
       query TextContent($locale: Locale!, $resourceName: String!) {
         textContent(
@@ -23,7 +23,7 @@ export const fetchText = async ({
       }
     `,
     { locale, resourceName }
-  );
+  )) as { textContent: { text: string } };
 
   return text;
 };
