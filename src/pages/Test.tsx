@@ -1,4 +1,4 @@
-import { contentApi } from '@/services';
+import { contentApi } from '@/services/contentApi';
 
 const Test = ({ test }: { test: string }) => <p>{test}</p>;
 

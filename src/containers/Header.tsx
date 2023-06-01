@@ -1,5 +1,5 @@
-import BurgerMenu from '@/common/assets/burgerMenu.svg';
-import Logo from '@/common/assets/logo.svg';
+import BurgerMenu from '@/assets/burgerMenu.svg';
+import Logo from '@/assets/logo.svg';
 import { Link, SectionWrapper } from '@/components';
 
 export const Header = () => (

@@ -28,9 +28,8 @@ Branch types:
 
 Every directory can be imported through the names listed below:
 
-- `@common`:
-  - `@assets` - Contains assets used in the app, eg. images, svg.
-  - `@fonts` - Contains fonts used in the app.
+- `@assets` - Contains assets used in the app, eg. images, svg.
+- `@fonts` - Contains fonts used in the app.
 - `@components` - Contains component files. A component should have its own directory and be written in the `index.tsx` file. Every file closely related to the component should be inside its directory, eg. `sample.spec.tsx`, `sample.stories.tsx`. A component should be exported in the root `index.ts` file (`export * from './Sample'`).
 - `@context` - Contains React Context API files. Similar structure to `@components`.
 - `@hooks` - Contains React Hooks files. Similar structure to `@components`.

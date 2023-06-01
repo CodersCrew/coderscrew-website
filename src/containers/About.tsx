@@ -1,5 +1,5 @@
-import PeopleWithMobiles from '@/common/assets/peopleWithMobiles.svg';
-import { BackgroundHexagon,Card, SectionWrapper  } from '@/components';
+import PeopleWithMobiles from '@/assets/peopleWithMobiles.svg';
+import { BackgroundHexagon, Card, SectionWrapper } from '@/components';
 
 export const About = () => (
   <SectionWrapper className="grid items-center justify-center gap-18 overflow-hidden lg:grid-cols-[1fr,min-content]">
@@ -11,8 +11,8 @@ export const About = () => (
           title="Organizacja non-profit z Wrocławia"
           text="Najważniejszą rzeczą dla nas jest rozwój – tworzenie społeczności, w której osoby gotowe do działania mogą doskonalić swoje umiejętności."
         />
-        <BackgroundHexagon className="top-8 -left-4 -z-10 h-[27px] w-[30px] bg-quaternary opacity-20 xl:-left-5 xl:h-[39px] xl:w-[42px]" />
-        <BackgroundHexagon className="bottom-13 -right-7 -z-10 h-[70px] w-[80px] bg-quaternary opacity-20 xl:-right-26 xl:h-[160px] xl:w-[172px]" />
+        <BackgroundHexagon className="-left-4 top-8 -z-10 h-[27px] w-[30px] bg-quaternary opacity-20 xl:-left-5 xl:h-[39px] xl:w-[42px]" />
+        <BackgroundHexagon className="-right-7 bottom-13 -z-10 h-[70px] w-[80px] bg-quaternary opacity-20 xl:-right-26 xl:h-[160px] xl:w-[172px]" />
       </div>
       <div className="relative z-10">
         <Card
@@ -20,7 +20,7 @@ export const About = () => (
           title="Poznaj branżę IT w praktyce"
           text="Wyróżnij się na rynku pracy unikalnym portfolio projektowym, rozwijając się w takich działach, jak web development, project management, online marketing oraz UX/UI design."
         />
-        <BackgroundHexagon className="top-20 -right-6 -z-10 h-[42px] w-[47px] bg-quaternary opacity-20 xl:top-26 xl:-right-13 xl:h-[72px] xl:w-[76px]" />
+        <BackgroundHexagon className="-right-6 top-20 -z-10 h-[42px] w-[47px] bg-quaternary opacity-20 xl:-right-13 xl:top-26 xl:h-[72px] xl:w-[76px]" />
         <BackgroundHexagon className="-bottom-6 -left-8 -z-10 h-[84px] w-[89px] bg-quaternary opacity-20 xl:-bottom-10 xl:-left-11 xl:h-[105px] xl:w-[114px]" />
       </div>
     </div>

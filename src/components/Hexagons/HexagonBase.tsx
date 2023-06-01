@@ -6,5 +6,7 @@ type HexagonBaseProps = {
 };
 
 export const HexagonBase = ({ className, children }: HexagonBaseProps) => (
-  <div className={`rotate-90 clip-path-hexPolygon ${className}`}>{children}</div>
+  <div className={`rotate-90 clip-path-hexPolygon ${className}`}>
+    {children}
+  </div>
 );

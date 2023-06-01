@@ -1,3 +1,4 @@
+export * from './Backdrop';
 export * from './Card';
 export * from './Carousel';
 export * from './Hexagons';

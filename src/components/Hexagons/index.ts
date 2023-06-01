@@ -1,3 +1,3 @@
-export * from './BackgroundHexagon';
-export * from './HexagonBase';
-export * from './IconHexagon';
+export { BackgroundHexagon } from './BackgroundHexagon';
+export { HexagonBase } from './HexagonBase';
+export { IconHexagon } from './IconHexagon';
