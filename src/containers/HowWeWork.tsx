@@ -1,4 +1,4 @@
-import UndrawWorld from '@/common/assets/undrawWorld.svg';
+import UndrawWorld from '@/assets/undrawWorld.svg';
 import { Card, Link } from '@/components';
 
 export const HowWeWork = () => (

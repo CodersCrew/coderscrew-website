@@ -1,4 +1,4 @@
-import Logo from '@/common/assets/logo.svg';
+import Logo from '@/assets/logo.svg';
 import { Link, SectionWrapper, SideMenu } from '@/components';
 
 export const Header = () => (
