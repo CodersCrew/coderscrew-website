@@ -1,11 +1,18 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  i18n: {
-    locales: ['pl'],
-    defaultLocale: 'pl'
+// @ts-nocheck
+import type { StorybookConfig } from '@storybook/nextjs';
+
+const config: StorybookConfig = {
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions'
+  ],
+  framework: {
+    name: '@storybook/nextjs',
+    options: {}
   },
-  webpack(config) {
+  webpackFinal: config => {
     const fileLoaderRule = config.module.rules.find(rule =>
       rule.test?.test?.('.svg')
     );
@@ -30,4 +37,4 @@ const nextConfig = {
   }
 };
 
-module.exports = nextConfig;
+export default config;
