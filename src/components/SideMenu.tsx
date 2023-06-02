@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 import BurgerMenu from '@/assets/burgerMenu.svg';
 import CrossMenu from '@/assets/crossMenu.svg';
