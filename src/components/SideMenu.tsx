@@ -4,6 +4,7 @@ import { twMerge } from 'tailwind-merge';
 import BurgerMenu from '@/assets/burgerMenu.svg';
 import CrossMenu from '@/assets/crossMenu.svg';
 
+import { Backdrop } from './Backdrop';
 import { Link } from './Link';
 
 export const SideMenu = () => {
@@ -16,12 +17,7 @@ export const SideMenu = () => {
   return (
     <>
       <BurgerMenu className="z-50 h-6 sm:h-8 lg:hidden" onClick={toggleMenu} />
-      <div
-        className={twMerge(
-          'fixed inset-0 -translate-x-full bg-primary opacity-20 transition-all duration-[50ms]',
-          isOpen && 'translate-x-0 '
-        )}
-      />
+      {isOpen && <Backdrop background={true} onClick={toggleMenu} />}
       <div
         className={`fixed inset-y-0 left-0 z-50 w-70 bg-primary text-tetriary transition-all lg:hidden ${
           !isOpen ? '-translate-x-70' : ''
