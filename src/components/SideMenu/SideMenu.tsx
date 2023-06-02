@@ -16,7 +16,7 @@ export const SideMenu = () => {
   return (
     <>
       <BurgerMenu className="z-50 h-6 sm:h-8 lg:hidden" onClick={toggleMenu} />
-      {isOpen && <Backdrop background={true} onClick={toggleMenu} />}
+      {isOpen && <Backdrop background onClick={toggleMenu} />}
       <div
         className={`fixed inset-y-0 left-0 z-50 w-70 bg-primary text-tetriary transition-all lg:hidden ${
           !isOpen ? '-translate-x-70' : ''
