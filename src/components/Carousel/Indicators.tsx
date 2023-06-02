@@ -1,4 +1,4 @@
-export type IndicatorsProps = {
+type IndicatorsProps = {
   count: number;
   currentSlide: number;
   setCurrentSlide: (slideNumber: number) => void;

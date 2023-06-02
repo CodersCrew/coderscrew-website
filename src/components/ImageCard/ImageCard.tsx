@@ -11,15 +11,15 @@ type HoverProps = {
   link: string;
 };
 
-type ImageWithHoverProps = ImageProps & HoverProps;
+type ImageCardProps = ImageProps & HoverProps;
 
-export const ImageWithHover = ({
+export const ImageCard = ({
   title,
   text,
   link,
   alt,
   ...props
-}: ImageWithHoverProps) => (
+}: ImageCardProps) => (
   <Link href={link}>
     <div className="relative flex cursor-pointer">
       <Image {...props} alt={alt} />

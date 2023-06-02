@@ -1,9 +1,4 @@
-import {
-  BackgroundHexagon,
-  Carousel,
-  Link,
-  SectionWrapper
-} from '@/components';
+import { Carousel, Hexagon, Link, SectionWrapper } from '@/components';
 
 const opinions = [
   {
@@ -47,8 +42,8 @@ const opinions = [
 export const Opinions = () => (
   <SectionWrapper className="relative z-10 flex max-w-none flex-col items-center gap-12">
     <div className="absolute inset-0 bottom-[40%] -z-50 overflow-hidden bg-primary">
-      <BackgroundHexagon className="bg-eerieBlack xl:-bottom-20 xl:right-5 xl:h-[210px] xl:w-[226px] 2xl:right-25" />
-      <BackgroundHexagon className="bg-dotIndicator opacity-40 xl:bottom-9 xl:right-[174px] xl:h-[100px] xl:w-[106px] 2xl:right-[254px]" />
+      <Hexagon className="absolute bg-eerieBlack xl:-bottom-20 xl:right-5 xl:h-[210px] xl:w-[226px] 2xl:right-25" />
+      <Hexagon className="absolute bg-dotIndicator opacity-40 xl:bottom-9 xl:right-[174px] xl:h-[100px] xl:w-[106px] 2xl:right-[254px]" />
     </div>
     <div className="max-w-2xl">
       <h2 className="mb-4 text-center text-2xl font-bold uppercase text-quaternary">

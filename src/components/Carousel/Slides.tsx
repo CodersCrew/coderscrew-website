@@ -1,7 +1,7 @@
 import { Arrow } from './Arrow';
 import { CarouselSlide } from './CarouselSlide';
 
-export type CarouselProps = {
+type SlidesProps = {
   currentSlide: number;
   nextSlide: () => void;
   prevSlide: () => void;
@@ -13,7 +13,7 @@ export const Slides = ({
   nextSlide,
   prevSlide,
   slides
-}: CarouselProps) => (
+}: SlidesProps) => (
   <div className="flex">
     {slides.map((slide, index) => (
       <div

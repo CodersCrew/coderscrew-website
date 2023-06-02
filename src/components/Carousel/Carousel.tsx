@@ -25,7 +25,7 @@ export const Carousel = ({ slides }: CarouselProps) => {
   };
 
   return (
-    <>
+    <div className="flex flex-col items-center gap-12">
       <Slides
         currentSlide={currentSlide}
         nextSlide={nextSlide}
@@ -37,6 +37,6 @@ export const Carousel = ({ slides }: CarouselProps) => {
         currentSlide={currentSlide}
         setCurrentSlide={setCurrentSlide}
       />
-    </>
+    </div>
   );
 };
