@@ -5,3 +5,4 @@ export { Hexagon } from './Hexagon';
 export { ImageCard } from './ImageCard';
 export { Link } from './Link';
 export { SectionWrapper } from './SectionWrapper';
+export { SideMenu } from './SideMenu';
