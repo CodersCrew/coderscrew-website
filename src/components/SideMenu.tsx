@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import BurgerMenu from '@/common/assets/burgerMenu.svg';
-import CrossMenu from '@/common/assets/crossMenu.svg';
+import BurgerMenu from '@/assets/burgerMenu.svg';
+import CrossMenu from '@/assets/crossMenu.svg';
 
 import { Link } from './Link';
 
@@ -10,7 +10,7 @@ export const SideMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen((current) => !current);
+    setIsOpen(current => !current);
   };
 
   return (
@@ -31,19 +31,19 @@ export const SideMenu = () => {
           <CrossMenu />
         </button>
         <nav className="flex-grow">
-          <Link className="block py-4 px-5" variant="bare" href="/zespoly">
+          <Link className="block px-5 py-4" variant="bare" href="/zespoly">
             Zespoły
           </Link>
-          <Link className="block py-4 px-5" variant="bare" href="/projekty">
+          <Link className="block px-5 py-4" variant="bare" href="/projekty">
             Projekty
           </Link>
-          <Link className="block py-4 px-5" variant="bare" href="/partnerzy">
+          <Link className="block px-5 py-4" variant="bare" href="/partnerzy">
             Partnerzy
           </Link>
-          <Link className="block py-4 px-5" variant="bare" href="/wspolpraca">
+          <Link className="block px-5 py-4" variant="bare" href="/wspolpraca">
             Współpraca
           </Link>
-          <Link className="block py-4 px-5" variant="bare" href="/rekrutacja">
+          <Link className="block px-5 py-4" variant="bare" href="/rekrutacja">
             Dołącz do nas
           </Link>
         </nav>
