@@ -3,8 +3,8 @@ import { useState } from 'react';
 import BurgerMenu from '@/assets/burgerMenu.svg';
 import CrossMenu from '@/assets/crossMenu.svg';
 
-import { Backdrop } from './Backdrop';
-import { Link } from './Link';
+import { Backdrop } from '../Backdrop';
+import { Link } from '../Link';
 
 export const SideMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
