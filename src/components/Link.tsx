@@ -21,7 +21,7 @@ export const Link = ({ children, href, variant, className, ...props }: LinkProps
   <NextLink href={href} passHref>
     <a
       className={twMerge(
-        'flex w-max items-center rounded-lg py-3 px-6 text-base leading-tight transition-colors duration-200',
+        'flex w-max items-center justify-center rounded-lg px-6 py-3 text-base leading-tight transition-colors duration-200',
         variants[variant],
         className
       )}
