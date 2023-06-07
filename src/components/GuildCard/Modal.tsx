@@ -5,8 +5,6 @@ import CloseModal from '@/assets/close-modal.svg';
 import { Hexagon } from '@/components/Hexagon';
 import { Pagination } from '@/components/Pagination';
 
-import { Backdrop } from '../Backdrop';
-
 type ModalProps = {
   Icon: ReactNode;
   title: string;
