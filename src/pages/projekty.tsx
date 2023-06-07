@@ -52,24 +52,22 @@ const Projects = () => (
     <h1 className="mb-8 text-3.5xl font-bold leading-tight md:mb-25 md:text-5xl">
       Nasze projekty
     </h1>
-    <div>
-      {projectsData.map(({ title, description, image }) => (
-        <div
-          className="mb-16 flex flex-col md:mb-40 md:flex-row md:odd:flex-row-reverse"
-          key={title}
-        >
-          <div className="md:mr-6 md:w-1/2 md:px-10">
-            <h2 className="mb-6 text-2xl font-semibold md:mb-8 md:text-3xl">
-              {title}
-            </h2>
-            <p className="mb-6 md:text-xl">{description}</p>
-          </div>
-          <div className="md:w-1/2">
-            <Image src={image} alt={title} className="w-full" />
-          </div>
+    {projectsData.map(({ title, description, image }) => (
+      <div
+        className="mb-16 flex flex-col md:mb-40 md:flex-row md:odd:flex-row-reverse"
+        key={title}
+      >
+        <div className="md:mr-6 md:w-1/2 md:px-10">
+          <h2 className="mb-6 text-2xl font-semibold md:mb-8 md:text-3xl">
+            {title}
+          </h2>
+          <p className="mb-6 md:text-xl">{description}</p>
         </div>
-      ))}
-    </div>
+        <div className="md:w-1/2">
+          <Image src={image} alt={title} className="w-full" />
+        </div>
+      </div>
+    ))}
   </SectionWrapper>
 );
 
