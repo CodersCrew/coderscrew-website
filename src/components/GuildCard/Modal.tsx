@@ -5,6 +5,8 @@ import CloseModal from '@/assets/close-modal.svg';
 import { Hexagon } from '@/components/Hexagon';
 import { Pagination } from '@/components/Pagination';
 
+import { Backdrop } from '../Backdrop';
+
 type ModalProps = {
   Icon: ReactNode;
   title: string;
@@ -93,12 +95,14 @@ export const Modal = ({
       )}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
+      onClick={handleExit}
     >
       <div
         className={twMerge(
           'h-[486px] w-[359px] overflow-hidden rounded-lg bg-white px-10 py-14 opacity-0 transition-opacity duration-200',
           isOpen ? 'fixed opacity-100' : 'duration-[0ms]'
         )}
+        onClick={e => e.stopPropagation()}
       >
         <button
           className="absolute right-4 top-4 text-black"
@@ -108,7 +112,7 @@ export const Modal = ({
         </button>
         <div className="flex h-full w-full select-none flex-col justify-between gap-5">
           <header className="flex">
-            <div className="mr-5 rotate-90 scale-125">{Icon}</div>
+            <div className="mr-5 rotate-0 scale-125">{Icon}</div>
             <span className="text-2xl font-semibold">{title}</span>
           </header>
           <section className="flex grow flex-col gap-4 text-secondary">
@@ -124,13 +128,13 @@ export const Modal = ({
         </div>
         <Hexagon
           className={twMerge(
-            '-left-7 -top-5 h-[66px] w-[69px] opacity-20',
+            'absolute -left-7 -top-5 h-[66px] w-[69px] opacity-20',
             hexagonsColor
           )}
         />
         <Hexagon
           className={twMerge(
-            '-bottom-8 -right-8 h-[87px] w-[88px] opacity-20',
+            'absolute -bottom-8 -right-8 h-[87px] w-[88px] opacity-20',
             hexagonsColor
           )}
         />
