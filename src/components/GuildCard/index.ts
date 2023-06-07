@@ -1,1 +1,1 @@
-export * from './GuildCard';
+export { GuildCard } from './GuildCard';

@@ -1,8 +1,8 @@
-import HumanResources from '@/common/assets/human-resources.svg';
-import OnlineMarketing from '@/common/assets/online-marketing.svg';
-import ProjectManagement from '@/common/assets/project-management.svg';
-import UXUIDesign from '@/common/assets/ux-ui-design.svg';
-import WebDev from '@/common/assets/web-development.svg';
+import HumanResources from '@/assets/human-resources.svg';
+import OnlineMarketing from '@/assets/online-marketing.svg';
+import ProjectManagement from '@/assets/project-management.svg';
+import UXUIDesign from '@/assets/ux-ui-design.svg';
+import WebDev from '@/assets/web-development.svg';
 import { GuildCard, Link, SectionWrapper, Separator } from '@/components';
 
 export const Guilds = () => (
@@ -12,11 +12,12 @@ export const Guilds = () => (
         Wybierz ścieżkę rozwoju dla siebie
       </header>
       <p className="leading-normal lg:text-[32px] lg:leading-[38px]">
-        Czekają na Ciebie interesujące wyzwania i ciekawe projekty, podczas których przełożysz teorię na praktykę.
+        Czekają na Ciebie interesujące wyzwania i ciekawe projekty, podczas
+        których przełożysz teorię na praktykę.
       </p>
     </section>
     <GuildCard
-      Icon={<WebDev className="-rotate-90" />}
+      Icon={<WebDev />}
       title="Web Development"
       shortDescription="Twórz unikalne strony i aplikacje mobilne"
       longDescription={
@@ -27,7 +28,7 @@ export const Guilds = () => (
     />
     <Separator className="col-start-2 row-span-1 row-start-2" />
     <GuildCard
-      Icon={<ProjectManagement className="-rotate-90" />}
+      Icon={<ProjectManagement />}
       title="Project Management"
       shortDescription="Zarządzaj projektami używając nowoczesnych metod"
       longDescription="Zarządzaj projektami używając nowoczesnych metod"
@@ -36,7 +37,7 @@ export const Guilds = () => (
     />
     <Separator className="lg:col-start-2 lg:row-start-4" />
     <GuildCard
-      Icon={<OnlineMarketing className="-rotate-90" />}
+      Icon={<OnlineMarketing />}
       title="Online Marketing"
       shortDescription="Zgłębiaj techniki digital marketingu"
       longDescription="Zgłębiaj techniki digital marketingu"
@@ -45,7 +46,7 @@ export const Guilds = () => (
     />
     <Separator className="lg:col-start-2 lg:row-start-6" />
     <GuildCard
-      Icon={<UXUIDesign className="-rotate-90" />}
+      Icon={<UXUIDesign />}
       title="UX/UI Design"
       shortDescription="Twórz projekty graficzne w oparciu o potrzeby użytkownika"
       longDescription="Twórz projekty graficzne w oparciu o potrzeby użytkownika"
@@ -54,7 +55,7 @@ export const Guilds = () => (
     />
     <Separator className="lg:row-start-8 lg:col-start-2" />
     <GuildCard
-      Icon={<HumanResources className="-rotate-90" />}
+      Icon={<HumanResources />}
       title="Human Resources"
       shortDescription="Zarządzaj naszymi zasobami ludzkimi"
       longDescription="Zarządzaj naszymi zasobami ludzkimi"

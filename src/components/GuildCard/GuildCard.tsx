@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import { IconHexagon } from '../Hexagons';
+import { Hexagon } from '../Hexagon';
 import { Modal } from './Modal';
 
 type GuildCardProps = {
@@ -25,7 +25,7 @@ export const GuildCard = ({
   const cardRef = useRef<null | HTMLButtonElement>(null);
 
   const handleOnClick = () => {
-    setIsModalOpen((prev) => !prev);
+    setIsModalOpen(prev => !prev);
     cardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
@@ -47,7 +47,7 @@ export const GuildCard = ({
         onClick={handleOnClick}
         ref={cardRef}
       >
-        <IconHexagon variant="guild" Icon={Icon} />
+        <Hexagon variant="guild">{Icon}</Hexagon>
         <div className="flex flex-col gap-2">
           <p className="text-2xl">{title}</p>
           <p>{shortDescription}</p>

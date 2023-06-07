@@ -1,8 +1,8 @@
 import { ReactNode, TouchEvent, useEffect, useMemo, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import CloseModal from '@/common/assets/close-modal.svg';
-import { BackgroundHexagon } from '@/components/Hexagons';
+import CloseModal from '@/assets/close-modal.svg';
+import { Hexagon } from '@/components/Hexagon';
 import { Pagination } from '@/components/Pagination';
 
 type ModalProps = {
@@ -16,11 +16,21 @@ type ModalProps = {
 
 const PageSize = 345;
 
-export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsColor }: ModalProps) => {
+export const Modal = ({
+  Icon,
+  title,
+  description,
+  isOpen,
+  setIsOpen,
+  hexagonsColor
+}: ModalProps) => {
   const [dataToPage, setDataToPage] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [touchPosition, setTouchPosition] = useState<null | number>(null);
-  const totalPageCount = useMemo(() => Math.ceil(description.length / PageSize), [description]);
+  const totalPageCount = useMemo(
+    () => Math.ceil(description.length / PageSize),
+    [description]
+  );
 
   const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
     const touchDown = e.touches[0]?.clientX || null;
@@ -36,10 +46,10 @@ export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsCol
     const diff = touchDown - currentTouch;
 
     if (diff > 5 && currentPage !== totalPageCount) {
-      setCurrentPage((prev) => prev + 1);
+      setCurrentPage(prev => prev + 1);
     }
     if (diff < -5 && currentPage !== 1) {
-      setCurrentPage((prev) => prev - 1);
+      setCurrentPage(prev => prev - 1);
     }
 
     setTouchPosition(null);
@@ -50,8 +60,10 @@ export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsCol
     setCurrentPage(1);
   };
 
-  const handlePreviousPage = () => currentPage > 1 && setCurrentPage((v) => v - 1);
-  const handleNextPage = () => currentPage < totalPageCount && setCurrentPage((v) => v + 1);
+  const handlePreviousPage = () =>
+    currentPage > 1 && setCurrentPage(v => v - 1);
+  const handleNextPage = () =>
+    currentPage < totalPageCount && setCurrentPage(v => v + 1);
 
   const currentDataToParagraphs =
     dataToPage[currentPage - 1]?.split('\n').map((paragraph, index) => (
@@ -63,10 +75,13 @@ export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsCol
     for (let i = 0; i < totalPageCount; i += 1) {
       const currentPageFirstIndex = i * PageSize;
       const currentPageLastIndex = currentPageFirstIndex + PageSize;
-      const sliceOfText = description.slice(currentPageFirstIndex, currentPageLastIndex);
+      const sliceOfText = description.slice(
+        currentPageFirstIndex,
+        currentPageLastIndex
+      );
       data.push(sliceOfText);
     }
-    data.map((set) => set.trim());
+    data.map(set => set.trim());
     setDataToPage(data);
   }, [description, totalPageCount]);
 
@@ -85,7 +100,10 @@ export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsCol
           isOpen ? 'fixed opacity-100' : 'duration-[0ms]'
         )}
       >
-        <button className="absolute right-4 top-4 text-black" onClick={handleExit}>
+        <button
+          className="absolute right-4 top-4 text-black"
+          onClick={handleExit}
+        >
           <CloseModal />
         </button>
         <div className="flex h-full w-full select-none flex-col justify-between gap-5">
@@ -93,7 +111,9 @@ export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsCol
             <div className="mr-5 rotate-90 scale-125">{Icon}</div>
             <span className="text-2xl font-semibold">{title}</span>
           </header>
-          <section className="flex grow flex-col gap-4 text-secondary">{currentDataToParagraphs}</section>
+          <section className="flex grow flex-col gap-4 text-secondary">
+            {currentDataToParagraphs}
+          </section>
           <Pagination
             currentPage={currentPage}
             totalPageCount={totalPageCount}
@@ -102,8 +122,18 @@ export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsCol
             className="self-center"
           />
         </div>
-        <BackgroundHexagon className={twMerge('-left-7 -top-5 h-[66px] w-[69px] opacity-20', hexagonsColor)} />
-        <BackgroundHexagon className={twMerge('-bottom-8 -right-8 h-[87px] w-[88px] opacity-20', hexagonsColor)} />
+        <Hexagon
+          className={twMerge(
+            '-left-7 -top-5 h-[66px] w-[69px] opacity-20',
+            hexagonsColor
+          )}
+        />
+        <Hexagon
+          className={twMerge(
+            '-bottom-8 -right-8 h-[87px] w-[88px] opacity-20',
+            hexagonsColor
+          )}
+        />
       </div>
     </div>
   );

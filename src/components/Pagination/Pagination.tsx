@@ -1,8 +1,8 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import DarkDot from '@/common/assets/dark-dot.svg';
-import LightDot from '@/common/assets/light-dot.svg';
+import DarkDot from '@/assets/dark-dot.svg';
+import LightDot from '@/assets/light-dot.svg';
 
 type PaginationProps = {
   totalPageCount: number;
@@ -22,7 +22,9 @@ export const Pagination = ({
   const dots = [];
 
   for (let i = 0; i < totalPageCount; i += 1) {
-    dots.push(<li key={i}>{currentPage === i + 1 ? <DarkDot /> : <LightDot />}</li>);
+    dots.push(
+      <li key={i}>{currentPage === i + 1 ? <DarkDot /> : <LightDot />}</li>
+    );
   }
 
   const isFirstPage = currentPage === 1;
