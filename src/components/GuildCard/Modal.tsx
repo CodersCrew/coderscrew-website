@@ -73,13 +73,18 @@ export const Modal = ({ Icon, title, description, isOpen, setIsOpen, hexagonsCol
   return (
     <div
       className={twMerge(
-        'left-0 top-0 z-10 flex h-full w-full flex-col items-center justify-center bg-primary/80 text-primary backdrop-blur-sm',
-        isOpen ? 'fixed' : 'hidden'
+        'left-0 top-0 z-10 flex h-0 w-0 flex-col items-center justify-center bg-primary/80 text-primary backdrop-blur-sm',
+        isOpen && 'fixed h-full w-full'
       )}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
-      <div className="relative h-[486px] w-[359px] overflow-hidden rounded-lg bg-white px-10 py-14">
+      <div
+        className={twMerge(
+          'h-[486px] w-[359px] overflow-hidden rounded-lg bg-white px-10 py-14 opacity-0 transition-opacity duration-200',
+          isOpen ? 'fixed opacity-100' : 'duration-[0ms]'
+        )}
+      >
         <button className="absolute right-4 top-4 text-black" onClick={handleExit}>
           <CloseModal />
         </button>
