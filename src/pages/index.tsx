@@ -1,6 +1,5 @@
 import {
   About,
-  Footer,
   HowWeWork,
   Introduction,
   Opinions,
@@ -19,7 +18,6 @@ const Index = () => (
 
     <HowWeWork />
     <Partnerships />
-    <Footer />
   </div>
 );
 
