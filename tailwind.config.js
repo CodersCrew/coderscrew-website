@@ -1,8 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/containers/**/*.{js,ts,jsx,tsx}'
+    './src/containers/**/*.{js,ts,jsx,tsx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     colors: {
@@ -74,7 +75,8 @@ module.exports = {
       39: '156px',
       40: '160px',
       41: '164px',
-      42: '168px'
+      42: '168px',
+      70: '280px'
     },
     clipPath: {
       hexPolygon: 'polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)'

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Indicators } from './Indicators';
 import { Slides } from './Slides';
 
-export type CarouselProps = {
+type CarouselProps = {
   slides: Array<{ id: number; author: string; content: string }>;
 };
 
@@ -25,9 +25,18 @@ export const Carousel = ({ slides }: CarouselProps) => {
   };
 
   return (
-    <>
-      <Slides currentSlide={currentSlide} nextSlide={nextSlide} prevSlide={prevSlide} slides={slides} />
-      <Indicators count={slides.length} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
-    </>
+    <div className="flex flex-col items-center gap-12">
+      <Slides
+        currentSlide={currentSlide}
+        nextSlide={nextSlide}
+        prevSlide={prevSlide}
+        slides={slides}
+      />
+      <Indicators
+        count={slides.length}
+        currentSlide={currentSlide}
+        setCurrentSlide={setCurrentSlide}
+      />
+    </div>
   );
 };

@@ -1,7 +1,9 @@
-export * from './Card';
-export * from './Carousel';
-export * from './GuildCard';
-export * from './Hexagons';
-export * from './Link';
-export * from './SectionWrapper';
-export * from './Separator';
+export { Backdrop } from './Backdrop';
+export { Card } from './Card';
+export { Carousel } from './Carousel';
+export { GuildCard } from './GuildCard';
+export { Hexagon } from './Hexagon';
+export { ImageCard } from './ImageCard';
+export { Link } from './Link';
+export { SectionWrapper } from './SectionWrapper';
+export { SideMenu } from './SideMenu';
