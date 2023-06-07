@@ -7,9 +7,7 @@ const Index = () => (
     <About />
     <Guilds />
     <Projects />
-
     <Opinions />
-
     <HowWeWork />
     <Partnerships />
     <Footer />
