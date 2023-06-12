@@ -2,7 +2,44 @@ import Education from '@/assets/education.svg';
 import EmployerBranding from '@/assets/employerBranding.svg';
 import Events from '@/assets/events.svg';
 import PartnersImg from '@/assets/partners.svg';
-import { Link,PartnershipProfitCard, SectionWrapper } from '@/components';
+import LiveChat from '@/assets/partners/liveChatBlack.svg';
+import {
+  Carousel,
+  Link,
+  PartnershipProfitCard,
+  SectionWrapper
+} from '@/components';
+
+const partnersData = [
+  {
+    id: 0,
+    logo: <LiveChat />,
+    content:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    href: 'https://www.livechat.com/'
+  },
+  {
+    id: 1,
+    logo: <LiveChat />,
+    content:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    href: 'https://www.livechat.com/'
+  },
+  {
+    id: 2,
+    logo: <LiveChat />,
+    content:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    href: 'https://www.livechat.com/'
+  },
+  {
+    id: 3,
+    logo: <LiveChat />,
+    content:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    href: 'https://www.livechat.com/'
+  }
+];
 
 const Partners = () => {
   const x = 'b';
@@ -59,7 +96,7 @@ const Partners = () => {
         </Link>
       </SectionWrapper>
       <SectionWrapper>
-        <div>Nasi partnerzy</div>
+        <Carousel slides={partnersData} variant="partners" />
       </SectionWrapper>
       <SectionWrapper>
         <div>Partnerzy medialni</div>
