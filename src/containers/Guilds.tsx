@@ -62,12 +62,10 @@ export const Guilds = () => (
       className="lg:row-start-9 col-start-2"
       modalHexagonsColor="bg-hr"
     />
-    <Link
-      href="#"
-      variant="filled"
-      className="mb-10 mt-10 h-11 w-[255px] lg:col-start-1 lg:row-start-5 lg:my-0 lg:ml-9 lg:mt-10 lg:self-center"
-    >
-      Dołącz do nas
-    </Link>
+    <div className="mb-10 mt-10 h-11 lg:col-start-1 lg:row-start-5 lg:my-0 lg:ml-9 lg:mt-10 lg:self-center">
+      <Link href="#" variant="filled" className="w-[175px]">
+        Dołącz do nas
+      </Link>
+    </div>
   </SectionWrapper>
 );

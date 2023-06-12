@@ -30,11 +30,7 @@ export const GuildCard = ({
   };
 
   useEffect(() => {
-    if (isModalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'visible';
-    }
+    document.body.style.overflow = isModalOpen ? 'hidden' : 'visible';
   }, [isModalOpen]);
 
   return (
@@ -42,7 +38,8 @@ export const GuildCard = ({
       <button
         className={twMerge(
           'flex h-[180px] w-[358px] items-center justify-center gap-3 rounded-lg bg-gradient-to-br from-darkGrey to-[rgba(56,56,56,0.15)] px-5 text-left drop-shadow-[0px_4px_4px_rgba(0,0,0,0.15)]',
-          className
+          className,
+          isModalOpen && 'overflow-hidden'
         )}
         onClick={handleOnClick}
         ref={cardRef}

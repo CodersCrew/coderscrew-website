@@ -66,9 +66,9 @@ export const Modal = ({
     currentPage < totalPageCount && setCurrentPage(v => v + 1);
 
   const currentDataToParagraphs =
-    dataToPage[currentPage - 1]?.split('\n').map((paragraph, index) => (
-      <p key={index}>{paragraph}</p> //eslint-disable-line
-    )) || [];
+    dataToPage[currentPage - 1]
+      ?.split('\n')
+      .map((paragraph, index) => <p key={index}>{paragraph}</p>) || [];
 
   useEffect(() => {
     const data = [];
