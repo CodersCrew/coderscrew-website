@@ -11,14 +11,12 @@ module.exports = {
       secondary: '#4B545C',
       tetriary: '#9A9999',
       quaternary: '#1A90FF',
-      guild: {
-        pm: '#1BC55F',
-        marketing: '#F0656F',
-        webDev: '#0075FF',
-        ux: '#FA8A43',
-        dataScience: '#AC6DE8',
-        codersCamp: '#FEC43D'
-      },
+      pm: '#1BC55F',
+      marketing: '#F0656F',
+      webDev: '#0075FF',
+      ux: '#FA8A43',
+      hr: '#AC6DE8',
+      codersCamp: '#FEC43D',
       black: '#000000',
       white: '#FFFFFF',
       darkWhite: '#FAFAFA',
@@ -29,7 +27,9 @@ module.exports = {
       },
       transparent: 'transparent',
       eerieBlack: '#1C1C1C',
-      linkWater: '#D1E9FF'
+      linkWater: '#D1E9FF',
+      lightGrey: '#F5F5F5',
+      darkGrey: '#383838'
     },
     spacing: {
       0: '0px',

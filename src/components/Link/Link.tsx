@@ -4,9 +4,9 @@ import { twMerge } from 'tailwind-merge';
 
 const variants = {
   outlined:
-    'font-bold border-2 border-quaternary text-quaternary hover:border-guild-webDev hover:bg-guild-webDev hover:text-additional-white hover:shadow-button',
+    'font-bold border-2 border-quaternary text-quaternary hover:border-webDev hover:bg-webDev hover:text-additional-white hover:shadow-button',
   filled:
-    'font-bold border-2 border-quaternary bg-quaternary text-additional-white hover:border-guild-webDev hover:bg-guild-webDev hover:shadow-button',
+    'font-bold border-2 border-quaternary bg-quaternary text-additional-white hover:border-webDev hover:bg-webDev hover:shadow-button',
   bare: 'font-semibold hover:underline'
 };
 
@@ -27,7 +27,7 @@ export const Link = ({
   <NextLink href={href} passHref>
     <span
       className={twMerge(
-        'flex w-max items-center rounded-lg px-6 py-3 text-base leading-tight transition-colors duration-200',
+        'flex w-max items-center justify-center rounded-lg px-6 py-3 text-base leading-tight transition-colors duration-200',
         variants[variant],
         className
       )}
