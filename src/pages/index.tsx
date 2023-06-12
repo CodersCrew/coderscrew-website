@@ -1,8 +1,6 @@
 import {
   About,
-  Footer,
   Guilds,
-  Header,
   HowWeWork,
   Introduction,
   Opinions,
@@ -12,7 +10,6 @@ import {
 
 const Index = () => (
   <div className="bg-additional-darkWhite">
-    <Header />
     <Introduction />
     <About />
     <Guilds />
@@ -20,7 +17,6 @@ const Index = () => (
     <Opinions />
     <HowWeWork />
     <Partnerships />
-    <Footer />
   </div>
 );
 
