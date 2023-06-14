@@ -9,6 +9,7 @@ type SlidesProps = {
   prevSlide: () => void;
   slides: Array<OpinionSlide | PartnerSlide>;
   variant: variants;
+  arrowsColor?: string;
 };
 
 export const Slides = ({
@@ -16,7 +17,8 @@ export const Slides = ({
   nextSlide,
   prevSlide,
   slides,
-  variant
+  variant,
+  arrowsColor
 }: SlidesProps) => (
   <div className="flex">
     {slides.map((slide, index) => (
@@ -28,21 +30,30 @@ export const Slides = ({
             : 'hidden'
         }
       >
-        <Arrow left prevSlide={prevSlide} nextSlide={nextSlide} />
+        <Arrow
+          left
+          prevSlide={prevSlide}
+          nextSlide={nextSlide}
+          arrowsColor={arrowsColor}
+        />
         {variant === 'opinions' && (
           <OpinionsCarouselSlide
-            author={slide.author}
+            author={(slide as OpinionSlide).author}
             content={slide.content}
           />
         )}
         {variant === 'partners' && (
           <PartnersCarouselSlide
-            logo={slide.logo}
+            logo={(slide as PartnerSlide).logo}
             content={slide.content}
-            href={slide.href}
+            href={(slide as PartnerSlide).href}
           />
         )}
-        <Arrow prevSlide={prevSlide} nextSlide={nextSlide} />
+        <Arrow
+          prevSlide={prevSlide}
+          nextSlide={nextSlide}
+          arrowsColor={arrowsColor}
+        />
       </div>
     ))}
   </div>

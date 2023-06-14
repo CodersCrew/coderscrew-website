@@ -4,6 +4,8 @@ export { Carousel } from './Carousel';
 export { Hexagon } from './Hexagon';
 export { ImageCard } from './ImageCard';
 export { Link } from './Link';
+export { PartnersCard } from './PartnersCard';
 export { PartnershipProfitCard } from './PartnershipProfitCard';
+export { PartnersLogos } from './PartnersLogos';
 export { SectionWrapper } from './SectionWrapper';
 export { SideMenu } from './SideMenu';

@@ -1,6 +1,6 @@
 import { Carousel, Hexagon, Link, SectionWrapper } from '@/components';
 
-const opinions = [
+export const opinions = [
   {
     content:
       'Dzięki CodersCrew mogę poszerzać moje doświadczenie w zarządzaniu projektami IT. Organizacja dała mi możliwość działania na prawdziwych projektach. Poznałam też mnóstwo cudownie kreatywnych ludzi, których zapał do działania nieustannie podziwiam!',
@@ -54,7 +54,7 @@ export const Opinions = () => (
         Zostań naszym partnerem, jeśli interesuje Cię to, co robimy.
       </p>
     </div>
-    <Carousel slides={opinions} />
+    <Carousel slides={opinions} variant="opinions" arrowsColor="text-white" />
     <div className="flex flex-col items-center gap-4 xs:flex-row">
       <Link href="/partnerzy" variant="outlined">
         Zostań partnerem
