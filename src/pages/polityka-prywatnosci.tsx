@@ -14,7 +14,7 @@ export default function PrivacyPolicy({ content }: PrivacyPolicyProps) {
   const [menuHeadings, setMenuHeadings] = useState<string[]>([]);
 
   useEffect(() => {
-    const headings = Array.from(document.querySelectorAll('h2')).map(
+    const headings = Array.from(document.querySelectorAll('.markdown h2')).map(
       (title, idx) => {
         title.id = `section-${idx}`;
         return title.textContent || '';
