@@ -1,16 +1,11 @@
-import fs from 'fs';
 import matter from 'gray-matter';
-import path from 'path';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import MarkdownFile from '@/assets/markdown/privacy-policy.md';
 import { SectionWrapper } from '@/components/SectionWrapper';
 
-type PrivacyPolicyProps = {
-  content: string;
-};
-
-export default function PrivacyPolicy({ content }: PrivacyPolicyProps) {
+export default function PrivacyPolicy() {
   const [menuHeadings, setMenuHeadings] = useState<string[]>([]);
 
   useEffect(() => {
@@ -40,24 +35,8 @@ export default function PrivacyPolicy({ content }: PrivacyPolicyProps) {
         ))}
       </aside>
       <ReactMarkdown className="markdown ml-auto py-10 md:w-1/2 md:bg-grey md:px-5">
-        {content}
+        {matter(MarkdownFile).content}
       </ReactMarkdown>
     </SectionWrapper>
   );
-}
-
-export async function getStaticProps() {
-  const filePath = path.join(
-    process.cwd(),
-    'src/assets/markdown',
-    'privacy-policy.md'
-  );
-  const fileContent = fs.readFileSync(filePath, 'utf-8');
-  const { content } = matter(fileContent);
-
-  return {
-    props: {
-      content
-    }
-  };
 }
