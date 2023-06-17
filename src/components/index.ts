@@ -1,3 +1,4 @@
+export { Accordion } from './Accordion';
 export { Backdrop } from './Backdrop';
 export { Card } from './Card';
 export { Carousel } from './Carousel';

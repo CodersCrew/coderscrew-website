@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
           </a>
         ))}
       </aside>
-      <ReactMarkdown className="markdown ml-auto py-10 md:w-1/2 md:bg-grey md:px-5">
+      <ReactMarkdown className="markdown ml-auto py-10 md:w-1/2 md:bg-grey/40 md:px-5">
         {matter(MarkdownFile).content}
       </ReactMarkdown>
     </SectionWrapper>
