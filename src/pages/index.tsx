@@ -5,6 +5,7 @@ import {
   Introduction,
   Opinions,
   Partnerships,
+  PressPack,
   Projects
 } from '@/containers';
 
@@ -17,6 +18,7 @@ const Index = () => (
     <Opinions />
     <HowWeWork />
     <Partnerships />
+    <PressPack />
   </div>
 );
 

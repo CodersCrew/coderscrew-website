@@ -50,5 +50,9 @@
     "tailwind-clip-path": "1.0.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/CodersCrew/coderscrew-website.git",
+  "author": "Damian <damian.gatkowski@proton.me>",
+  "license": "MIT"
 }

@@ -3,7 +3,7 @@ import Facebook from '@/assets/socials/facebook.svg';
 import Github from '@/assets/socials/github.svg';
 import Instagram from '@/assets/socials/instagram.svg';
 import LinkedIn from '@/assets/socials/linkedin.svg';
-import { Hexagon } from '@/components';
+import { Hexagon, Link } from '@/components';
 
 export const Footer = () => (
   <div className="mx-auto grid grid-flow-row gap-10 bg-primary px-15 py-10 text-additional-white md:px-30 lg:grid-cols-[170px,1fr,min-content] lg:gap-26">
@@ -34,7 +34,10 @@ export const Footer = () => (
       </div>
       <div className="flex flex-col items-center gap-4 md:items-stretch">
         <h3 className="text-xl font-bold md:text-base">Do pobrania</h3>
-        <p className="text-xl md:text-sm">Presspack</p>
+        {/* <p className="text-xl md:text-sm">Presspack</p> */}
+        <Link className="text-xl md:text-sm" variant="bare" href="/press">
+          Presspack
+        </Link>
         <p className="text-xl md:text-sm">Polityka prywatności</p>
       </div>
     </div>
