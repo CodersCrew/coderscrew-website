@@ -1,3 +1,5 @@
+import PressC from 'next/image';
+
 import Frame641 from '@/assets/pressPack/Frame641.png';
 import Frame641black from '@/assets/pressPack/Frame641black.png';
 import Frame761 from '@/assets/pressPack/Frame761black.png';
@@ -6,7 +8,7 @@ import { SectionWrapper } from '@/components';
 import { PressCard } from '@/components/PressCard';
 import { PressColors } from '@/components/PressColors';
 
-export const PressPack = () => (
+const PressPack = () => (
   <SectionWrapper className="grid items-center justify-center gap-18 overflow-hidden lg:grid-cols-[1fr,min-content]">
     <div className="flex flex-col gap-y-10">
       <div className="flex flex-col gap-4">
@@ -45,19 +47,19 @@ export const PressPack = () => (
       </div>
       <div className="flex flex-col gap-12 lg:flex-row">
         <PressColors
-          // div="bg-white"
+          //   div="bg-white"
           title="Biały"
           hex="hex: #ffffff"
           rgb="rgb: 255, 255, 255"
         />
         <PressColors
-          // div="bg-quaternary"
+          //   div="bg-white"
           title="Niebieski"
           hex="hex: #1a90ff"
           rgb="rgb: 26, 144, 255"
         />
         <PressColors
-          // div="bg-primary"
+          //   div="bg-white"
           title="Czarny"
           hex="hex: #292929"
           rgb="rgb: 41, 41, 41"
@@ -66,3 +68,5 @@ export const PressPack = () => (
     </div>
   </SectionWrapper>
 );
+
+export default PressPack;
