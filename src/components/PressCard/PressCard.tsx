@@ -1,6 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { ComponentProps } from 'react';
+
+// import Link from 'next/link';
+import { Link } from '@/components';
 
 type ImageProps = ComponentProps<typeof Image>;
 type HoverProps = {
@@ -11,11 +13,13 @@ type HoverProps = {
 type PressCardProps = ImageProps & HoverProps;
 
 export const PressCard = ({ title, link, alt, ...props }: PressCardProps) => (
-  <div className="relative flex cursor-pointer">
-    <Image {...props} alt={alt} />
-    <p className="mt-auto grow-0 self-stretch text-3xl font-bold leading-tight tracking-wide lg:text-2xl 2xl:text-3xl">
+  <div className="w-360 h-263 rounded-8 flex flex-col items-center justify-center gap-4 bg-white p-0 pb-8">
+    <Image {...props} alt={alt} className="w-full" />
+    <p className="w-112 font-lato leading-120 flex h-19 items-center justify-center text-2xl font-medium text-black">
       {title}
     </p>
-    <Link href={link}>Pobierz</Link>
+    <Link variant="filled" href={link}>
+      Pobierz
+    </Link>
   </div>
 );

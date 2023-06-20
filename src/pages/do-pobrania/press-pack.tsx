@@ -1,5 +1,3 @@
-import PressC from 'next/image';
-
 import Frame641 from '@/assets/pressPack/Frame641.png';
 import Frame641black from '@/assets/pressPack/Frame641black.png';
 import Frame761 from '@/assets/pressPack/Frame761black.png';
@@ -12,14 +10,16 @@ const PressPack = () => (
   <SectionWrapper className="grid items-center justify-center gap-18 overflow-hidden lg:grid-cols-[1fr,min-content]">
     <div className="flex flex-col gap-y-10">
       <div className="flex flex-col gap-4">
-        <h1>PressPack </h1>
+        <h1 className="mb-8 text-3.5xl font-bold leading-tight md:mb-25 md:text-5xl">
+          PressPack{' '}
+        </h1>
         <p className="text-center text-xl leading-normal">
           Tutaj możesz pobrać nasz logotyp w różnych wersjach, w zależności od
           potrzeb. Dołożyliśmy również oficjalne kolory wykorzystywane w
           komunikacji wizualnej naszego stowarzyszenia.
         </p>
       </div>
-      <div className="flex flex-col gap-12 lg:flex-row">
+      <div className="w-360 h-263 rounded-8 flex flex-col items-center justify-center gap-4 bg-white p-0 pb-8 md:flex-row">
         <PressCard
           src={Frame641}
           alt="Logo ciemne"
@@ -32,6 +32,8 @@ const PressPack = () => (
           title="Logo białe"
           link="#"
         />
+      </div>
+      <div className="w-360 h-263 rounded-8 flex flex-col items-center justify-center gap-4 bg-white p-0 pb-8 md:flex-row">
         <PressCard
           src={Frame761}
           alt="Logo czarne druk"
@@ -45,21 +47,21 @@ const PressPack = () => (
           link="#"
         />
       </div>
-      <div className="flex flex-col gap-12 lg:flex-row">
+      <div className="w-56 flex flex-col gap-12 lg:flex-row">
         <PressColors
-          //   div="bg-white"
+          div="bg-white"
           title="Biały"
           hex="hex: #ffffff"
           rgb="rgb: 255, 255, 255"
         />
         <PressColors
-          //   div="bg-white"
+          div="bg-quaternary"
           title="Niebieski"
           hex="hex: #1a90ff"
           rgb="rgb: 26, 144, 255"
         />
         <PressColors
-          //   div="bg-white"
+          div="bg-black"
           title="Czarny"
           hex="hex: #292929"
           rgb="rgb: 41, 41, 41"

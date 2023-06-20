@@ -1,15 +1,19 @@
 type PressColorsProps = {
+  div: string;
   title: string;
   hex: string;
   rgb: string;
 };
 
-export const PressColors = ({ title, hex, rgb }: PressColorsProps) => (
-  <div className="flex flex-col gap-y-10">
-    <div className="flex flex-col gap-y-10 rounded-lg"></div>
-    <p className="mt-auto grow-0 self-stretch text-3xl font-bold leading-tight tracking-wide lg:text-2xl 2xl:text-3xl">
-      {title}
-    </p>
+export const PressColors: React.FC<PressColorsProps> = ({
+  div,
+  title,
+  hex,
+  rgb
+}) => (
+  <div className="h-48 rounded-8 w-56 flex flex-col items-center gap-6 bg-white p-0 pb-8">
+    <div className={`h-20 rounded-lg	p-4 shadow-lg ${div}`}></div>
+    <p className="mb-2 text-xl font-semibold">{title}</p>
     <p className="text-transform: uppercase; text-base leading-normal text-primary">
       {hex}
     </p>
