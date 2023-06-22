@@ -7,14 +7,14 @@ import KtoMozeDolaczyc from '@/assets/markdown/faq/kto-moze-dolaczyc.md';
 import WJakichObszarach from '@/assets/markdown/faq/w-jakich-obszarach.md';
 import { AccordionContainer, SectionWrapper } from '@/components';
 
-const itemsMarkdownPart1 = [
+const itemsMarkdownCol1 = [
   KimJestescie,
   KtoMozeDolaczyc,
   JakDolaczyc,
   WJakichObszarach
 ];
 
-const itemsMarkdownPart2 = [
+const itemsMarkdownCol2 = [
   JakieSaKorzysci,
   CzegoSieSpodziewac,
   JakieSaObowiazki
@@ -29,8 +29,8 @@ const FAQ = () => (
       </p>
     </header>
     <div className="flex flex-col gap-6 xl:flex-row xl:gap-10">
-      <AccordionContainer items={itemsMarkdownPart1} />
-      <AccordionContainer items={itemsMarkdownPart2} />
+      <AccordionContainer items={itemsMarkdownCol1} />
+      <AccordionContainer items={itemsMarkdownCol2} />
     </div>
   </SectionWrapper>
 );
