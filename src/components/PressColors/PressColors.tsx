@@ -11,16 +11,22 @@ export const PressColors: React.FC<PressColorsProps> = ({
   hex,
   rgb
 }) => (
-  <div className="h-48 flex w-full flex-col bg-white p-0 pb-8">
-    <div className={`w-80 h-20 rounded-lg p-4 shadow-lg ${div}`}></div>
-    <div className="h-48 flex w-full flex-col items-center bg-white p-0 pb-8">
+  <div className="h-48 align-center flex w-[171px] flex-1 flex-col p-0 md:w-[222px]">
+    <div className="shadow-colorDiv">
+      <div
+        className={`w-56 md:w-72 h-20 rounded-lg p-4 shadow-2xl ${div} `}
+      ></div>
+    </div>
+    <div className="h-48 flex flex-col items-center p-0 pb-8">
       <p className="mb-2 p-4 text-xl font-semibold">{title}</p>
-      <p className="text-transform: uppercase; text-base leading-normal text-primary">
-        {hex}
-      </p>
-      <p className="text-transform: uppercase; text-base leading-normal text-primary">
-        {rgb}
-      </p>
+      <div className="text-transform: font-semibold uppercase">
+        <p className="text-transform: uppercase; text-base leading-normal text-primary">
+          {hex}
+        </p>
+        <p className="text-transform: uppercase; text-base leading-normal text-primary">
+          {rgb}
+        </p>
+      </div>
     </div>
   </div>
 );
