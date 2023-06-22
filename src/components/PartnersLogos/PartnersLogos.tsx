@@ -20,31 +20,28 @@ import UXMagazyn from '@/assets/partners/black/uxMagazyn.svg';
 import WomenInTechSummit from '@/assets/partners/black/womenInTechSummit.svg';
 import WUDWroclaw from '@/assets/partners/black/wudWroclaw.svg';
 
-export const PartnersLogos = () => {
-  const a = 'b';
-  return (
-    <div className="flex max-w-[1128px] flex-wrap items-center justify-around gap-x-5 gap-y-8 md:gap-x-15 md:gap-y-10 lg:gap-y-13">
-      <UXMagazyn />
-      <SemKRK />
-      <UserConf />
-      <DataScienceSummit />
-      <WUDWroclaw />
-      <Sekurak />
-      <TydzienProgramisty />
-      <JSPoland />
-      <Infoshare />
-      <KarieraIT />
-      <DigitalFestival />
-      <BigDataTechSummit />
-      <DesignWaysConf />
-      <DevelopersFestival />
-      <ILoveMarketing />
-      <Jobsora />
-      <WomenInTechSummit />
-      <GovtechFestival />
-      <ProjectManagementSession />
-      <HackYeah />
-      <LDI />
-    </div>
-  );
-};
+export const PartnersLogos = () => (
+  <div className="flex max-w-[1128px] flex-wrap items-center justify-around gap-x-5 gap-y-8 md:gap-x-15 md:gap-y-10 lg:gap-y-13">
+    <UXMagazyn />
+    <SemKRK />
+    <UserConf />
+    <DataScienceSummit />
+    <WUDWroclaw />
+    <Sekurak />
+    <TydzienProgramisty />
+    <JSPoland />
+    <Infoshare />
+    <KarieraIT />
+    <DigitalFestival />
+    <BigDataTechSummit />
+    <DesignWaysConf />
+    <DevelopersFestival />
+    <ILoveMarketing />
+    <Jobsora />
+    <WomenInTechSummit />
+    <GovtechFestival />
+    <ProjectManagementSession />
+    <HackYeah />
+    <LDI />
+  </div>
+);
