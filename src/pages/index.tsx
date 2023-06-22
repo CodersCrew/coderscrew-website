@@ -1,5 +1,6 @@
 import {
   About,
+  Guilds,
   HowWeWork,
   Introduction,
   Opinions,
@@ -11,11 +12,9 @@ const Index = () => (
   <div className="bg-additional-darkWhite">
     <Introduction />
     <About />
-    {/* <Guilds /> */}
+    <Guilds />
     <Projects />
-
     <Opinions />
-
     <HowWeWork />
     <Partnerships />
   </div>
