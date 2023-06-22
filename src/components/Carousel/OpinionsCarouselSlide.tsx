@@ -1,12 +1,15 @@
 import QuotationMark from '@/assets/quotationMark.svg';
 import { Hexagon } from '@/components/Hexagon';
 
-type CarouselSlideProps = {
+type OpinionsCarouselSlideProps = {
   content: string;
   author: string;
 };
 
-export const CarouselSlide = ({ content, author }: CarouselSlideProps) => (
+export const OpinionsCarouselSlide = ({
+  content,
+  author
+}: OpinionsCarouselSlideProps) => (
   <div className="flex h-[382px] w-[290px] flex-col items-center justify-between rounded-lg bg-white p-6 shadow-card md:h-[288px] md:w-[510px]">
     <Hexagon variant="opinion">
       <QuotationMark />

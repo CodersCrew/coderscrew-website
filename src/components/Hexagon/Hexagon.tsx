@@ -6,7 +6,8 @@ const variantBase = 'flex items-center justify-center';
 export const variants = {
   social: `${variantBase} h-13 w-13  bg-quaternary lg:h-10 lg:w-10`,
   opinion: `${variantBase} h-14 w-14 bg-linkWater`,
-  guild: `${variantBase} min-h-[74px] min-w-[78px] bg-white opacity-90`
+  guild: `${variantBase} min-h-[74px] min-w-[78px] bg-white opacity-90`,
+  partner: `${variantBase} h-[80px] w-[80px] bg-white`
 };
 
 type HexagonBaseProps = {
@@ -18,7 +19,7 @@ type HexagonBaseProps = {
 export const Hexagon = ({ className, children, variant }: HexagonBaseProps) => (
   <div
     className={twMerge(
-      'rotate-90 clip-path-hexPolygon',
+      'rotate-90 drop-shadow clip-path-hexPolygon',
       variant && variants[variant],
       className
     )}

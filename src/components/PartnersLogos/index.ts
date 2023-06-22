@@ -1,0 +1,1 @@
+export { PartnersLogos } from './PartnersLogos';
