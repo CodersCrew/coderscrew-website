@@ -84,7 +84,8 @@ module.exports = {
     extend: {
       boxShadow: {
         button: '6px 6px 17px rgba(0, 117, 255, 0.25)',
-        card: '17px 16px 33px rgba(0, 0, 0, 0.05)'
+        card: '17px 16px 33px rgba(0, 0, 0, 0.05)',
+        colorDiv: '0px 4px 16px rgba(0, 0, 0, 0.12);'
       },
       fontSize: {
         '3.5xl': '2rem'
