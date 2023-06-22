@@ -5,7 +5,7 @@ import JakieSaObowiazki from '@/assets/markdown/faq/jakie-sa-obowiazki.md';
 import KimJestescie from '@/assets/markdown/faq/kim-jestescie.md';
 import KtoMozeDolaczyc from '@/assets/markdown/faq/kto-moze-dolaczyc.md';
 import WJakichObszarach from '@/assets/markdown/faq/w-jakich-obszarach.md';
-import { Accordion, SectionWrapper } from '@/components';
+import { AccordionContainer, SectionWrapper } from '@/components';
 
 const itemsMarkdownPart1 = [
   KimJestescie,
@@ -29,8 +29,8 @@ const FAQ = () => (
       </p>
     </header>
     <div className="flex flex-col gap-6 xl:flex-row xl:gap-10">
-      <Accordion items={itemsMarkdownPart1} />
-      <Accordion items={itemsMarkdownPart2} />
+      <AccordionContainer items={itemsMarkdownPart1} />
+      <AccordionContainer items={itemsMarkdownPart2} />
     </div>
   </SectionWrapper>
 );
