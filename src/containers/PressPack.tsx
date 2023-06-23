@@ -45,7 +45,6 @@ export const PressPack = () => (
       </div>
       <div className="flex flex-col gap-12 lg:flex-row">
         <PressColors
-          // div="bg-white"
           title="Biały"
           hex="hex: #ffffff"
           rgb="rgb: 255, 255, 255"
