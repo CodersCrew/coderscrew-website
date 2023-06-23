@@ -50,7 +50,6 @@ export const PressPack = () => (
           rgb="rgb: 255, 255, 255"
         />
         <PressColors
-          // div="bg-quaternary"
           title="Niebieski"
           hex="hex: #1a90ff"
           rgb="rgb: 26, 144, 255"
