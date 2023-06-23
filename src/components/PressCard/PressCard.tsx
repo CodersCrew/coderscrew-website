@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { ComponentProps } from 'react';
 
-// import Link from 'next/link';
 import { Link } from '@/components';
 
 type ImageProps = ComponentProps<typeof Image>;
