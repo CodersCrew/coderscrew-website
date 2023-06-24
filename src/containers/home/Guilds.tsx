@@ -6,7 +6,7 @@ import WebDev from '@/assets/web-development.svg';
 import { GuildCard, Link, SectionWrapper, Separator } from '@/components';
 
 export const Guilds = () => (
-  <SectionWrapper className="relative flex flex-col items-center justify-center gap-8 overflow-hidden bg-primary text-lightGrey lg:grid lg:grid-cols-[3fr_2fr] lg:grid-rows-[180px_40px_180px_40px_180px_40px_180px_40px_180px] lg:gap-3">
+  <SectionWrapper className="relative flex max-w-none flex-col items-center  justify-center gap-8 overflow-hidden bg-primary text-lightGrey lg:grid lg:grid-cols-[3fr_2fr] lg:grid-rows-[180px_40px_180px_40px_180px_40px_180px_40px_180px] lg:gap-3">
     <section className="mb-8 flex max-w-[305px] flex-col justify-center gap-3 pt-10 text-left lg:col-start-1 lg:row-start-3 lg:ml-9 lg:max-w-[470px] lg:self-start lg:pt-0">
       <header className="text-3xl font-bold leading-tight opacity-90 lg:text-5xl lg:leading-[58px]">
         Wybierz ścieżkę rozwoju dla siebie
