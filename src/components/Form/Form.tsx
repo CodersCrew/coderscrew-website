@@ -23,12 +23,15 @@ export function Form() {
       <h2>Cześć!</h2>
       <h2>Cieszymy się, że chcesz zostać członkiem CodersCrew!</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
+        <label htmlFor="name">Imię i nazwisko</label>
         <input {...register('name', { required: true })} />
         {errors.name && <span>To pole jest wymagane</span>}
+        <label htmlFor="email">E-mail</label>
         <input {...register('email', { required: true })} />
         {errors.email && (
           <span>Błędny format e-mail (brak znaków specjalnych np. @, .)</span>
         )}
+        <label htmlFor="selectedDepartment">Dział, który Cię interesuje</label>
         <select name="selectedDepartment">
           <option value="webDevelopment">Web development</option>
           <option value="projectManagement">Project management</option>
@@ -36,11 +39,15 @@ export function Form() {
           <option value="uxUiDesign">UX/UI design</option>
           <option value="HumanResources">Human Resources</option>
         </select>
-        <textarea {...register('message', { required: true })} />
+        <label htmlFor="message">Wiadomość:</label>
+        <textarea
+          {...register('message', { required: true })}
+          placeholder="Parę słów o Tobie i Twoim doświadczeniu"
+        />
         {errors.message && <span>To pole jest wymagane</span>}
-        <input type="checkbox" name="privatePolicy" />
-        <p>
-          Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
+        <input
+          type="checkbox"
+          name="Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
           na przetwarzanie przez Stowarzyszenie CodersCrew z siedzibą we
           Wrocławiu, wpisane do rejestru stowarzyszeń Krajowego Rejestru
           Sądowego pod numerem KRS 0000744745 (dalej: “Stowarzyszenie”), w
@@ -49,11 +56,11 @@ export function Form() {
           wykorzystania w materiałach audio, audiowizualnych, fotograficznych
           lub na jakichkolwiek innych nośnikach, a także w mediach
           społecznościowych, portalach i na stronach internetowych
-          Stowarzyszenia do celów marketingowych (promocyjnych) Stowarzyszenia.
-        </p>
-        <input type="checkbox" name="dataProcessing" />
-        <p>
-          Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu danych
+          Stowarzyszenia do celów marketingowych (promocyjnych) Stowarzyszenia."
+        />
+        <input
+          type="checkbox"
+          name="Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu danych
           osobowych” zawartej w Polityce Prywatności, zawierającą m. in.
           informacje o szczegółowych celach przetwarzania moich danych
           osobowych, o podstawie prawnej ich przetwarzania, o danych
@@ -66,9 +73,9 @@ export function Form() {
           przysługuje mi prawo do cofnięcia zgody na przetwarzanie danych
           osobowych, a wycofanie zgody nie wpływa na zgodność z prawem
           przetwarzania, którego dokonano na podstawie zgody przed jej
-          wycofaniem.
-        </p>
-        <button>Wyślij wiadomość</button>
+          wycofaniem."
+        />
+        <input type="submit" value="Wyślij wiadomość" />
       </form>
     </>
   );
