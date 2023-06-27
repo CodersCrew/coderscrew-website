@@ -23,36 +23,45 @@ export function FormJoin() {
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="">
         <div className="mb-6 flex flex-col">
-          <label htmlFor="name" className="text-red-500 font-bold">
+          <label htmlFor="name" className="font-normal text-tetriary">
             Imię i nazwisko
           </label>
           <input
             type="text"
-            className="mb-3 w-2/5 rounded border px-4 py-3"
+            className="form-input mb-3 w-2/5 rounded-lg border-hidden bg-grey	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
             placeholder="Katarzyna Wolska"
             {...register('name', { required: true })}
           />
-          {errors.name && <span>To pole jest wymagane</span>}
+          {errors.name && (
+            <span className="text-marketing">To pole jest wymagane</span>
+          )}
         </div>
         <div className="mb-6 flex flex-col">
-          <label htmlFor="email">E-mail</label>
+          <label htmlFor="email" className="font-normal text-tetriary">
+            E-mail
+          </label>
           <input
             type="email"
-            className="mb-3 w-2/5 rounded border px-4 py-3"
+            className="form-input mb-3 w-2/5 rounded-lg border-hidden bg-grey	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
             placeholder="kasia.wolska22@gmail.com"
             {...register('email', { required: true })}
           />
           {errors.email && (
-            <span>Błędny format e-mail (brak znaków specjalnych np. @, .)</span>
+            <span className="text-marketing">
+              Błędny format e-mail (brak znaków specjalnych np. @, .)
+            </span>
           )}
         </div>
         <div className="mb-6 flex flex-col">
-          <label htmlFor="selectedDepartment">
+          <label
+            htmlFor="selectedDepartment"
+            className="font-normal text-tetriary"
+          >
             Dział, który Cię interesuje
           </label>
           <select
             placeholder="UX/UI Design"
-            className="mb-3 w-2/5 rounded border px-4 py-3"
+            className="form-input mb-3 w-2/5 rounded-lg border-hidden bg-grey	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
             name="selectedDepartment"
           >
             <option value="webDevelopment">Web development</option>
@@ -64,16 +73,23 @@ export function FormJoin() {
         </div>
       </div>
       <div className="mb-5 flex flex-col">
-        <label htmlFor="message">Wiadomość:</label>
+        <label htmlFor="message" className="font-normal text-tetriary">
+          Wiadomość:
+        </label>
         <textarea
-          className="mb-3 h-1/2 w-4/5 rounded border px-4 py-3"
+          className="form-input mb-3 block w-2/5 rounded-lg border-hidden	bg-grey p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
           {...register('message', { required: true })}
           placeholder="Parę słów o Tobie i Twoim doświadczeniu"
         />
-        {errors.message && <span>To pole jest wymagane</span>}
+        {errors.message && (
+          <span className="text-marketing">To pole jest wymagane</span>
+        )}
       </div>
       <div className="flex flex-row">
-        <input type="checkbox" className="text-pink-500 mr-10 rounded" />
+        <input
+          type="checkbox"
+          className="form-checkbox mr-10 rounded text-primary"
+        />
         <span className="mb-10 text-sm">
           Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
           na przetwarzanie przez Stowarzyszenie CodersCrew z siedzibą we
@@ -88,8 +104,11 @@ export function FormJoin() {
         </span>
       </div>
       <div className="flex flex-row">
-        <input type="checkbox" className="mr-10" />
-        <span className="mb-10 text-sm">
+        <input
+          type="checkbox"
+          className="form-checkbox mr-10 rounded text-primary"
+        />
+        <span className="mb-5 text-sm">
           Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu danych
           osobowych” zawartej w Polityce Prywatności, zawierającą m. in.
           informacje o szczegółowych celach przetwarzania moich danych
@@ -108,7 +127,7 @@ export function FormJoin() {
       </div>
       <input
         type="submit"
-        className="bg-sky-500 border-sky-500 gap-2.5 inline-flex h-11 w-[175px] items-start justify-center rounded border px-4 py-[12.50px]"
+        className="gap-2.5 value:text-tetriary value:text-white align-center inline-flex h-11 w-[175px] items-center rounded border border-quaternary bg-quaternary px-4 py-[12.50px]"
         value="Wyślij wiadomość"
       />
     </form>
