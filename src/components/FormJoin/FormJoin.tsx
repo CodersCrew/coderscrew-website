@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 type Inputs = {
@@ -8,7 +8,7 @@ type Inputs = {
   message: string;
 };
 
-export default function FormJoinUs() {
+export function FormJoin() {
   const {
     register,
     handleSubmit,
