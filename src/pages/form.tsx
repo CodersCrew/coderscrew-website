@@ -1,10 +1,17 @@
-import Koperta from 'assets/joinUs/Koperta.png';
-import Pinezka from 'assets/joinUs/Pinezka.png';
-import Zespol from 'assets/joinUs/Zespol.png';
+import confetti from 'assets/confetti.svg';
+import dialog from 'assets/dialog.svg';
+import eye from 'assets/eye.svg';
+import file from 'assets/file.svg';
+import Koperta from 'assets/Koperta.svg';
+import Pinezka from 'assets/pinezka.png';
+import thic from 'assets/thic.svg';
+import vector from 'assets/vector.svg';
+import Zespol from 'assets/zespol.svg';
 import Image from 'next/image';
 
 import { Hexagon } from '@/components';
 import { SectionWrapper } from '@/components';
+import { CardRecruitProcess } from '@/components/CardRecruitProcess';
 import { FormJoin } from '@/components/FormJoin';
 
 const Formular = () => (
