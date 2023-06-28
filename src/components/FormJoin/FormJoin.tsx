@@ -125,7 +125,7 @@ export function FormJoin() {
       </div>
       <input
         type="submit"
-        className="gap-2.5 value:text-white align-center inline-flex h-11 w-[175px] items-center rounded border border-quaternary bg-quaternary px-4 py-[12.50px]"
+        className="gap-2.5 value:text-white align-center inline-flex h-11 w-[175px] rounded border border-quaternary bg-quaternary bg-center px-4 py-[12.50px]"
         value="Wyślij wiadomość"
       />
     </form>

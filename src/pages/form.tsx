@@ -7,7 +7,6 @@ import Pinezka from 'assets/Pinezka.svg';
 import Thic from 'assets/thic.svg';
 import Vector from 'assets/vector.svg';
 import Zespol from 'assets/zespol.svg';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Hexagon } from '@/components';
@@ -61,23 +60,28 @@ const Formular = () => (
             </p>
           </div>
         </div>
+        <Hexagon />
         <div>
           <Hexagon />
         </div>
       </div>
     </section>
     <section className="w-full bg-grey">
-      <h1>Nasz proces rekrutacyjny</h1>
+      <h1 className="pb-4 text-3xl font-bold leading-10">
+        Nasz proces rekrutacyjny
+      </h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <img src="" alt="" />
-          <span>1. Wypełnienie formularza</span>
-          <p>
+          <File />
+          <span className="w-2/5 pb-4 text-2xl font-bold leading-10">
+            1. Wypełnienie formularza
+          </span>
+          <p className="w-2/5">
             Na początek poprosimy Cię o wypełnienie poniższego formularza.
             Zajmie Ci to maksymalnie 10 minut.
           </p>
         </div>
-        <img src="" alt="" />
+        <Eye />
         <div className="flex flex-col">
           <img src="" alt="" />
           <span>2. Rozpatrzenie zgłoszenia </span>
@@ -89,7 +93,7 @@ const Formular = () => (
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <img src="" alt="" />
+          <Dialog />
           <span>3. Rozmowa kwalifikacyjna</span>
           <p>
             Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
@@ -98,7 +102,7 @@ const Formular = () => (
         </div>
         <img src="" alt="" />
         <div className="flex flex-col">
-          <img src="" alt="" />
+          <Confetti />
           <span>4. Dołączenie do nas</span>
           <p>
             Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
