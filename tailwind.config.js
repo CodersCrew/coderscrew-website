@@ -17,6 +17,7 @@ module.exports = {
       ux: '#FA8A43',
       hr: '#AC6DE8',
       codersCamp: '#FEC43D',
+      formField: '#d6d3d1',
       black: '#000000',
       white: '#FFFFFF',
       grey: '#E0E0E0',

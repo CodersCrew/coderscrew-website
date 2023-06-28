@@ -28,8 +28,7 @@ export function FormJoin() {
           </label>
           <input
             type="text"
-            className="form-input mb-3 w-2/5 rounded-lg border-hidden bg-grey	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
-            placeholder="Katarzyna Wolska"
+            className="form-input mb-3 w-3/5 rounded-lg border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
             {...register('name', { required: true })}
           />
           {errors.name && (
@@ -42,8 +41,7 @@ export function FormJoin() {
           </label>
           <input
             type="email"
-            className="form-input mb-3 w-2/5 rounded-lg border-hidden bg-grey	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
-            placeholder="kasia.wolska22@gmail.com"
+            className="form-input mb-3 w-3/5 rounded-lg border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
             {...register('email', { required: true })}
           />
           {errors.email && (
@@ -61,7 +59,7 @@ export function FormJoin() {
           </label>
           <select
             placeholder="UX/UI Design"
-            className="form-input mb-3 w-2/5 rounded-lg border-hidden bg-grey	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
+            className="form-input mb-3 w-3/5 rounded-lg border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
             name="selectedDepartment"
           >
             <option value="webDevelopment">Web development</option>
@@ -77,7 +75,7 @@ export function FormJoin() {
           Wiadomość:
         </label>
         <textarea
-          className="form-input mb-3 block w-2/5 rounded-lg border-hidden	bg-grey p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
+          className="form-textarea mb-3 block h-[314px] w-3/5 rounded-lg border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
           {...register('message', { required: true })}
           placeholder="Parę słów o Tobie i Twoim doświadczeniu"
         />
@@ -88,7 +86,7 @@ export function FormJoin() {
       <div className="flex flex-row">
         <input
           type="checkbox"
-          className="form-checkbox mr-10 rounded text-primary"
+          className="form-checkbox mr-6 rounded text-primary"
         />
         <span className="mb-10 text-sm">
           Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
@@ -106,7 +104,7 @@ export function FormJoin() {
       <div className="flex flex-row">
         <input
           type="checkbox"
-          className="form-checkbox mr-10 rounded text-primary"
+          className="form-checkbox mr-6 rounded text-primary"
         />
         <span className="mb-5 text-sm">
           Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu danych
@@ -127,7 +125,7 @@ export function FormJoin() {
       </div>
       <input
         type="submit"
-        className="gap-2.5 value:text-tetriary value:text-white align-center inline-flex h-11 w-[175px] items-center rounded border border-quaternary bg-quaternary px-4 py-[12.50px]"
+        className="gap-2.5 value:text-white align-center inline-flex h-11 w-[175px] items-center rounded border border-quaternary bg-quaternary px-4 py-[12.50px]"
         value="Wyślij wiadomość"
       />
     </form>
