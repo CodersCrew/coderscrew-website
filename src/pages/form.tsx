@@ -1,13 +1,14 @@
-import confetti from 'assets/confetti.svg';
-import dialog from 'assets/dialog.svg';
-import eye from 'assets/eye.svg';
-import file from 'assets/file.svg';
+import Confetti from 'assets/confetti.svg';
+import Dialog from 'assets/dialog.svg';
+import Eye from 'assets/eye.svg';
+import File from 'assets/file.svg';
 import Koperta from 'assets/Koperta.svg';
-import Pinezka from 'assets/pinezka.png';
-import thic from 'assets/thic.svg';
-import vector from 'assets/vector.svg';
+import Pinezka from 'assets/Pinezka.svg';
+import Thic from 'assets/thic.svg';
+import Vector from 'assets/vector.svg';
 import Zespol from 'assets/zespol.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Hexagon } from '@/components';
 import { SectionWrapper } from '@/components';
@@ -17,30 +18,48 @@ import { FormJoin } from '@/components/FormJoin';
 const Formular = () => (
   <SectionWrapper className="flex flex-col">
     <section className="bg-white">
-      <h1 className="text-3xl font-bold leading-10">
+      <h1 className="w-3/5 pb-6 text-5xl font-bold leading-10">
         Rozpocznij z nami swoją przygodę w branży IT!
       </h1>
       <div className="flex flex-row">
-        <div className="flex flex-col">
+        <div className="flex w-1/4 flex-col pb-10">
           <p>
             Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
             portfolio z pewnością zawojujesz rynek pracy!
           </p>
-          <button className="border">Przejdź do formularza</button>
+          <div className="w-72 border-b-indigo-500 flex h-12 flex-row border">
+            <p>Przejdź do formularza</p>
+            <Vector />
+          </div>
         </div>
-        <div>
-          <Image src={Zespol} alt="Zespol" className="" />
+        <div className="flex flex-row items-start">
+          <Zespol />
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <h2>Dlaczego warto?</h2>
-          <p>Postawisz pierwsze kroki w IT</p>
-          <p>Wykorzystasz swój potencjał</p>
-          <p>
-            Będziesz uczestniczył w ambitnych projektach, które staną się
-            wspaniałym wpisem do Twojego CV
-          </p>
+          <h2 className="pb-6 text-5xl font-bold leading-10">
+            Dlaczego warto?
+          </h2>
+          <div className="flex flex-row">
+            <Thic />
+            <p className="pb-4 text-2xl font-bold leading-10">
+              Postawisz pierwsze kroki w IT
+            </p>
+          </div>
+          <div className="flex flex-row">
+            <Thic />
+            <p className="w-1/4 pb-4 text-2xl font-bold leading-10">
+              Wykorzystasz swój potencjał
+            </p>
+          </div>
+          <div className="flex flex-row">
+            <Thic />
+            <p className="w-1/4 pb-4 text-2xl font-bold leading-10">
+              Będziesz uczestniczył w ambitnych projektach, które staną się
+              wspaniałym wpisem do Twojego CV
+            </p>
+          </div>
         </div>
         <div>
           <Hexagon />
@@ -88,7 +107,7 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <div className="pb-10 text-2xl font-bold">
+    <div className="pb-10 pt-15 text-2xl font-bold">
       <h2>Cześć!</h2>
       <h2>Cieszymy się, że chcesz zostać członkiem CodersCrew!</h2>
     </div>
@@ -101,13 +120,13 @@ const Formular = () => (
           <h2 className="text-2xl font-bold">Masz pytania?</h2>
           <h2 className="pb-10 text-2xl font-bold">Skontaktuj się z nami!</h2>
           <div className="flex flex-row items-center pb-5 font-normal">
-            <Image src={Koperta} alt="Koperta" className="w-[38px]" />
+            <Koperta />
             <p className="pl-4 font-normal leading-normal">
               kontakt@coderscrew.pl
             </p>
           </div>
           <div className="flex flex-row items-center pb-5 font-normal">
-            <Image src={Pinezka} alt="Pinezka" className="w-[38px]" />
+            <Pinezka />
             <p className="pl-4 font-normal leading-normal">
               ul. Powstańców Śląskich 5, pokój 610, Wrocław
             </p>
