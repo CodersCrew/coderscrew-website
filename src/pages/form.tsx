@@ -94,13 +94,13 @@ const Formular = () => (
           <h2 className="text-2xl font-bold">Masz pytania?</h2>
           <h2 className="pb-10 text-2xl font-bold">Skontaktuj się z nami!</h2>
           <div className="flex flex-row items-center pb-5 font-normal">
-            <Image src={Koperta} alt="Koperta" className="h-[38px] w-[38px]" />
+            <Image src={Koperta} alt="Koperta" className="w-[38px]" />
             <p className="pl-4 font-normal leading-normal">
               kontakt@coderscrew.pl
             </p>
           </div>
           <div className="flex flex-row items-center pb-5 font-normal">
-            <Image src={Pinezka} alt="Pinezka" className="h-[38px] w-[34px]" />
+            <Image src={Pinezka} alt="Pinezka" className="w-[38px]" />
             <p className="pl-4 font-normal leading-normal">
               ul. Powstańców Śląskich 5, pokój 610, Wrocław
             </p>
