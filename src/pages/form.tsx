@@ -3,6 +3,7 @@ import Pinezka from 'assets/joinUs/Pinezka.png';
 import Zespol from 'assets/joinUs/Zespol.png';
 import Image from 'next/image';
 
+import { Hexagon } from '@/components';
 import { SectionWrapper } from '@/components';
 import { FormJoin } from '@/components/FormJoin';
 
@@ -24,14 +25,19 @@ const Formular = () => (
           <Image src={Zespol} alt="Zespol" className="" />
         </div>
       </div>
-      <div className="flex flex-col">
-        <h2>Dlaczego warto?</h2>
-        <p>Postawisz pierwsze kroki w IT</p>
-        <p>Wykorzystasz swój potencjał</p>
-        <p>
-          Będziesz uczestniczył w ambitnych projektach, które staną się
-          wspaniałym wpisem do Twojego CV
-        </p>
+      <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col">
+          <h2>Dlaczego warto?</h2>
+          <p>Postawisz pierwsze kroki w IT</p>
+          <p>Wykorzystasz swój potencjał</p>
+          <p>
+            Będziesz uczestniczył w ambitnych projektach, które staną się
+            wspaniałym wpisem do Twojego CV
+          </p>
+        </div>
+        <div>
+          <Hexagon />
+        </div>
       </div>
     </section>
     <section className="w-full bg-grey">
