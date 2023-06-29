@@ -19,7 +19,7 @@ const Formular = () => (
         Rozpocznij z nami swoją przygodę w branży IT!
       </h1>
       <div className="flex flex-row">
-        <div className="flex w-1/4 flex-col pb-10">
+        <div className="flex w-1/4 flex-col pb-10 text-2xl	">
           <p>
             Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
             portfolio z pewnością zawojujesz rynek pracy!
@@ -40,19 +40,19 @@ const Formular = () => (
           </h2>
           <div className="flex flex-row">
             <Thic />
-            <p className="pb-4 text-2xl font-bold leading-10">
+            <p className="pb-4 text-3.5xl font-bold leading-10">
               Postawisz pierwsze kroki w IT
             </p>
           </div>
           <div className="flex flex-row">
             <Thic />
-            <p className="w-1/4 pb-4 text-2xl font-bold leading-10">
+            <p className="w-1/4 pb-4 text-3.5xl font-bold leading-10">
               Wykorzystasz swój potencjał
             </p>
           </div>
           <div className="flex flex-row">
             <Thic />
-            <p className="w-1/4 pb-4 text-2xl font-bold leading-10">
+            <p className="w-1/4 pb-4 text-3.5xl font-bold leading-10">
               Będziesz uczestniczył w ambitnych projektach, które staną się
               wspaniałym wpisem do Twojego CV
             </p>
