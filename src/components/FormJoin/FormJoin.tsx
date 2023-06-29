@@ -108,7 +108,6 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-              value={checkboxAcceptPrivPolicy}
               onChange={e => setcheckboxAcceptPrivPolicy(e.target.checked)}
             />
             <span className="mb-10 text-sm">
@@ -129,7 +128,6 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-              value={checkboxReadRodoInfo}
               onChange={e => setcheckboxReadRodoInfo(e.target.checked)}
             />
             <span className="mb-5 text-sm">
