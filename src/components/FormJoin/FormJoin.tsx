@@ -20,7 +20,6 @@ export function FormJoin() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors }
   } = useForm<Inputs>();
 
@@ -29,8 +28,6 @@ export function FormJoin() {
     data.checkboxReadRodoInfo = checkboxReadRodoInfo;
     console.log(data);
   };
-
-  console.log(watch('name', 'message'));
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -159,13 +156,13 @@ export function FormJoin() {
             <h2 className="w-4/5 pb-10 pl-10 text-3.5xl font-bold">
               Skontaktuj się z nami!
             </h2>
-            <div className="flex flex-row items-center pb-5 pl-15 font-normal">
+            <div className="flex flex-row items-center pb-5 pl-10 font-normal">
               <Koperta />
               <p className="pl-4 font-normal leading-normal">
                 kontakt@coderscrew.pl
               </p>
             </div>
-            <div className="flex flex-row items-center pb-5 pl-15 font-normal">
+            <div className="flex flex-row items-center pb-5 pl-10 font-normal">
               <Pinezka />
               <p className="w-2/3 pl-4 font-normal leading-normal">
                 ul. Powstańców Śląskich 5, pokój 610, Wrocław
@@ -174,10 +171,10 @@ export function FormJoin() {
           </section>
         </aside>
       </main>
-      <div className="flex items-start justify-center leading-tight">
+      <div className="flex items-start justify-center pt-10 leading-tight">
         <input
           type="submit"
-          className="inline-flex h-11 w-[175px] items-start justify-center rounded border border-quaternary bg-quaternary bg-center px-4 py-[12.50px] leading-tight text-white"
+          className="inline-flex  h-11 w-[175px] items-start justify-center rounded border border-quaternary bg-quaternary bg-center px-4 py-[12.50px] leading-tight text-white"
           value="Wyślij wiadomość"
         />
       </div>
