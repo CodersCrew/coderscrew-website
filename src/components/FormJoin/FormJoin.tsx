@@ -151,18 +151,18 @@ export function FormJoin() {
         <aside className="flex w-1/2 flex-col">
           <section className="flex flex-col pb-10">
             <h2 className="pl-10 text-3.5xl font-bold">Masz pytania?</h2>
-            <h2 className="w-4/5 pb-10 pl-10 text-3.5xl font-bold">
+            <h2 className="pb-10 pl-10 text-3.5xl font-bold md:w-4/5">
               Skontaktuj się z nami!
             </h2>
-            <div className="flex flex-row items-center pb-5 pl-10 font-normal">
+            <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
               <Koperta />
-              <p className="pl-4 font-normal leading-normal">
-                kontakt@coderscrew.pl
+              <p className="font-normal leading-normal md:pl-4">
+                kontakt @ coderscrew.pl
               </p>
             </div>
-            <div className="flex flex-row items-center pb-5 pl-10 font-normal">
+            <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
               <Pinezka />
-              <p className="w-2/3 pl-4 font-normal leading-normal">
+              <p className="w-full font-normal leading-normal md:w-2/3 md:pl-4">
                 ul. Powstańców Śląskich 5, pokój 610, Wrocław
               </p>
             </div>

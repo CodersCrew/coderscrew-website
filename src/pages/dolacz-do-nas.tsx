@@ -76,14 +76,13 @@ const Formular = () => (
       </h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <File />
-          <span className="w-2/5 pb-4 text-2xl font-bold leading-10">
-            1. Wypełnienie formularza
-          </span>
-          <p className="w-2/5">
-            Na początek poprosimy Cię o wypełnienie poniższego formularza.
-            Zajmie Ci to maksymalnie 10 minut.
-          </p>
+          <CardRecruitProcess
+            src={File}
+            alt="File logo"
+            title="1. Wypełnienie formularza."
+            text="Na początek poprosimy Cię o wypełnienie poniższego formularza.
+            Zajmie Ci to maksymalnie 10 minut."
+          />
         </div>
         <Eye />
         <div className="flex flex-col">
