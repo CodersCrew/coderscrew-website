@@ -32,7 +32,8 @@ module.exports = {
       eerieBlack: '#1C1C1C',
       linkWater: '#D1E9FF',
       lightGrey: '#F5F5F5',
-      darkGrey: '#383838'
+      darkGrey: '#383838',
+      textGrey: '#6B7280',
     },
     spacing: {
       0: '0px',

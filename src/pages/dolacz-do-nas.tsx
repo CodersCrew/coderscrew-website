@@ -14,51 +14,57 @@ import { FormJoin } from '@/components/FormJoin';
 
 const Formular = () => (
   <SectionWrapper className="flex flex-col">
-    <section className="bg-white">
-      <h1 className="w-3/5 pb-6 text-5xl font-bold leading-10">
+    <section className="bg-white pb-36">
+      <h1 className="pb-6 text-5xl font-bold leading-normal md:w-3/5">
         Rozpocznij z nami swoją przygodę w branży IT!
       </h1>
       <div className="flex flex-row">
-        <div className="flex w-1/4 flex-col pb-10 text-2xl	">
-          <p>
+        <div className=" flex w-1/3 flex-col">
+          <p className="pb-12 text-2xl	font-bold leading-relaxed text-textGrey">
             Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
             portfolio z pewnością zawojujesz rynek pracy!
           </p>
-          <div className="w-72 border-b-indigo-500 flex h-12 flex-row border">
-            <p>Przejdź do formularza</p>
-            <Vector />
-          </div>
+          <Link href="#formular">
+            <div className=" itemjustify-end flex h-12 w-[196px] flex-row items-center border border-b-black border-e-white border-s-white border-t-white ">
+              <p className="pl-3">Przejdź do formularza</p>
+              <div className="pl-3">
+                <Vector />
+              </div>
+            </div>
+          </Link>
         </div>
         <div className="flex flex-row items-start">
           <Zespol />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex-col pt-15 md:flex-row">
         <div className="flex flex-col">
           <h2 className="pb-6 text-5xl font-bold leading-10">
             Dlaczego warto?
           </h2>
-          <div className="flex flex-row">
+          <div className="itemjustify-end flex flex-row items-center">
             <Thic />
-            <p className="pb-4 text-3.5xl font-bold leading-10">
+            <p className="-m-8 pb-6 text-3.5xl font-bold leading-10">
               Postawisz pierwsze kroki w IT
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="itemjustify-end flex flex-row items-center pb-5">
             <Thic />
-            <p className="w-1/4 pb-4 text-3.5xl font-bold leading-10">
+            <p className="-m-8 w-1/3 pb-10 text-3.5xl font-bold leading-10">
               Wykorzystasz swój potencjał
             </p>
           </div>
-          <div className="flex flex-row">
+          <div className="pb-48 flex flex-row">
             <Thic />
-            <p className="w-1/4 pb-4 text-3.5xl font-bold leading-10">
+            <p className="-m-8 w-1/3  text-3.5xl font-bold leading-10">
               Będziesz uczestniczył w ambitnych projektach, które staną się
               wspaniałym wpisem do Twojego CV
             </p>
           </div>
         </div>
-        <Hexagon />
+        <div>
+          <Hexagon />
+        </div>
         <div>
           <Hexagon />
         </div>
@@ -109,7 +115,7 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <div className="w-3/5 pb-10 pl-20 pt-15 text-3.5xl font-bold">
+    <div className="w-3/5 pb-10 pl-20 pt-15 text-3.5xl font-bold" id="formular">
       <h2>Cześć!</h2>
       <h2>Cieszymy się, że chcesz zostać członkiem CodersCrew!</h2>
     </div>
