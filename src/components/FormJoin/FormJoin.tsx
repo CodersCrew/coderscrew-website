@@ -1,6 +1,6 @@
-// import React from 'react';
 import Koperta from 'assets/Koperta.svg';
 import Pinezka from 'assets/Pinezka.svg';
+import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 type Inputs = {
@@ -8,9 +8,14 @@ type Inputs = {
   email: string;
   department: string;
   message: string;
+  checkbox1: boolean;
+  checkbox2: boolean;
 };
 
 export function FormJoin() {
+  const [checkbox1, setCheckbox1] = useState(false);
+  const [checkbox2, setCheckbox2] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -18,8 +23,13 @@ export function FormJoin() {
     formState: { errors }
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
-  console.log(watch('name'));
+  const onSubmit: SubmitHandler<Inputs> = data => {
+    data.checkbox1 = checkbox1;
+    data.checkbox2 = checkbox2;
+    console.log(data);
+  };
+
+  console.log(watch('name', 'message'));
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -100,6 +110,8 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
+              value={checkbox1}
+              onChange={e => setCheckbox1(e.target.checked)}
             />
             <span className="mb-10 text-sm">
               Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam
@@ -119,6 +131,8 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
+              value={checkbox2}
+              onChange={e => setCheckbox2(e.target.checked)}
             />
             <span className="mb-5 text-sm">
               Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu
