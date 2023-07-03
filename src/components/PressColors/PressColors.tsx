@@ -5,12 +5,12 @@ type PressColorsProps = {
   rgb: string;
 };
 
-export const PressColors: React.FC<PressColorsProps> = ({
+export const PressColors = ({
   div,
   title,
   hex,
   rgb
-}) => (
+}: PressColorsProps) => (
   <div className="h-48 align-center flex w-[171px] flex-1 flex-col p-0 md:w-[222px]">
     <div className="shadow-colorDiv">
       <div
