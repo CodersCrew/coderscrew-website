@@ -8,7 +8,7 @@ const variants = {
   filled:
     'font-bold border-2 border-quaternary bg-quaternary text-additional-white hover:border-webDev hover:bg-webDev hover:shadow-button',
   bare: 'font-semibold hover:underline',
-  footer: 'font-normal items-left hover:underline px-0 py-0 text-sm'
+  footer: 'font-normal items-left hover:underline p-0 text-sm'
 };
 
 type LinkProps = {
