@@ -3,7 +3,7 @@ import Facebook from '@/assets/socials/facebook.svg';
 import Github from '@/assets/socials/github.svg';
 import Instagram from '@/assets/socials/instagram.svg';
 import LinkedIn from '@/assets/socials/linkedin.svg';
-import { Hexagon } from '@/components';
+import { Hexagon, Link } from '@/components';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,20 +25,36 @@ export const Footer = () => {
       <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:items-stretch ">
         <div className="flex flex-col items-center gap-4 md:items-stretch">
           <h3 className="text-xl font-bold md:text-base">Poznaj nas</h3>
-          <p className="text-xl md:text-sm">Zespoły</p>
-          <p className="text-xl md:text-sm">Partnerzy</p>
-          <p className="text-xl md:text-sm">Projekty</p>
-          <p className="text-xl md:text-sm">FAQ</p>
+          <Link variant="footer" href="/zespoly">
+            Zespoły
+          </Link>
+          <Link variant="footer" href="/partnerzy">
+            Partnerzy
+          </Link>
+          <Link variant="footer" href="/projekty">
+            Projekty
+          </Link>
+          <Link variant="footer" href="/faq">
+            FAQ
+          </Link>
         </div>
         <div className="flex flex-col items-center gap-4 md:items-stretch">
           <h3 className="text-xl font-bold md:text-base">Działajmy razem</h3>
-          <p className="text-xl md:text-sm">Współpraca</p>
-          <p className="text-xl md:text-sm">Dołącz do nas</p>
+          <Link variant="footer" href="/wspolpraca">
+            Współpraca
+          </Link>
+          <Link variant="footer" href="/dolacz-do-nas">
+            Dołącz do nas
+          </Link>
         </div>
         <div className="flex flex-col items-center gap-4 md:items-stretch">
           <h3 className="text-xl font-bold md:text-base">Do pobrania</h3>
-          <p className="text-xl md:text-sm">Presspack</p>
-          <p className="text-xl md:text-sm">Polityka prywatności</p>
+          <Link variant="footer" href="/do-pobrania/presspack">
+            Presspack
+          </Link>
+          <Link variant="footer" href="/polityka-prywatnosci">
+            Polityka prywatności
+          </Link>
         </div>
       </div>
       <div className="flex flex-col items-center justify-between gap-y-8 lg:items-end">
