@@ -1,10 +1,11 @@
-import Frame641 from '@/assets/pressPack/Frame641.png';
-import Frame641black from '@/assets/pressPack/Frame641black.png';
-import Frame761 from '@/assets/pressPack/Frame761.png';
-import Frame761black from '@/assets/pressPack/Frame761black.png';
+import LogotypBiały from '@/assets/pressPack/logotypBiały.png';
+import LogotypBiałyDruk from '@/assets/pressPack/logotypBiałyDruk.png';
+import LogotypCiemny from '@/assets/pressPack/logotypCiemny.png';
+import LogotypCzarnyDruk from '@/assets/pressPack/logotypCzarnyDruk.png';
 import { SectionWrapper } from '@/components';
 import { PressCard } from '@/components/PressCard';
 import { PressColors } from '@/components/PressColors';
+import { hexToRGB } from '@/components/PressColors/colorUtils';
 
 const PressPack = () => (
   <SectionWrapper className="grid items-center overflow-hidden ">
@@ -24,13 +25,13 @@ const PressPack = () => (
           <h2 className="mb-4 items-center text-2xl font-bold">Logo</h2>
           <div className="w-360 rounded-8 flex flex-col items-center justify-center gap-2 p-0 pb-8 md:flex-row">
             <PressCard
-              src={Frame641}
+              src={LogotypCiemny}
               alt="Logotyp ciemny"
               title="Logotyp ciemny"
               link="#"
             />
             <PressCard
-              src={Frame641black}
+              src={LogotypBiały}
               alt="Logotyp biały"
               title="Logotyp biały"
               link="#"
@@ -38,13 +39,13 @@ const PressPack = () => (
           </div>
           <div className="w-360 rounded-8 flex flex-col items-center justify-center gap-2 p-0 pb-20 md:flex-row">
             <PressCard
-              src={Frame761}
+              src={LogotypCzarnyDruk}
               alt="Logotyp czarny druk"
               title="Logotyp czarny druk"
               link="#"
             />
             <PressCard
-              src={Frame761black}
+              src={LogotypBiałyDruk}
               alt="Logotyp biały druk"
               title="Logotyp biały druk"
               link="#"
@@ -57,22 +58,19 @@ const PressPack = () => (
             <div className="align-center flex	flex-col items-center gap-10 ">
               <div className=" flex flex-col gap-10 p-4 md:flex-row">
                 <PressColors
-                  div="bg-white"
+                  color={`rgb(${hexToRGB('#ffffff')})`}
                   title="Biały"
-                  hex="hex: #ffffff"
-                  rgb="rgb: 255, 255, 255"
+                  hex="#ffffff"
                 />
                 <PressColors
-                  div="bg-quaternary"
+                  color={`rgb(${hexToRGB('#1a90ff')})`}
                   title="Niebieski"
-                  hex="hex: #1a90ff"
-                  rgb="rgb: 26, 144, 255"
+                  hex="#1a90ff"
                 />
                 <PressColors
-                  div="bg-black"
+                  color={`rgb(${hexToRGB('#292929')})`}
                   title="Czarny"
-                  hex="hex: #292929"
-                  rgb="rgb: 41, 41, 41"
+                  hex="#292929"
                 />
               </div>
             </div>
