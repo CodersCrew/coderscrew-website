@@ -10,3 +10,33 @@
     @apply scroll-smooth;
   }
 }
+
+@layer components {
+  .markdown {
+    @apply whitespace-pre-wrap;
+  }
+
+  .markdown h1 {
+    @apply text-2xl font-bold md:text-3.5xl;
+  }
+
+  .markdown h2 {
+    @apply text-2xl font-bold;
+  }
+
+  .markdown h3 {
+    @apply text-xl;
+  }
+
+  .markdown p {
+    @apply text-xl;
+  }
+
+  .faq ul {
+    @apply flex list-outside list-disc flex-col gap-2 pl-5;
+  }
+
+  .faq a {
+    @apply text-quaternary;
+  }
+}

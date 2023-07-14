@@ -1,14 +1,14 @@
-import Accesto from '@/assets/partners/accesto.svg';
-import BetterSoftware from '@/assets/partners/betterSoftware.svg';
-import ChallengeRocket from '@/assets/partners/challengeRocket.svg';
-import Deviniti from '@/assets/partners/deviniti.svg';
-import Divante from '@/assets/partners/divante.svg';
-import FourSoft from '@/assets/partners/fourSoft.svg';
-import Freshmail from '@/assets/partners/freshmail.svg';
-import LiveChat from '@/assets/partners/liveChat.svg';
-import Rst from '@/assets/partners/rst.svg';
-import Vm from '@/assets/partners/vm.svg';
-import Zaven from '@/assets/partners/zaven.svg';
+import Accesto from '@/assets/partners/white/accesto.svg';
+import BetterSoftware from '@/assets/partners/white/betterSoftware.svg';
+import ChallengeRocket from '@/assets/partners/white/challengeRocket.svg';
+import Deviniti from '@/assets/partners/white/deviniti.svg';
+import Divante from '@/assets/partners/white/divante.svg';
+import FourSoft from '@/assets/partners/white/fourSoft.svg';
+import Freshmail from '@/assets/partners/white/freshmail.svg';
+import LiveChat from '@/assets/partners/white/liveChat.svg';
+import Rst from '@/assets/partners/white/rst.svg';
+import Vm from '@/assets/partners/white/vm.svg';
+import Zaven from '@/assets/partners/white/zaven.svg';
 import { Hexagon, Link } from '@/components';
 
 export const Partnerships = () => (

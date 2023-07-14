@@ -19,6 +19,7 @@ module.exports = {
       codersCamp: '#FEC43D',
       black: '#000000',
       white: '#FFFFFF',
+      grey: '#E0E0E0',
       darkWhite: '#FAFAFA',
       dotIndicator: '#666666',
       additional: {
