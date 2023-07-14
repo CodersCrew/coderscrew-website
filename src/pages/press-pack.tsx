@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { SectionWrapper } from '@/components';
 import { PressCard } from '@/components/PressCard';
 import { PressColors } from '@/components/PressColors';
