@@ -1,7 +1,5 @@
-import LogotypBiały from '@/assets/pressPack/logotypBiały.png';
-import LogotypBiałyDruk from '@/assets/pressPack/logotypBiałyDruk.png';
-import LogotypCiemny from '@/assets/pressPack/logotypCiemny.png';
-import LogotypCzarnyDruk from '@/assets/pressPack/logotypCzarnyDruk.png';
+import React from 'react';
+
 import { SectionWrapper } from '@/components';
 import { PressCard } from '@/components/PressCard';
 import { PressColors } from '@/components/PressColors';
@@ -25,30 +23,26 @@ const PressPack = () => (
           <h2 className="mb-4 items-center text-2xl font-bold">Logo</h2>
           <div className="w-360 rounded-8 flex flex-col items-center justify-center gap-2 p-0 pb-8 md:flex-row">
             <PressCard
-              src={LogotypCiemny}
+              src="/pressPack/logotypCiemny.png"
               alt="Logotyp ciemny"
               title="Logotyp ciemny"
-              link="#"
             />
             <PressCard
-              src={LogotypBiały}
+              src="/pressPack/logotypBiały.png"
               alt="Logotyp biały"
               title="Logotyp biały"
-              link="#"
             />
           </div>
           <div className="w-360 rounded-8 flex flex-col items-center justify-center gap-2 p-0 pb-20 md:flex-row">
             <PressCard
-              src={LogotypCzarnyDruk}
+              src="/pressPack/logotypCzarnyDruk.png"
               alt="Logotyp czarny druk"
               title="Logotyp czarny druk"
-              link="#"
             />
             <PressCard
-              src={LogotypBiałyDruk}
+              src="/pressPack/logotypBiałyDruk.png"
               alt="Logotyp biały druk"
               title="Logotyp biały druk"
-              link="#"
             />
           </div>
           <div className="flex max-w-6xl flex-col">
