@@ -1,7 +1,5 @@
 import Logo from '@/assets/logoWhite.svg';
-import Facebook from '@/assets/socials/facebook.svg';
 import Github from '@/assets/socials/github.svg';
-import Instagram from '@/assets/socials/instagram.svg';
 import LinkedIn from '@/assets/socials/linkedin.svg';
 import { Hexagon, Link } from '@/components';
 
@@ -25,13 +23,10 @@ export const Footer = () => {
       <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:items-stretch ">
         <div className="flex flex-col items-center gap-4 md:items-stretch">
           <h3 className="text-xl font-bold md:text-base">Poznaj nas</h3>
-          <Link variant="footer" href="/zespoly">
+          <Link variant="footer" href="#guilds">
             Zespoły
           </Link>
-          <Link variant="footer" href="/partnerzy">
-            Partnerzy
-          </Link>
-          <Link variant="footer" href="/projekty">
+          <Link variant="footer" href="#projects">
             Projekty
           </Link>
           <Link variant="footer" href="/faq">
@@ -40,7 +35,7 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col items-center gap-4 md:items-stretch">
           <h3 className="text-xl font-bold md:text-base">Działajmy razem</h3>
-          <Link variant="footer" href="/wspolpraca">
+          <Link variant="footer" href="/partnerzy">
             Współpraca
           </Link>
           <Link variant="footer" href="/dolacz-do-nas">
@@ -59,22 +54,20 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col items-center justify-between gap-y-8 lg:items-end">
         <div className="flex gap-2">
-          <a href="#" className="transition-transform hover:scale-105">
-            <Hexagon variant="social">
-              <Facebook className="scale-75" />
-            </Hexagon>
-          </a>
-          <a href="#" className="transition-transform hover:scale-105">
-            <Hexagon variant="social">
-              <Instagram className="scale-75" />
-            </Hexagon>
-          </a>
-          <a href="#" className="transition-transform hover:scale-105">
+          <a
+            href="https://www.linkedin.com/company/coderscrew/"
+            target="_blank"
+            className="transition-transform hover:scale-105"
+          >
             <Hexagon variant="social">
               <LinkedIn className="relative right-[2px] scale-75" />
             </Hexagon>
           </a>
-          <a href="#" className="transition-transform hover:scale-105">
+          <a
+            href="https://github.com/CodersCrew"
+            target="_blank"
+            className="transition-transform hover:scale-105"
+          >
             <Hexagon variant="social">
               <Github className="scale-75" />
             </Hexagon>
