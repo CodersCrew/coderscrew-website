@@ -27,11 +27,7 @@ const PartnersProfits = () => (
         description="Nie masz czasu na organizację własnego kursu, webinaru lub innego wydarzenia rozowjowego? Chętnie w tym pomożemy, na każdym etapie."
       />
     </div>
-    <Link
-      variant="outlined"
-      href="#zapraszamy-do-kontaktu"
-      className="m-auto mt-6"
-    >
+    <Link variant="outlined" href="#zapraszamy" className="m-auto mt-6">
       Zostań partnerem
     </Link>
   </SectionWrapper>
