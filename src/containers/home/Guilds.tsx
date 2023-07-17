@@ -63,7 +63,7 @@ export const Guilds = () => (
       modalHexagonsColor="bg-hr"
     />
     <div className="mb-10 mt-10 h-11 lg:col-start-1 lg:row-start-5 lg:my-0 lg:ml-9 lg:mt-10 lg:self-center">
-      <Link href="#" variant="filled" className="w-[175px]">
+      <Link href="/rekrutacja" variant="filled" className="w-[175px]">
         Dołącz do nas
       </Link>
     </div>
