@@ -23,11 +23,9 @@ export const PressColors = ({ color, title, hex }: PressColorsProps) => {
           <p className="uppercase text-base leading-normal text-primary">
             hex: {hex}
           </p>
-          {rgb && (
-            <p className="text-transform: uppercase; text-base leading-normal text-primary">
+            <p className="uppercase text-base leading-normal text-primary">
               rgb: {rgb}
             </p>
-          )}
         </div>
       </div>
     </div>
