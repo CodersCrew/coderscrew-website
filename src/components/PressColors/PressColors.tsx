@@ -13,7 +13,7 @@ export const PressColors = ({ color, title, hex }: PressColorsProps) => {
     <div className="h-48 align-center flex w-[171px] flex-1 flex-col p-0 md:w-[222px]">
       <div className="shadow-lg">
         <div
-          className={`w-56 md:w-72 h-20 rounded-lg p-4 shadow-2xl`}
+          className="w-56 md:w-72 h-20 rounded-lg p-4 shadow-2xl"
           style={{ backgroundColor: color }}
         ></div>
       </div>
