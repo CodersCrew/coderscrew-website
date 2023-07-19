@@ -19,8 +19,8 @@ export const PressColors = ({ color, title, hex }: PressColorsProps) => {
       </div>
       <div className="h-48 flex flex-col items-center p-0 pb-8">
         <p className="mb-2 p-4 text-xl font-semibold">{title}</p>
-        <div className="text-transform: font-semibold uppercase">
-          <p className="text-transform: uppercase; text-base leading-normal text-primary">
+        <div className="font-semibold uppercase">
+          <p className="uppercase text-base leading-normal text-primary">
             hex: {hex}
           </p>
           {rgb && (
