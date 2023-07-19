@@ -1,7 +1,7 @@
 import { hexToRGB } from '../../utils/colorUtils';
 
 type PressColorsProps = {
-  color: any;
+  color: string;
   title: string;
   hex: string;
 };
@@ -20,12 +20,12 @@ export const PressColors = ({ color, title, hex }: PressColorsProps) => {
       <div className="h-48 flex flex-col items-center p-0 pb-8">
         <p className="mb-2 p-4 text-xl font-semibold">{title}</p>
         <div className="font-semibold uppercase">
-          <p className="uppercase text-base leading-normal text-primary">
+          <p className="text-base uppercase leading-normal text-primary">
             hex: {hex}
           </p>
-            <p className="uppercase text-base leading-normal text-primary">
-              rgb: {rgb}
-            </p>
+          <p className="text-base uppercase leading-normal text-primary">
+            rgb: {rgb}
+          </p>
         </div>
       </div>
     </div>

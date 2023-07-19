@@ -3,6 +3,12 @@ import { PressCard } from '@/components/PressCard';
 import { PressColors } from '@/components/PressColors';
 import { hexToRGB } from '@/utils/colorUtils';
 
+const colorData = [
+  { title: 'Biały', hex: '#ffffff' },
+  { title: 'Niebieski', hex: '#1a90ff' },
+  { title: 'Czarny', hex: '#292929' }
+];
+
 const PressPack = () => (
   <SectionWrapper className="grid items-center overflow-hidden ">
     <div className="flex flex-col gap-y-10">
@@ -49,20 +55,14 @@ const PressPack = () => (
             </h2>
             <div className="align-center flex	flex-col items-center gap-10 ">
               <div className=" flex flex-col gap-10 p-4 md:flex-row">
-                <PressColors
-                  title="Biały"
-                  hex="#ffffff"
-                />
-                <PressColors
-                  color={`rgb(${hexToRGB('#1a90ff')})`}
-                  title="Niebieski"
-                  hex="#1a90ff"
-                />
-                <PressColors
-                  color={`rgb(${hexToRGB('#292929')})`}
-                  title="Czarny"
-                  hex="#292929"
-                />
+                {colorData.map(({ title, hex }) => (
+                  <PressColors
+                    key={hex}
+                    color={`rgb(${hexToRGB(hex)})`}
+                    title={title}
+                    hex={hex}
+                  />
+                ))}
               </div>
             </div>
           </div>
