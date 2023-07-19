@@ -20,7 +20,7 @@ const PressPack = () => (
       </div>
       <div className="align-center flex flex-col items-center">
         <div className="items-left flex max-w-3xl flex-col justify-center">
-          <h2 className="mb-4 items-center text-2xl font-bold">Logo</h2>
+          <h2 className="mb-4 ml-3 items-center text-2xl md:font-bold">Logo</h2>
           <div className="w-360 rounded-8 flex flex-col items-center justify-center gap-2 p-0 pb-8 md:flex-row">
             <PressCard
               src="/pressPack/logotypCiemny.png"
