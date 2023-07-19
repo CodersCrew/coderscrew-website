@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { SectionWrapper } from '@/components';
 import { PressCard } from '@/components/PressCard';
 import { PressColors } from '@/components/PressColors';
@@ -52,7 +50,6 @@ const PressPack = () => (
             <div className="align-center flex	flex-col items-center gap-10 ">
               <div className=" flex flex-col gap-10 p-4 md:flex-row">
                 <PressColors
-                  color={`rgb(${hexToRGB('#ffffff')})`}
                   title="Biały"
                   hex="#ffffff"
                 />
