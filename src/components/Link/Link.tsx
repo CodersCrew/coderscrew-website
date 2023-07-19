@@ -25,7 +25,7 @@ export const Link = ({
   className,
   ...props
 }: LinkProps) => (
-  <NextLink href={href} passHref>
+  <NextLink href={href} passHref scroll={false}>
     <span
       className={twMerge(
         'flex w-max items-center justify-center rounded-lg px-6 py-3 text-base leading-tight transition-colors duration-200',
