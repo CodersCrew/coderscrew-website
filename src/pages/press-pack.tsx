@@ -3,7 +3,7 @@ import React from 'react';
 import { SectionWrapper } from '@/components';
 import { PressCard } from '@/components/PressCard';
 import { PressColors } from '@/components/PressColors';
-import { hexToRGB } from '@/components/PressColors/colorUtils';
+import { hexToRGB } from '@/utils/colorUtils';
 
 const PressPack = () => (
   <SectionWrapper className="grid items-center overflow-hidden ">

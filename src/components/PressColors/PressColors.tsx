@@ -1,4 +1,4 @@
-import { hexToRGB } from '../PressColors/colorUtils';
+import { hexToRGB } from '../../utils/colorUtils';
 
 type PressColorsProps = {
   color: any;
