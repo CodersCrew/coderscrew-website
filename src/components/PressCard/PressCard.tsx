@@ -16,7 +16,7 @@ export const PressCard = ({ title, alt, src }: PressCardProps) => (
       <a
         href={src}
         download
-        className="h-11 w-24 rounded-lg border-quaternary bg-quaternary px-6 py-3 text-center text-base font-bold leading-tight text-additional-white hover:border-webDev hover:bg-webDev hover:shadow-button"
+        className="h-11 rounded-lg border-quaternary bg-quaternary px-6 py-3 text-center text-base font-bold leading-tight text-additional-white hover:border-webDev hover:bg-webDev hover:shadow-button"
       >
         Pobierz
       </a>
