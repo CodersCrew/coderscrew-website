@@ -84,33 +84,34 @@ const Formular = () => (
             Zajmie Ci to maksymalnie 10 minut."
           />
         </div>
-        <Eye />
         <div className="flex flex-col">
-          <img src="" alt="" />
-          <span>2. Rozpatrzenie zgłoszenia </span>
-          <p>
-            Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
-            odpowiadają naszym aktualnym potrzebom.
-          </p>
+          <CardRecruitProcess
+            src={File}
+            alt="File logo"
+            title="2. Rozpatrzenie zgłoszenia"
+            text="Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
+            odpowiadają naszym aktualnym potrzebom."
+          />
         </div>
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <Dialog />
-          <span>3. Rozmowa kwalifikacyjna</span>
-          <p>
-            Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
-            Odpowiemy także na wszystkie pytania, jakie Ci się nasuną.{' '}
-          </p>
+          <CardRecruitProcess
+            src={File}
+            alt="File logo"
+            title="3. Rozmowa kwalifikacyjna"
+            text="Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
+            Odpowiemy także na wszystkie pytania, jakie Ci się nasuną."
+          />
         </div>
-        <img src="" alt="" />
         <div className="flex flex-col">
-          <Confetti />
-          <span>4. Dołączenie do nas</span>
-          <p>
-            Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
-            możemy razem zmieniać świat na lepsze!
-          </p>
+          <CardRecruitProcess
+            src={File}
+            alt="File logo"
+            title="4. Dołączenie do nas"
+            text="Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
+            możemy razem zmieniać świat na lepsze!"
+          />
         </div>
       </div>
     </section>
