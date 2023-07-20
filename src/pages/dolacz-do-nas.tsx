@@ -86,7 +86,7 @@ const Formular = () => (
         </div>
         <div className="flex flex-col">
           <CardRecruitProcess
-            src={File}
+            src={Eye}
             alt="File logo"
             title="2. Rozpatrzenie zgłoszenia"
             text="Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
@@ -97,7 +97,7 @@ const Formular = () => (
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <CardRecruitProcess
-            src={File}
+            src={Dialog}
             alt="File logo"
             title="3. Rozmowa kwalifikacyjna"
             text="Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
@@ -106,7 +106,7 @@ const Formular = () => (
         </div>
         <div className="flex flex-col">
           <CardRecruitProcess
-            src={File}
+            src={Confetti}
             alt="File logo"
             title="4. Dołączenie do nas"
             text="Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
