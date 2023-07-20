@@ -15,7 +15,7 @@ import { FormJoin } from '@/components/FormJoin';
 const Formular = () => (
   <SectionWrapper className="flex flex-col">
     <section className="bg-white pb-36">
-      <h1 className="pb-6 text-5xl font-bold leading-normal md:w-3/5">
+      <h1 className="relative pb-6 text-5xl font-bold leading-normal md:w-4/6">
         Rozpocznij z nami swoją przygodę w branży IT!
       </h1>
       <div className="flex flex-row">
@@ -70,7 +70,7 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <section className="w-full bg-grey">
+    <section className="w-full	bg-lightGrey">
       <h1 className="pb-4 text-3xl font-bold leading-10">
         Nasz proces rekrutacyjny
       </h1>
@@ -114,7 +114,10 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <div className="w-3/5 pb-10 pl-20 pt-15 text-3.5xl font-bold" id="formular">
+    <div
+      className="w-3/5 pb-10 pl-20 pt-15 text-3.5xl font-bold leading-tight"
+      id="formular"
+    >
       <h2>Cześć!</h2>
       <h2>Cieszymy się, że chcesz zostać członkiem CodersCrew!</h2>
     </div>

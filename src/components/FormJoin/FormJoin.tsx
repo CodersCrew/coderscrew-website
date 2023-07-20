@@ -43,7 +43,7 @@ export function FormJoin() {
               </label>
               <input
                 type="text"
-                className="form-input mb-3 w-3/5 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
+                className="form-input mb-3 w-4/6 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
                 {...register('name', { required: true })}
               />
               {errors.name && (
@@ -59,7 +59,7 @@ export function FormJoin() {
               </label>
               <input
                 type="email"
-                className="form-input mb-3 w-3/5 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
+                className="form-input mb-3 w-4/6 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
                 {...register('email', { required: true })}
               />
               {errors.email && (
@@ -77,7 +77,7 @@ export function FormJoin() {
               </label>
               <select
                 placeholder="Wybierz z listy"
-                className="form-input mb-3 w-3/5 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
+                className="form-input mb-3 w-4/6 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
                 {...register('department')}
               >
                 <option value="webDevelopment">Web development</option>
@@ -96,7 +96,7 @@ export function FormJoin() {
               Wiadomość:
             </label>
             <textarea
-              className="form-textarea mb-3 block h-[314px] w-3/5 rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
+              className="form-textarea mb-3 block h-[314px] w-4/6 rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
               {...register('message', { required: true })}
               placeholder="Parę słów o Tobie i Twoim doświadczeniu"
             />
