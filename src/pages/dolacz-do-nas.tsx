@@ -1,16 +1,16 @@
 // import Confetti from 'assets/confetti.svg';
 // import Dialog from 'assets/dialog.svg';
 // import Eye from 'assets/eye.svg';
-// import File from 'assets/file.svg';
 import Link from 'next/link';
 
+import File from '/public/joinUs/thic.svg';
 import Thic from '/public/joinUs/thic.svg';
 import Vector from '/public/joinUs/vector.svg';
 import Zespol from '/public/joinUs/zespol.svg';
-import { Hexagon } from '@/components';
 import { SectionWrapper } from '@/components';
 import { CardRecruitProcess } from '@/components/CardRecruitProcess';
 import { FormJoin } from '@/components/FormJoin';
+import { Hexagon } from '@/components/Hexagon';
 
 const Formular = () => (
   <SectionWrapper className="flex flex-col">
@@ -77,7 +77,7 @@ const Formular = () => (
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <CardRecruitProcess
-            src="/public/joinUs/handArrow1.svg"
+            src={File}
             alt="File logo"
             title="1. Wypełnienie formularza."
             text="Na początek poprosimy Cię o wypełnienie poniższego formularza.

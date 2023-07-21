@@ -1,23 +1,23 @@
 import Image from 'next/image';
-import { ComponentProps } from 'react';
 
-type ImageProps = ComponentProps<typeof Image>;
-type CardRecrutProps = {
+// type ImageProps = ComponentProps<typeof Image>;
+type CardRecruitProps = {
   title: string;
   text: string;
   src: string;
+  alt: string;
 };
 
-type ImageCardProps = ImageProps & CardRecrutProps;
+// type ImageCardProps = ImageProps & CardRecrutProps;
 
 export const CardRecruitProcess = ({
   title,
   text,
   src,
   alt
-}: ImageCardProps) => (
+}: CardRecruitProps) => (
   <div className="flex h-[347px] w-[456px] flex-col py-[27px]">
-    <Image src={src} alt={alt} width="100" height="100" className="w-full" />
+    <Image src={src} alt={alt} width="50" height="50" className="fill" />
     <p className="pb-4 text-2xl font-semibold leading-tight text-primary lg:text-3.5xl">
       {title}
     </p>
