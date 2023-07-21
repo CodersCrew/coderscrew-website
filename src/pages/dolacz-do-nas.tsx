@@ -1,12 +1,12 @@
-import Confetti from 'assets/confetti.svg';
-import Dialog from 'assets/dialog.svg';
-import Eye from 'assets/eye.svg';
-import File from 'assets/file.svg';
-import Thic from 'assets/thic.svg';
-import Vector from 'assets/vector.svg';
-import Zespol from 'assets/zespol.svg';
+// import Confetti from 'assets/confetti.svg';
+// import Dialog from 'assets/dialog.svg';
+// import Eye from 'assets/eye.svg';
+// import File from 'assets/file.svg';
 import Link from 'next/link';
 
+import Thic from '/public/joinUs/thic.svg';
+import Vector from '/public/joinUs/vector.svg';
+import Zespol from '/public/joinUs/zespol.svg';
 import { Hexagon } from '@/components';
 import { SectionWrapper } from '@/components';
 import { CardRecruitProcess } from '@/components/CardRecruitProcess';
@@ -77,7 +77,7 @@ const Formular = () => (
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <CardRecruitProcess
-            src={File}
+            src="/public/joinUs/handArrow1.svg"
             alt="File logo"
             title="1. Wypełnienie formularza."
             text="Na początek poprosimy Cię o wypełnienie poniższego formularza.
@@ -86,8 +86,8 @@ const Formular = () => (
         </div>
         <div className="flex flex-col">
           <CardRecruitProcess
-            src={Eye}
-            alt="File logo"
+            src="/public/joinUs/eye.svg"
+            alt="Eye logo"
             title="2. Rozpatrzenie zgłoszenia"
             text="Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
             odpowiadają naszym aktualnym potrzebom."
@@ -97,8 +97,8 @@ const Formular = () => (
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <CardRecruitProcess
-            src={Dialog}
-            alt="File logo"
+            src="/public/joinUs/dialog.svg"
+            alt="Dialog logo"
             title="3. Rozmowa kwalifikacyjna"
             text="Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
             Odpowiemy także na wszystkie pytania, jakie Ci się nasuną."
@@ -106,8 +106,8 @@ const Formular = () => (
         </div>
         <div className="flex flex-col">
           <CardRecruitProcess
-            src={Confetti}
-            alt="File logo"
+            src="/public/joinUs/confetti.svg"
+            alt="Confetti logo"
             title="4. Dołączenie do nas"
             text="Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
             możemy razem zmieniać świat na lepsze!"
