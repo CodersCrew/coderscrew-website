@@ -1,9 +1,12 @@
-// import Confetti from 'assets/confetti.svg';
-// import Dialog from 'assets/dialog.svg';
-// import Eye from 'assets/eye.svg';
 import Link from 'next/link';
 
-import File from '/public/joinUs/thic.svg';
+import Confetti from '/public/joinUs/confetti.svg';
+import Dialog from '/public/joinUs/dialog.svg';
+import Eye from '/public/joinUs/eye.svg';
+import File from '/public/joinUs/file.svg';
+import HandArrow1 from '/public/joinUs/handArrow1.svg';
+import HandArrow2 from '/public/joinUs/handArrow2.svg';
+import HandArrow3 from '/public/joinUs/handArrow3.svg';
 import Thic from '/public/joinUs/thic.svg';
 import Vector from '/public/joinUs/vector.svg';
 import Zespol from '/public/joinUs/zespol.svg';
@@ -70,12 +73,13 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <section className="w-full	bg-lightGrey">
+    <section className="w-full bg-lightGrey">
       <h1 className="pb-4 text-3xl font-bold leading-10">
         Nasz proces rekrutacyjny
       </h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
+          <File />
           <CardRecruitProcess
             src={File}
             alt="File logo"
@@ -84,7 +88,11 @@ const Formular = () => (
             Zajmie Ci to maksymalnie 10 minut."
           />
         </div>
+        <div>
+          <HandArrow1 />
+        </div>
         <div className="flex flex-col">
+          <Eye />
           <CardRecruitProcess
             src="/public/joinUs/eye.svg"
             alt="Eye logo"
@@ -96,6 +104,7 @@ const Formular = () => (
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
+          <Dialog />
           <CardRecruitProcess
             src="/public/joinUs/dialog.svg"
             alt="Dialog logo"
@@ -105,6 +114,15 @@ const Formular = () => (
           />
         </div>
         <div className="flex flex-col">
+          <div>
+            <HandArrow2 />
+          </div>
+          <div>
+            <HandArrow3 />
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <Confetti />
           <CardRecruitProcess
             src="/public/joinUs/confetti.svg"
             alt="Confetti logo"

@@ -17,7 +17,13 @@ export const CardRecruitProcess = ({
   alt
 }: CardRecruitProps) => (
   <div className="flex h-[347px] w-[456px] flex-col py-[27px]">
-    <Image src={src} alt={alt} width="50" height="50" className="fill" />
+    <Image
+      src={src}
+      alt={alt}
+      width="50"
+      height="50"
+      className="fill bg-white"
+    />
     <p className="pb-4 text-2xl font-semibold leading-tight text-primary lg:text-3.5xl">
       {title}
     </p>
