@@ -7,36 +7,34 @@ import Thic from '/public/joinUs/thic.svg';
 import Vector from '/public/joinUs/vector.svg';
 import Zespol from '/public/joinUs/zespol.svg';
 import { SectionWrapper } from '@/components';
-import { CardRecruitProcess } from '@/components/CardRecruitProcess';
 import { FormJoin } from '@/components/FormJoin';
 import { Hexagon } from '@/components/Hexagon';
+import { RecruitCard } from '@/components/RecruitCard';
 
 const Formular = () => (
   <SectionWrapper className="flex flex-col">
     <section className="w-full bg-white pb-36">
-      <h1 className="relative pb-6 text-5xl font-bold leading-normal md:w-4/6">
-        Rozpocznij z nami swoją przygodę w branży IT!
-      </h1>
-      <div className="flex flex-row">
-        <div className=" flex w-1/3 flex-col">
-          <p className="pb-12 text-2xl	font-bold leading-relaxed text-textGrey">
-            Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
-            portfolio z pewnością zawojujesz rynek pracy!
-          </p>
-          <Link href="#formular">
-            <div className=" itemjustify-end flex h-12 w-[196px] flex-row items-center border border-b-black border-e-white border-s-white border-t-white ">
-              <p className="pl-3">Przejdź do formularza</p>
-              <div className="pl-3">
-                <Vector />
-              </div>
+      <div className="flex flex-col ">
+        <h1 className="relative pb-6 text-5xl font-bold leading-normal md:w-4/6">
+          Rozpocznij z nami swoją przygodę w branży IT!
+        </h1>
+        <p className="pb-12 text-2xl	font-bold leading-relaxed text-textGrey">
+          Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
+          portfolio z pewnością zawojujesz rynek pracy!
+        </p>
+        <Link href="#formular">
+          <div className=" itemjustify-end flex h-12 w-[196px] flex-row items-center border border-b-black border-e-white border-s-white border-t-white ">
+            <p className="pl-3">Przejdź do formularza</p>
+            <div className="pl-3">
+              <Vector />
             </div>
-          </Link>
-        </div>
-        <div className="flex flex-row items-start">
+          </div>
+        </Link>
+        <div className="order-first flex flex-col items-start md:order-2 md:flex-row">
           <Zespol />
         </div>
       </div>
-      <div className="flex-col pt-15 md:flex-row">
+      <div className="flex-col items-center pt-15 md:flex-row">
         <div className="flex flex-col">
           <h2 className="pb-6 text-5xl font-bold leading-10">
             Dlaczego warto?
@@ -55,7 +53,7 @@ const Formular = () => (
           </div>
           <div className="pb-48 flex flex-row">
             <Thic />
-            <p className="-m-8 w-1/3  text-3.5xl font-bold leading-10">
+            <p className="-m-8 w-1/3 text-3.5xl font-bold leading-10">
               Będziesz uczestniczył w ambitnych projektach, które staną się
               wspaniałym wpisem do Twojego CV
             </p>
@@ -69,13 +67,13 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <section className="relative mx-0 max-w-none bg-lightGrey px-0">
+    <section className="relative mx-0 max-w-none items-center justify-center bg-lightGrey px-0">
       <h1 className="pb-4 pt-8 text-3xl font-bold leading-10">
         Nasz proces rekrutacyjny
       </h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <CardRecruitProcess
+          <RecruitCard
             src="/public/joinUs/file.png"
             alt="File logo"
             title="1. Wypełnienie formularza."
@@ -83,11 +81,11 @@ const Formular = () => (
             Zajmie Ci to maksymalnie 10 minut."
           />
         </div>
-        <div>
+        <div className="invisible flex items-center justify-center md:visible">
           <HandArrow1 />
         </div>
         <div className="flex flex-col">
-          <CardRecruitProcess
+          <RecruitCard
             src="/public/joinUs/eye.png"
             alt="Eye logo"
             title="2. Rozpatrzenie zgłoszenia"
@@ -98,7 +96,7 @@ const Formular = () => (
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <CardRecruitProcess
+          <RecruitCard
             src="/public/joinUs/dialog.png"
             alt="Dialog logo"
             title="3. Rozmowa kwalifikacyjna"
@@ -107,15 +105,15 @@ const Formular = () => (
           />
         </div>
         <div className="flex flex-col">
-          <div>
+          <div className="invisible flex items-center justify-center md:visible">
             <HandArrow2 />
           </div>
-          <div>
+          <div className="invisible flex items-center justify-center md:visible">
             <HandArrow3 />
           </div>
         </div>
         <div className="flex flex-col">
-          <CardRecruitProcess
+          <RecruitCard
             src="/public/joinUs/confetti.png"
             alt="Confetti logo"
             title="4. Dołączenie do nas"

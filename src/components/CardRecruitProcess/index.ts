@@ -1,1 +1,0 @@
-export { CardRecruitProcess } from './CardRecruitProcess';
