@@ -1,9 +1,5 @@
 import Link from 'next/link';
 
-import Confetti from '/public/joinUs/confetti.svg';
-import Dialog from '/public/joinUs/dialog.svg';
-import Eye from '/public/joinUs/eye.svg';
-import File from '/public/joinUs/file.svg';
 import HandArrow1 from '/public/joinUs/handArrow1.svg';
 import HandArrow2 from '/public/joinUs/handArrow2.svg';
 import HandArrow3 from '/public/joinUs/handArrow3.svg';
@@ -17,7 +13,7 @@ import { Hexagon } from '@/components/Hexagon';
 
 const Formular = () => (
   <SectionWrapper className="flex flex-col">
-    <section className="bg-white pb-36">
+    <section className="w-full bg-white pb-36">
       <h1 className="relative pb-6 text-5xl font-bold leading-normal md:w-4/6">
         Rozpocznij z nami swoją przygodę w branży IT!
       </h1>
@@ -73,15 +69,14 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <section className="w-full bg-lightGrey">
+    <section className="relative mx-0 max-w-none bg-lightGrey px-0">
       <h1 className="pb-4 pt-8 text-3xl font-bold leading-10">
         Nasz proces rekrutacyjny
       </h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <File />
           <CardRecruitProcess
-            src={File}
+            src="/public/joinUs/file.png"
             alt="File logo"
             title="1. Wypełnienie formularza."
             text="Na początek poprosimy Cię o wypełnienie poniższego formularza.
@@ -92,9 +87,8 @@ const Formular = () => (
           <HandArrow1 />
         </div>
         <div className="flex flex-col">
-          <Eye />
           <CardRecruitProcess
-            src="/public/joinUs/eye.svg"
+            src="/public/joinUs/eye.png"
             alt="Eye logo"
             title="2. Rozpatrzenie zgłoszenia"
             text="Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
@@ -104,9 +98,8 @@ const Formular = () => (
       </div>
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
-          <Dialog />
           <CardRecruitProcess
-            src="/public/joinUs/dialog.svg"
+            src="/public/joinUs/dialog.png"
             alt="Dialog logo"
             title="3. Rozmowa kwalifikacyjna"
             text="Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
@@ -122,9 +115,8 @@ const Formular = () => (
           </div>
         </div>
         <div className="flex flex-col">
-          <Confetti />
           <CardRecruitProcess
-            src="/public/joinUs/confetti.svg"
+            src="/public/joinUs/confetti.png"
             alt="Confetti logo"
             title="4. Dołączenie do nas"
             text="Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
