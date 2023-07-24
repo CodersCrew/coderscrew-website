@@ -74,7 +74,7 @@ const Formular = () => (
       </div>
     </section>
     <section className="w-full bg-lightGrey">
-      <h1 className="pb-4 text-3xl font-bold leading-10">
+      <h1 className="pb-4 pt-8 text-3xl font-bold leading-10">
         Nasz proces rekrutacyjny
       </h1>
       <div className="flex flex-col md:flex-row">
