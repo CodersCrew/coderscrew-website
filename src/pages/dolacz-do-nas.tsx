@@ -73,11 +73,11 @@ const Formular = () => (
         </div>
       </div>
     </section>
-    <section className="relative mx-0 max-w-none items-center justify-center bg-lightGrey px-0">
-      <h1 className="pb-4 pt-8 text-3xl font-bold leading-10">
+    <section className="relative items-center justify-center bg-lightGrey px-0">
+      <h1 className="pb-4 pt-8 text-4xl font-bold leading-10">
         Nasz proces rekrutacyjny
       </h1>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col">
           <RecruitCard
             src={Files}
@@ -90,7 +90,7 @@ const Formular = () => (
         <div className="invisible flex items-center justify-center md:visible">
           <HandArrow1 />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col pt-6">
           <RecruitCard
             src={Eye}
             alt="Eye logo"
@@ -100,7 +100,7 @@ const Formular = () => (
           />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col">
           <RecruitCard
             src={Dialog}
@@ -110,15 +110,15 @@ const Formular = () => (
             Odpowiemy także na wszystkie pytania, jakie Ci się nasuną."
           />
         </div>
-        <div className="flex flex-col">
-          <div className="invisible flex items-center justify-center md:visible">
+        <div className="flex flex-row">
+          <div className="invisible flex items-start justify-center md:visible">
             <HandArrow2 />
           </div>
-          <div className="invisible flex items-center justify-center md:visible">
+          <div className="invisible flex items-center justify-center pt-15 md:visible">
             <HandArrow3 />
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col pt-15">
           <RecruitCard
             src={Confetti}
             alt="Confetti logo"

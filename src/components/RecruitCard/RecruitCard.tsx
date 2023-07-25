@@ -17,6 +17,6 @@ export const RecruitCard = ({ title, text, src, alt }: RecruitCardProps) => (
     <p className="pb-4 text-2xl font-semibold leading-tight text-primary lg:text-3.5xl">
       {title}
     </p>
-    <p className="pl-8 text-xl leading-7 text-primary">{text}</p>
+    <p className="pl-18 text-xl leading-7 text-primary">{text}</p>
   </div>
 );
