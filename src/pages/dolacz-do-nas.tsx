@@ -1,5 +1,9 @@
 import Link from 'next/link';
 
+import Confetti from '/public/joinUs/confetti.png';
+import Dialog from '/public/joinUs/dialog.png';
+import Eye from '/public/joinUs/eye.png';
+import Files from '/public/joinUs/file.png';
 import HandArrow1 from '/public/joinUs/handArrow1.svg';
 import HandArrow2 from '/public/joinUs/handArrow2.svg';
 import HandArrow3 from '/public/joinUs/handArrow3.svg';
@@ -13,24 +17,26 @@ import { RecruitCard } from '@/components/RecruitCard';
 
 const Formular = () => (
   <SectionWrapper className="flex flex-col">
-    <section className="w-full bg-white pb-36">
-      <div className="flex flex-col ">
-        <h1 className="relative pb-6 text-5xl font-bold leading-normal md:w-4/6">
-          Rozpocznij z nami swoją przygodę w branży IT!
-        </h1>
-        <p className="pb-12 text-2xl	font-bold leading-relaxed text-textGrey">
-          Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
-          portfolio z pewnością zawojujesz rynek pracy!
-        </p>
-        <Link href="#formular">
-          <div className=" itemjustify-end flex h-12 w-[196px] flex-row items-center border border-b-black border-e-white border-s-white border-t-white ">
-            <p className="pl-3">Przejdź do formularza</p>
-            <div className="pl-3">
-              <Vector />
+    <section className="bg-white pb-36">
+      <h1 className="relative pb-6 text-5xl font-bold leading-normal md:w-4/6">
+        Rozpocznij z nami swoją przygodę w branży IT!
+      </h1>
+      <div className="flex flex-row">
+        <div className=" flex w-1/3 flex-col">
+          <p className="pb-12 text-2xl	font-bold leading-relaxed text-textGrey">
+            Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
+            portfolio z pewnością zawojujesz rynek pracy!
+          </p>
+          <Link href="#formular">
+            <div className=" itemjustify-end flex h-12 w-[196px] flex-row items-center border border-b-black border-e-white border-s-white border-t-white ">
+              <p className="pl-3">Przejdź do formularza</p>
+              <div className="pl-3">
+                <Vector />
+              </div>
             </div>
-          </div>
-        </Link>
-        <div className="order-first flex flex-col items-start md:order-2 md:flex-row">
+          </Link>
+        </div>
+        <div className="flex flex-row items-start">
           <Zespol />
         </div>
       </div>
@@ -74,7 +80,7 @@ const Formular = () => (
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <RecruitCard
-            src="/public/joinUs/file.png"
+            src={Files}
             alt="File logo"
             title="1. Wypełnienie formularza."
             text="Na początek poprosimy Cię o wypełnienie poniższego formularza.
@@ -86,7 +92,7 @@ const Formular = () => (
         </div>
         <div className="flex flex-col">
           <RecruitCard
-            src="/public/joinUs/eye.png"
+            src={Eye}
             alt="Eye logo"
             title="2. Rozpatrzenie zgłoszenia"
             text="Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
@@ -97,7 +103,7 @@ const Formular = () => (
       <div className="flex flex-col md:flex-row">
         <div className="flex flex-col">
           <RecruitCard
-            src="/public/joinUs/dialog.png"
+            src={Dialog}
             alt="Dialog logo"
             title="3. Rozmowa kwalifikacyjna"
             text="Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
@@ -114,7 +120,7 @@ const Formular = () => (
         </div>
         <div className="flex flex-col">
           <RecruitCard
-            src="/public/joinUs/confetti.png"
+            src={Confetti}
             alt="Confetti logo"
             title="4. Dołączenie do nas"
             text="Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
