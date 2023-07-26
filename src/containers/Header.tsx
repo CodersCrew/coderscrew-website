@@ -10,7 +10,7 @@ export const Header = () => (
       <Link variant="bare" href="#guilds">
         Zespoły
       </Link>
-      <Link variant="bare" href="#projects">
+      <Link variant="bare" href="/#projects">
         Projekty
       </Link>
       <Link variant="outlined" href="/partnerzy">

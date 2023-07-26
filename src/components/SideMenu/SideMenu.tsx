@@ -29,7 +29,7 @@ export const SideMenu = () => {
           <Link className="block px-5 py-4" variant="bare" href="/zespoly">
             Zespoły
           </Link>
-          <Link className="block px-5 py-4" variant="bare" href="#projects">
+          <Link className="block px-5 py-4" variant="bare" href="/#projects">
             Projekty
           </Link>
           <Link className="block px-5 py-4" variant="bare" href="/partnerzy">
