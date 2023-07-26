@@ -4,7 +4,10 @@ import Untitled3 from '@/assets/Untitled3.png';
 import { ImageCard, Link, SectionWrapper } from '@/components';
 
 export const Projects = () => (
-  <SectionWrapper className="flex flex-col items-center gap-12 lg:gap-30">
+  <SectionWrapper
+    className="flex flex-col items-center gap-12 lg:gap-30"
+    id="projects"
+  >
     <div className="flex flex-col gap-4">
       <p className="text-center text-2xl font-semibold uppercase text-quaternary">
         Nasze projekty
