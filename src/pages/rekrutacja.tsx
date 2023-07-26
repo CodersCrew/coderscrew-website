@@ -16,14 +16,14 @@ import { Hexagon } from '@/components/Hexagon';
 import { RecruitCard } from '@/components/RecruitCard';
 
 const Formular = () => (
-  <SectionWrapper className="flex flex-col">
-    <section className="bg-white pb-36">
-      <h1 className="relative pb-6 text-5xl font-bold leading-normal md:w-4/6">
+  <SectionWrapper className="min-w-min pt-2	">
+    <div className="bg-white pb-36">
+      <h1 className="relative pb-6 text-5xl font-bold leading-normal">
         Rozpocznij z nami swoją przygodę w branży IT!
       </h1>
-      <div className="flex flex-row">
-        <div className=" flex w-1/3 flex-col">
-          <p className="pb-12 text-2xl	font-bold leading-relaxed text-textGrey">
+      <div className="flex flex-col md:flex-row">
+        <div className=" flex flex-col md:w-1/3">
+          <p className="pb-12 text-2xl font-bold leading-relaxed text-textGrey">
             Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
             portfolio z pewnością zawojujesz rynek pracy!
           </p>
@@ -36,7 +36,7 @@ const Formular = () => (
             </div>
           </Link>
         </div>
-        <div className="flex flex-row items-start">
+        <div className="flex flex-col items-start md:flex-row">
           <Zespol />
         </div>
       </div>
@@ -53,13 +53,13 @@ const Formular = () => (
           </div>
           <div className="itemjustify-end flex flex-row items-center pb-5">
             <Thic />
-            <p className="-m-8 w-1/3 pb-10 text-3.5xl font-bold leading-10">
+            <p className="-m-8 pb-10 text-3.5xl font-bold leading-10 md:w-1/3">
               Wykorzystasz swój potencjał
             </p>
           </div>
           <div className="pb-48 flex flex-row">
             <Thic />
-            <p className="-m-8 w-1/3 text-3.5xl font-bold leading-10">
+            <p className="-m-8 text-3.5xl font-bold leading-10 md:w-1/3">
               Będziesz uczestniczył w ambitnych projektach, które staną się
               wspaniałym wpisem do Twojego CV
             </p>
@@ -72,7 +72,7 @@ const Formular = () => (
           <Hexagon />
         </div>
       </div>
-    </section>
+    </div>
     <section className="relative items-center justify-center bg-lightGrey px-0">
       <h1 className="pb-4 pt-8 text-4xl font-bold leading-10">
         Nasz proces rekrutacyjny
@@ -130,7 +130,7 @@ const Formular = () => (
       </div>
     </section>
     <div
-      className="w-3/5 pb-10 pl-20 pt-15 text-3.5xl font-bold leading-tight"
+      className="pb-10 pl-20 pt-15 text-3.5xl font-bold leading-tight md:w-3/5"
       id="formular"
     >
       <h2>Cześć!</h2>
