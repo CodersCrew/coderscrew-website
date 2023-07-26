@@ -23,7 +23,7 @@ export const Footer = () => {
       <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:items-stretch ">
         <div className="flex flex-col items-center gap-4 md:items-stretch">
           <h3 className="text-xl font-bold md:text-base">Poznaj nas</h3>
-          <Link variant="footer" href="#guilds">
+          <Link variant="footer" href="/#guilds">
             Zespoły
           </Link>
           <Link variant="footer" href="#projects">
