@@ -7,7 +7,7 @@ export const Header = () => (
       <Logo className="h-4.5 sm:h-6" />
     </Link>
     <div className="hidden gap-4 lg:flex">
-      <Link variant="bare" href="#guilds">
+      <Link variant="bare" href="/#guilds">
         Zespoły
       </Link>
       <Link variant="bare" href="/#projects">
