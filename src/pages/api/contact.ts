@@ -60,6 +60,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       .then(response => response.json())
       .then(data => {
         return res.status(200).json({ message: data });
+      })
+      .catch(error => {
+        return res.status(500).json({ error: 'Something went wrong.' });
       });
   } else {
     return res.status(405).json({ error: 'Method not allowed.' });
