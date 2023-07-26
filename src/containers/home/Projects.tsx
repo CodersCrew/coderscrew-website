@@ -23,7 +23,7 @@ export const Projects = () => (
         style={{ objectFit: 'cover' }}
         title="Coders Camp"
         text="Największy otwarty kurs programowania webowego"
-        link="#"
+        link="/projekty"
       />
       <ImageCard
         src={Untitled1}
@@ -33,7 +33,7 @@ export const Projects = () => (
         style={{ objectFit: 'cover' }}
         title="Przejście centrum innowacji"
         text="Warsztaty z podstaw programowania webowego"
-        link="#"
+        link="/projekty"
       />
       <ImageCard
         src={Untitled3}
@@ -43,7 +43,7 @@ export const Projects = () => (
         style={{ objectFit: 'cover' }}
         title="Jira Sticky Notes"
         text="Add-on do największego narzędzia do zarządzania projektami IT"
-        link="#"
+        link="/projekty"
       />
     </div>
     <Link href="/projekty" variant="filled">

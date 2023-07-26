@@ -2,7 +2,10 @@ import PeopleWithMobiles from '@/assets/peopleWithMobiles.svg';
 import { Card, Hexagon, SectionWrapper } from '@/components';
 
 export const About = () => (
-  <SectionWrapper className="grid items-center justify-center gap-18 overflow-hidden lg:grid-cols-[1fr,min-content]">
+  <SectionWrapper
+    className="grid items-center justify-center gap-18 overflow-hidden lg:grid-cols-[1fr,min-content]"
+    id="about-us"
+  >
     <PeopleWithMobiles className="hidden max-w-2xl lg:block" />
     <div className="flex flex-col gap-y-10">
       <div className="relative z-10">
