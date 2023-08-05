@@ -43,7 +43,7 @@ export function FormJoin() {
               </label>
               <input
                 type="text"
-                className="form-input mb-3 w-4/6 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
+                className="form-input mb-3 rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary md:w-4/6 "
                 {...register('name', { required: true })}
               />
               {errors.name && (
@@ -59,7 +59,7 @@ export function FormJoin() {
               </label>
               <input
                 type="email"
-                className="form-input mb-3 w-4/6 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary "
+                className="form-input mb-3 rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary md:w-4/6 "
                 {...register('email', { required: true })}
               />
               {errors.email && (
@@ -77,7 +77,7 @@ export function FormJoin() {
               </label>
               <select
                 placeholder="Wybierz z listy"
-                className="form-input mb-3 w-4/6 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
+                className="form-input mb-3 rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
                 {...register('department')}
               >
                 <option value="webDevelopment">Web development</option>
@@ -96,7 +96,7 @@ export function FormJoin() {
               Wiadomość:
             </label>
             <textarea
-              className="form-textarea mb-3 block h-[314px] w-4/6 rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary"
+              className="form-textarea mb-3 block h-[314px] rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
               {...register('message', { required: true })}
               placeholder="Parę słów o Tobie i Twoim doświadczeniu"
             />
@@ -147,11 +147,21 @@ export function FormJoin() {
               zgody przed jej wycofaniem.
             </span>
           </div>
+          <div className="flex items-start justify-center pt-10 leading-tight">
+            <input
+              type="submit"
+              className="inline-flex  h-11 w-[175px] items-start justify-center rounded border border-quaternary bg-quaternary bg-center px-4 py-[12.50px] leading-tight text-white"
+              value="Wyślij wiadomość"
+            />
+          </div>
         </section>
+
         <aside className="flex w-1/2 flex-col">
           <section className="flex flex-col pb-10">
-            <h2 className="pl-10 text-3.5xl font-bold">Masz pytania?</h2>
-            <h2 className="pb-10 pl-10 text-3.5xl font-bold md:w-4/5">
+            <h2 className="pl-10 text-2xl font-bold md:text-3.5xl">
+              Masz pytania?
+            </h2>
+            <h2 className="pb-10 pl-10 text-2xl font-bold md:w-4/5 md:text-3.5xl">
               Skontaktuj się z nami!
             </h2>
             <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
@@ -169,13 +179,6 @@ export function FormJoin() {
           </section>
         </aside>
       </main>
-      <div className="flex items-start justify-center pt-10 leading-tight">
-        <input
-          type="submit"
-          className="inline-flex  h-11 w-[175px] items-start justify-center rounded border border-quaternary bg-quaternary bg-center px-4 py-[12.50px] leading-tight text-white"
-          value="Wyślij wiadomość"
-        />
-      </div>
     </form>
   );
 }
