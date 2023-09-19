@@ -1,7 +1,8 @@
-import Koperta from 'assets/koperta.svg';
-import Pinezka from 'assets/Pinezka.svg';
 import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
+
+import Koperta from '@/assets/koperta.svg';
+import Pinezka from '@/assets/Pinezka.svg';
 
 type Inputs = {
   name: string;
