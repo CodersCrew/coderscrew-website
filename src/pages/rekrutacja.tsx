@@ -15,7 +15,7 @@ import { FormJoin } from '@/components/FormJoin';
 import { Hexagon } from '@/components/Hexagon';
 import { RecruitCard } from '@/components/RecruitCard';
 
-const Formular = () => (
+const Rekrutacja = () => (
   <SectionWrapper className="pt-2	">
     <div className="bg-white pb-36">
       <h1 className="relative pb-6 text-3.5xl font-bold leading-normal md:text-5xl">
@@ -150,4 +150,4 @@ const Formular = () => (
   </SectionWrapper>
 );
 
-export default Formular;
+export default Rekrutacja;
