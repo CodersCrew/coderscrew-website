@@ -28,7 +28,7 @@ const Rekrutacja = () => (
             portfolio z pewnością zawojujesz rynek pracy!
           </p>
           <Link href="#formular">
-            <div className=" itemjustify-end flex h-12 w-[196px] flex-row items-center border border-b-black border-e-white border-s-white border-t-white ">
+            <div className="itemjustify-end flex h-12 w-[196px] flex-row items-center border border-b-black border-e-white border-s-white border-t-white">
               <p className="pl-3">Przejdź do formularza</p>
               <div className="pl-3">
                 <Vector />
