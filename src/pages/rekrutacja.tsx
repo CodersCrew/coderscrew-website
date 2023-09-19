@@ -22,7 +22,7 @@ const Rekrutacja = () => (
         Rozpocznij z nami swoją przygodę w branży IT!
       </h1>
       <div className="flex flex-col md:flex-row">
-        <div className=" flex flex-col md:w-1/3">
+        <div className="flex flex-col md:w-1/3">
           <p className="pb-12 text-2xl font-bold leading-relaxed text-textGrey">
             Będziesz mógł tworzyć zmieniające świat projekty. Mając takie
             portfolio z pewnością zawojujesz rynek pracy!
@@ -55,7 +55,7 @@ const Rekrutacja = () => (
               Postawisz pierwsze kroki w IT
             </p>
           </div>
-          <div className="itemjustify-end flex flex-row items-center pb-5 ">
+          <div className="itemjustify-end flex flex-row items-center pb-5">
             <Thic className="min-w-max" />
             <p className="pb-2 text-2xl font-bold leading-8 md:text-3.5xl">
               Wykorzystasz swój potencjał
