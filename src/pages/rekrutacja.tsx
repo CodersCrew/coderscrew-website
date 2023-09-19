@@ -41,8 +41,6 @@ const Rekrutacja = () => (
             className="mx-auto h-auto max-w-full"
             alt="Obraz zespołu"
             layout="responsive"
-            // width={352}
-            // height={265}
           />
         </div>
       </div>
