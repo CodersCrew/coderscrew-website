@@ -16,7 +16,7 @@ import { Hexagon } from '@/components/Hexagon';
 import { RecruitCard } from '@/components/RecruitCard';
 
 const Rekrutacja = () => (
-  <SectionWrapper className="pt-2	">
+  <SectionWrapper className="pt-2">
     <div className="bg-white pb-36">
       <h1 className="relative pb-6 text-3.5xl font-bold leading-normal md:text-5xl">
         Rozpocznij z nami swoją przygodę w branży IT!
