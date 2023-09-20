@@ -13,7 +13,7 @@ type RecruitCardProps = ImageProps & HoverProps;
 
 export const RecruitCard = ({ title, text, src, alt }: RecruitCardProps) => (
   <div className="flex w-[340px] flex-col items-center justify-center py-[27px] md:h-[347px] md:w-[456px]">
-    <Image src={src} alt={alt} width="109" height="109" className="" />
+    <Image src={src} alt={alt} width="109" height="109" />
     <p className="pb-4 text-2xl font-semibold leading-tight text-primary lg:text-3.5xl">
       {title}
     </p>
