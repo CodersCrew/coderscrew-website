@@ -9,14 +9,13 @@ type Inputs = {
   email: string;
   department: string;
   message: string;
-  checkboxAcceptPrivPolicy: boolean;
-  checkboxReadRodoInfo: boolean;
+  privacyPolicy: boolean;
+  rodo: boolean;
 };
 
 export function FormJoin() {
-  const [checkboxAcceptPrivPolicy, setcheckboxAcceptPrivPolicy] =
-    useState(false);
-  const [checkboxReadRodoInfo, setcheckboxReadRodoInfo] = useState(false);
+  const [privacyPolicy, setPrivacyPolicy] = useState(false);
+  const [rodo, setRodo] = useState(false);
 
   const {
     register,
@@ -25,8 +24,8 @@ export function FormJoin() {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = data => {
-    data.checkboxAcceptPrivPolicy = checkboxAcceptPrivPolicy;
-    data.checkboxReadRodoInfo = checkboxReadRodoInfo;
+    data.privacyPolicy = privacyPolicy;
+    data.rodo = rodo;
     console.log(data);
   };
 
@@ -109,7 +108,7 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-              onChange={e => setcheckboxAcceptPrivPolicy(e.target.checked)}
+              onChange={e => setPrivacyPolicy(e.target.checked)}
             />
             <span className="mb-10 text-sm">
               Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam
@@ -129,7 +128,7 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-              onChange={e => setcheckboxReadRodoInfo(e.target.checked)}
+              onChange={e => setRodo(e.target.checked)}
             />
             <span className="mb-5 text-sm">
               Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu
