@@ -14,18 +14,13 @@ type Inputs = {
 };
 
 export function FormJoin() {
-  const [privacyPolicy, setPrivacyPolicy] = useState(false);
-  const [rodo, setRodo] = useState(false);
-
   const {
     register,
     handleSubmit,
     formState: { errors }
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = data => {
-    data.privacyPolicy = privacyPolicy;
-    data.rodo = rodo;
+  const onSubmit = (data: Inputs) => {
     console.log(data);
   };
 
@@ -108,7 +103,7 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-              onChange={e => setPrivacyPolicy(e.target.checked)}
+              {...register('privacyPolicy', { required: true })}
             />
             <span className="mb-10 text-sm">
               Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam
@@ -128,7 +123,7 @@ export function FormJoin() {
             <input
               type="checkbox"
               className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-              onChange={e => setRodo(e.target.checked)}
+              {...register('rodo', { required: true })}
             />
             <span className="mb-5 text-sm">
               Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu
