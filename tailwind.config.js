@@ -17,7 +17,7 @@ module.exports = {
       ux: '#FA8A43',
       hr: '#AC6DE8',
       codersCamp: '#FEC43D',
-      formField: '#ededed',
+      formField: '#EDEDED',
       formAlert: '#F44336',
       black: '#000000',
       white: '#FFFFFF',
@@ -33,7 +33,7 @@ module.exports = {
       linkWater: '#D1E9FF',
       lightGrey: '#F5F5F5',
       darkGrey: '#383838',
-      textGrey: '#6B7280',
+      textGrey: '#6B7280'
     },
     spacing: {
       0: '0px',
