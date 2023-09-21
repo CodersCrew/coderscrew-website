@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import Koperta from '@/assets/Koperta.svg';
-import Pinezka from '@/assets/Pinezka.svg';
+import Koperta from '@/assets/.svg';
+import Pinezka from '@/assets/.svg';
 
 type Inputs = {
   name: string;
@@ -160,7 +160,7 @@ export function FormJoin() {
               Skontaktuj się z nami!
             </h2>
             <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
-              <Koperta />
+              <Koperta className="min-w-max" />
               <p className="font-normal leading-normal md:pl-4">
                 kontakt @ coderscrew.pl
               </p>
