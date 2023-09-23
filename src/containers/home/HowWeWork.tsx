@@ -21,8 +21,10 @@ export const HowWeWork = () => (
       </div>
       <UndrawWorld className="px-7" />
     </div>
-    <Link href="/faq" variant="filled" className="self-center">
-      Zobacz więcej
-    </Link>
+    <div className="self-center">
+      <Link href="/faq" variant="filled">
+        Zobacz więcej
+      </Link>
+    </div>
   </div>
 );
