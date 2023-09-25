@@ -1,6 +1,5 @@
 import React from 'react';
-import { FieldErrors, FieldValues } from 'react-hook-form';
-import { UseFormRegister } from 'react-hook-form';
+import { FieldErrors, UseFormRegister } from 'react-hook-form';
 
 import { Inputs } from '../FormJoin/FormJoin';
 
@@ -12,7 +11,7 @@ type InputProps = {
   content: string;
 };
 
-export function FormTextInput({
+export function FormText({
   register,
   errors,
   htmlFor,

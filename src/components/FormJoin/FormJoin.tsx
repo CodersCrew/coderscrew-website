@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import { SubmitHandler, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 import Koperta from '@/assets/koperta.svg';
 import Pinezka from '@/assets/pinezka.svg';
-import { FormTextInput } from '@/components/FormTextInput';
+import { FormCheckbox } from '@/components/FormCheckbox';
+import { FormSelect } from '@/components/FormSelect';
+import { FormText } from '@/components/FormText';
+import { FormTextarea } from '@/components/FormTextarea';
 
 export type Inputs = {
   name: string;
@@ -12,7 +15,6 @@ export type Inputs = {
   message: string;
   privacyPolicy: boolean;
   rodo: boolean;
-  htmlFor: string;
 };
 
 export function FormJoin() {
@@ -32,62 +34,38 @@ export function FormJoin() {
       onSubmit={handleSubmit(onSubmit)}
     >
       <main className="flex w-full flex-col">
-        <FormTextInput
+        <FormText
           register={register}
           errors={errors}
           type="name"
           htmlFor="name"
           content="Imię i nazwsiko"
         />
-        <FormTextInput
+        <FormText
           register={register}
           errors={errors}
           type="email"
           htmlFor="email"
           content="E-mail"
         />
-        <label
+        <FormSelect
+          register={register}
+          errors={errors}
           htmlFor="department"
-          className="font-normal leading-10 text-tetriary"
-        >
-          Dział, który Cię interesuje
-        </label>
-        <select
-          placeholder="Wybierz z listy"
-          className="form-input rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
-          {...register('department')}
-        >
-          <option value="webDevelopment">Web development</option>
-          <option value="projectManagement">Project management</option>
-          <option value="onlineMarketing">Online marketing</option>
-          <option value="uxUiDesign">UX/UI design</option>
-          <option value="HumanResources">Human Resources</option>
-        </select>
-
-        <div className="mb-5 flex flex-col">
-          <label
-            htmlFor="message"
-            className="font-normal leading-10 text-tetriary"
-          >
-            Wiadomość:
-          </label>
-          <textarea
-            className="form-textarea mb-3 block h-[314px] rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
-            {...register('message', { required: true })}
-            placeholder="Parę słów o Tobie i Twoim doświadczeniu"
-          />
-          {errors.message && (
-            <span className="text-formAlert">To pole jest wymagane</span>
-          )}
-        </div>
-        <div className="flex flex-row">
-          <input
-            type="checkbox"
-            className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-            {...register('privacyPolicy', { required: true })}
-          />
-          <span className="mb-10 text-sm">
-            Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
+          content="Dział, który Cię interesuje"
+        />
+        <FormTextarea
+          register={register}
+          errors={errors}
+          htmlFor="message"
+          content="Wiadomość:"
+          placeholder="Parę słów o Tobie i Twoim doświadczeniu"
+        />
+        <FormCheckbox
+          register={register}
+          errors={errors}
+          htmlFor="privacyPolicy"
+          content="Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
             na przetwarzanie przez Stowarzyszenie CodersCrew z siedzibą we
             Wrocławiu, wpisane do rejestru stowarzyszeń Krajowego Rejestru
             Sądowego pod numerem KRS 0000744745 (dalej: “Stowarzyszenie”), w
@@ -97,17 +75,13 @@ export function FormJoin() {
             lub na jakichkolwiek innych nośnikach, a także w mediach
             społecznościowych, portalach i na stronach internetowych
             Stowarzyszenia do celów marketingowych (promocyjnych)
-            Stowarzyszenia.
-          </span>
-        </div>
-        <div className="flex flex-row">
-          <input
-            type="checkbox"
-            className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary"
-            {...register('rodo', { required: true })}
-          />
-          <span className="mb-5 text-sm">
-            Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu
+            Stowarzyszenia."
+        />
+        <FormCheckbox
+          register={register}
+          errors={errors}
+          htmlFor="rodo"
+          content="Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu
             danych osobowych” zawartej w Polityce Prywatności, zawierającą m.
             in. informacje o szczegółowych celach przetwarzania moich danych
             osobowych, o podstawie prawnej ich przetwarzania, o danych
@@ -120,9 +94,8 @@ export function FormJoin() {
             przysługuje mi prawo do cofnięcia zgody na przetwarzanie danych
             osobowych, a wycofanie zgody nie wpływa na zgodność z prawem
             przetwarzania, którego dokonano na podstawie zgody przed jej
-            wycofaniem.
-          </span>
-        </div>
+            wycofaniem."
+        />
         <div className="flex items-start justify-center pt-10 leading-tight">
           <input
             type="submit"
