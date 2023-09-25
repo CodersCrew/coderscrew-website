@@ -12,6 +12,7 @@ export type Inputs = {
   message: string;
   privacyPolicy: boolean;
   rodo: boolean;
+  htmlFor: string;
 };
 
 export function FormJoin() {
@@ -45,7 +46,6 @@ export function FormJoin() {
           htmlFor="email"
           content="E-mail"
         />
-
         <label
           htmlFor="department"
           className="font-normal leading-10 text-tetriary"

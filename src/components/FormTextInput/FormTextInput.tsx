@@ -1,13 +1,13 @@
 import React from 'react';
-import { FieldErrors } from 'react-hook-form';
+import { FieldErrors, FieldValues } from 'react-hook-form';
 import { UseFormRegister } from 'react-hook-form';
 
 import { Inputs } from '../FormJoin/FormJoin';
 
 type InputProps = {
   errors: FieldErrors;
-  register: UseFormRegister<any>;
-  htmlFor: string;
+  register: UseFormRegister<Inputs>;
+  htmlFor: any;
   type: string;
   content: string;
 };
