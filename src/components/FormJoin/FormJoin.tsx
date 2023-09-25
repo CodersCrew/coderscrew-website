@@ -4,9 +4,10 @@ import { useForm } from 'react-hook-form';
 import Koperta from '@/assets/koperta.svg';
 import Pinezka from '@/assets/pinezka.svg';
 import { FormCheckbox } from '@/components/FormCheckbox';
+import { FormEmail } from '@/components/FormEmail';
 import { FormSelect } from '@/components/FormSelect';
-import { FormText } from '@/components/FormText';
 import { FormTextarea } from '@/components/FormTextarea';
+import { FormUsername } from '@/components/FormUsername';
 
 export type Inputs = {
   name: string;
@@ -34,18 +35,16 @@ export function FormJoin() {
       onSubmit={handleSubmit(onSubmit)}
     >
       <main className="flex w-full flex-col">
-        <FormText
+        <FormUsername
           register={register}
           errors={errors}
           type="name"
-          htmlFor="name"
           content="Imię i nazwsiko"
         />
-        <FormText
+        <FormEmail
           register={register}
           errors={errors}
           type="email"
-          htmlFor="email"
           content="E-mail"
         />
         <FormSelect
