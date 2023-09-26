@@ -6,11 +6,14 @@ import { Inputs } from '../FormJoin/FormJoin';
 type InputProps = {
   errors: FieldErrors;
   register: UseFormRegister<Inputs>;
-  type: string;
   content: string;
 };
 
-export function FormEmail({ register, errors, type, content }: InputProps) {
+const emailValidation = (email: string): boolean => {
+  return email.includes('@');
+};
+
+export function FormEmail({ register, errors, content }: InputProps) {
   return (
     <>
       <label
@@ -20,11 +23,11 @@ export function FormEmail({ register, errors, type, content }: InputProps) {
         {content}
       </label>
       <input
-        type={type}
+        type="email"
         className="form-input mb-5 rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary md:w-4/6 "
         {...register('email', { required: true })}
       />
-      {errors['email'] && (
+      {errors.email && (
         <span className="mb-5 text-formAlert">To pole jest wymagane</span>
       )}
     </>

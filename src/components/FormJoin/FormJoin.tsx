@@ -38,15 +38,9 @@ export function FormJoin() {
         <FormUsername
           register={register}
           errors={errors}
-          type="name"
           content="Imię i nazwsiko"
         />
-        <FormEmail
-          register={register}
-          errors={errors}
-          type="email"
-          content="E-mail"
-        />
+        <FormEmail register={register} errors={errors} content="E-mail" />
         <FormSelect
           register={register}
           errors={errors}

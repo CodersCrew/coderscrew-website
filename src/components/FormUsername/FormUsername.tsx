@@ -6,11 +6,11 @@ import { Inputs } from '../FormJoin/FormJoin';
 type InputProps = {
   errors: FieldErrors;
   register: UseFormRegister<Inputs>;
-  type: string;
   content: string;
 };
 
-export function FormUsername({ register, errors, type, content }: InputProps) {
+export function FormUsername({ register, errors, content }: InputProps) {
+  console.log(errors.name);
   return (
     <>
       <label
@@ -20,12 +20,21 @@ export function FormUsername({ register, errors, type, content }: InputProps) {
         {content}
       </label>
       <input
-        type={type}
+        type="name"
         className="form-input mb-5 rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary md:w-4/6 "
-        {...register('name', { required: true })}
+        {...register('name', {
+          pattern: {
+            value:
+              /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u,
+            message: 'Tylko litery'
+          },
+          required: 'To pole jest wymagane'
+        })}
       />
       {errors['name'] && (
-        <span className="mb-5 text-formAlert">To pole jest wymagane</span>
+        <span className="mb-5 text-formAlert">
+          {errors.name.message?.toString()}
+        </span>
       )}
     </>
   );
