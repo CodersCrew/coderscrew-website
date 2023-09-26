@@ -19,7 +19,9 @@ export function FormCheckbox({
     <div className="flex flex-row">
       <input
         type="checkbox"
-        className="form-checkbox mr-5 h-6 w-6 rounded-md text-primary hover:cursor-pointer focus:invisible"
+        className={`+ form-checkbox mr-5 h-6 w-6 rounded-md text-primary hover:cursor-pointer focus:invisible ${
+          errors[htmlFor] && 'border-x-marketing border-y-marketing'
+        }`}
         {...register(htmlFor, { required: true })}
       />
       <span className="mb-10 text-sm">{content}</span>
