@@ -16,14 +16,14 @@ export function FormEmail({ register, errors, content }: InputProps) {
     <div className="mb-5">
       <label
         htmlFor="email"
-        className="flex w-full font-normal leading-10 text-tetriary"
+        className="flex font-normal leading-10 text-tetriary"
       >
         {content}
       </label>
       <div className="flex flex-row items-center">
         <input
           type="email"
-          className="form-input mr-1 rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary md:w-4/6"
+          className="form-input mr-1 w-full rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary md:w-4/6"
           {...register('email', {
             pattern: {
               value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,

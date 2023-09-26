@@ -25,11 +25,13 @@ export function FormTextarea({
       </label>
       <textarea
         className="form-textarea mb-3 block h-[314px] rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
-        {...register('message', { required: true })}
+        {...register('message', { required: 'To pole jest wymagane' })}
         placeholder={placeholder}
       />
       {errors.message && (
-        <span className="text-formAlert">To pole jest wymagane</span>
+        <span className="text-formAlert">
+          {errors[htmlFor]?.message?.toString()}
+        </span>
       )}
     </div>
   );
