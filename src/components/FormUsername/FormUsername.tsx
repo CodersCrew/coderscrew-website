@@ -10,7 +10,6 @@ type InputProps = {
 };
 
 export function FormUsername({ register, errors, content }: InputProps) {
-  console.log(errors.name);
   return (
     <>
       <label

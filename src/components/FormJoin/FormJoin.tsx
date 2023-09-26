@@ -94,6 +94,7 @@ export function FormJoin() {
             type="submit"
             className="inline-flex  h-11 w-[175px] items-start justify-center rounded border border-quaternary bg-quaternary bg-center px-4 py-[12.50px] leading-tight text-white"
             value="Wyślij wiadomość"
+            formNoValidate
           />
         </div>
       </main>
