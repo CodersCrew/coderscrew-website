@@ -22,8 +22,8 @@ export function FormJoin() {
   const {
     register,
     handleSubmit,
-    formState: { errors }
-  } = useForm<Inputs>();
+    formState: { errors, touchedFields, dirtyFields }
+  } = useForm<Inputs>({ mode: 'onTouched' });
 
   const onSubmit = (data: Inputs) => {
     console.log(data);
@@ -40,7 +40,13 @@ export function FormJoin() {
           errors={errors}
           content="Imię i nazwsiko"
         />
-        <FormEmail register={register} errors={errors} content="E-mail" />
+        <FormEmail
+          register={register}
+          errors={errors}
+          content="E-mail"
+          touched={touchedFields.email}
+          dirty={dirtyFields.email}
+        />
         <FormSelect
           register={register}
           errors={errors}

@@ -5,7 +5,7 @@ import { Inputs } from '../FormJoin/FormJoin';
 type InputProps = {
   register: UseFormRegister<Inputs>;
   errors: FieldErrors;
-  htmlFor: any;
+  htmlFor: keyof Pick<Inputs, 'rodo' | 'privacyPolicy'>;
   content: string;
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
 
-import RedCross from '@/assets/red-cross-form-error.svg';
+import RedCross from '@/assets/form-red-cross-error.svg';
 
 import { Inputs } from '../FormJoin/FormJoin';
 

@@ -1,7 +1,8 @@
 import React from 'react';
-import { FieldErrors, UseFormRegister } from 'react-hook-form';
+import { type FieldError, FieldErrors, UseFormRegister } from 'react-hook-form';
 
-import RedCross from '@/assets/red-cross-form-error.svg';
+import GreenCheck from '@/assets/form-green-check.svg';
+import RedCross from '@/assets/form-red-cross-error.svg';
 
 import { Inputs } from '../FormJoin/FormJoin';
 
@@ -9,9 +10,19 @@ type InputProps = {
   errors: FieldErrors;
   register: UseFormRegister<Inputs>;
   content: string;
+  dirty?: boolean;
+  touched?: boolean;
 };
 
-export function FormEmail({ register, errors, content }: InputProps) {
+const emailFormat = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
+
+export function FormEmail({
+  register,
+  errors,
+  content,
+  dirty,
+  touched
+}: InputProps) {
   return (
     <div className="mb-5">
       <label
@@ -23,16 +34,20 @@ export function FormEmail({ register, errors, content }: InputProps) {
       <div className="flex flex-row items-center">
         <input
           type="email"
-          className="form-input mr-1 w-full rounded-2xl border-hidden bg-formField	px-4 py-3 leading-10 text-tetriary md:w-4/6"
+          className="form-input w-full rounded-2xl border-hidden bg-formField px-4 py-3 leading-10 text-tetriary md:w-4/6"
           {...register('email', {
             pattern: {
-              value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+              value: emailFormat,
               message: 'Błędny format e-mail (brak znaków specjalnych np. @,.)'
             },
             required: 'To pole jest wymagane'
           })}
         />
-        {errors.email && <RedCross />}
+        <FieldStateIndicator
+          error={errors.email as FieldError}
+          dirty={dirty}
+          touched={touched}
+        />
       </div>
       {errors.email && (
         <span className="text-formAlert">
@@ -41,4 +56,19 @@ export function FormEmail({ register, errors, content }: InputProps) {
       )}
     </div>
   );
+}
+
+function FieldStateIndicator({
+  error,
+  dirty,
+  touched
+}: {
+  error: FieldError;
+  dirty?: boolean;
+  touched?: boolean;
+}) {
+  // console.log({error, dirty, touched});
+  if (dirty === undefined && touched) return <RedCross />;
+  if (dirty === undefined) return null;
+  return !error ? <GreenCheck /> : <RedCross />;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { FieldErrors, UseFormRegister } from 'react-hook-form';
-
-import RedCross from '@/assets/red-cross-form-error.svg';
+import { useForm } from 'react-hook-form';
 
 import { Inputs } from '../FormJoin/FormJoin';
 
@@ -11,7 +10,10 @@ type InputProps = {
   content: string;
 };
 
+const watch = useForm<Inputs>;
+
 export function FormUsername({ register, errors, content }: InputProps) {
+  const watchUsername = watch();
   return (
     <div className="mb-5">
       <label htmlFor="name" className="font-normal leading-10 text-tetriary">
@@ -30,7 +32,6 @@ export function FormUsername({ register, errors, content }: InputProps) {
             required: 'To pole jest wymagane'
           })}
         />
-        {errors.email && <RedCross />}
       </div>
       {errors['name'] && (
         <span className="mb-5 text-formAlert">
