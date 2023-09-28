@@ -38,7 +38,7 @@ export function FormJoin() {
         <FormUsername
           register={register}
           errors={errors}
-          content="Imię i nazwsiko"
+          content="Imię i nazwisko"
           dirty={dirtyFields.name}
         />
         <FormEmail
