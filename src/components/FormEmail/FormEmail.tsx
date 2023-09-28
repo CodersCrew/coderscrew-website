@@ -1,10 +1,8 @@
 import React from 'react';
 import { type FieldError, FieldErrors, UseFormRegister } from 'react-hook-form';
 
-import GreenCheck from '@/assets/form-green-check.svg';
-import RedCross from '@/assets/form-red-cross-error.svg';
-
-import { Inputs } from '../FormJoin/FormJoin';
+import { FieldStateIndicator } from '@/components/FieldStateIndicator/FieldStateIndicator';
+import { Inputs } from '@/components/FormJoin/FormJoin';
 
 type InputProps = {
   errors: FieldErrors;
@@ -48,23 +46,5 @@ export function FormEmail({ register, errors, content, touched }: InputProps) {
         </span>
       )}
     </div>
-  );
-}
-
-function FieldStateIndicator({
-  error,
-  touched,
-  className
-}: {
-  error: FieldError;
-  touched?: boolean;
-  className?: string;
-}) {
-  console.log({ error, touched });
-  if (touched === undefined) return null;
-  return !error ? (
-    <GreenCheck className={className} />
-  ) : (
-    <RedCross className={className} />
   );
 }
