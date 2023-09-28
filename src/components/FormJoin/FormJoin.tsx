@@ -61,11 +61,12 @@ export function FormJoin() {
           placeholder="Parę słów o Tobie i Twoim doświadczeniu"
           dirty={dirtyFields.message}
         />
-        <FormCheckbox
-          register={register}
-          errors={errors}
-          htmlFor="privacyPolicy"
-          content="Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
+        <div className="mt-11">
+          <FormCheckbox
+            register={register}
+            errors={errors}
+            htmlFor="privacyPolicy"
+            content="Akceptuję Politykę Prywatności serwisu coderscrew.pl i wyrażam zgodę
             na przetwarzanie przez Stowarzyszenie CodersCrew z siedzibą we
             Wrocławiu, wpisane do rejestru stowarzyszeń Krajowego Rejestru
             Sądowego pod numerem KRS 0000744745 (dalej: “Stowarzyszenie”), w
@@ -76,12 +77,12 @@ export function FormJoin() {
             społecznościowych, portalach i na stronach internetowych
             Stowarzyszenia do celów marketingowych (promocyjnych)
             Stowarzyszenia."
-        />
-        <FormCheckbox
-          register={register}
-          errors={errors}
-          htmlFor="rodo"
-          content="Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu
+          />
+          <FormCheckbox
+            register={register}
+            errors={errors}
+            htmlFor="rodo"
+            content="Oświadczam, że zapoznałam/em się z “Informacją o przetwarzaniu
             danych osobowych” zawartej w Polityce Prywatności, zawierającą m.
             in. informacje o szczegółowych celach przetwarzania moich danych
             osobowych, o podstawie prawnej ich przetwarzania, o danych
@@ -95,11 +96,12 @@ export function FormJoin() {
             osobowych, a wycofanie zgody nie wpływa na zgodność z prawem
             przetwarzania, którego dokonano na podstawie zgody przed jej
             wycofaniem."
-        />
+          />
+        </div>
         <div className="flex items-start justify-center pt-10 leading-tight">
           <input
             type="submit"
-            className="inline-flex  h-11 w-[175px] items-start justify-center rounded border border-quaternary bg-quaternary bg-center px-4 py-[12.50px] leading-tight text-white"
+            className="flex w-[175px] items-center justify-center rounded border border-quaternary bg-quaternary px-4 py-[12.50px] leading-tight text-additional-white transition-colors duration-200 hover:cursor-pointer hover:border-webDev hover:bg-webDev hover:shadow-button"
             value="Wyślij wiadomość"
             formNoValidate
           />
