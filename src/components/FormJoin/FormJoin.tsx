@@ -98,31 +98,31 @@ export function FormJoin() {
             wycofaniem."
           />
         </div>
-        <div className="flex items-start justify-center pt-10 leading-tight">
+        <div className="flex items-start justify-center leading-tight">
           <input
             type="submit"
-            className="flex w-[175px] items-center justify-center rounded border border-quaternary bg-quaternary px-4 py-[12.50px] leading-tight text-additional-white transition-colors duration-200 hover:cursor-pointer hover:border-webDev hover:bg-webDev hover:shadow-button"
+            className="flex w-[175px] items-start justify-center rounded border border-quaternary bg-quaternary px-4 py-[12.50px] leading-tight text-additional-white transition-colors duration-200 hover:cursor-pointer hover:border-webDev hover:bg-webDev hover:shadow-button"
             value="Wyślij wiadomość"
             formNoValidate
           />
         </div>
       </main>
-      <aside className="flex w-1/2 flex-col">
-        <h2 className="pl-10 text-2xl font-bold md:text-3.5xl">
+      <aside className="flex flex-col sm:w-1/2">
+        <h2 className="pt-19 text-2xl font-bold md:pl-10 md:text-3.5xl">
           Masz pytania?
         </h2>
-        <h2 className="pb-10 pl-10 text-2xl font-bold md:w-4/5 md:text-3.5xl">
+        <h2 className="w-full pb-5 text-2xl font-bold md:w-4/5 md:pb-10 md:pl-10 md:text-3.5xl">
           Skontaktuj się z nami!
         </h2>
         <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
           <Koperta className="min-w-max" />
-          <p className="font-normal leading-normal md:pl-4">
+          <p className="pl-4 font-normal leading-normal">
             kontakt @ coderscrew.pl
           </p>
         </div>
         <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
           <Pinezka />
-          <p className="w-full font-normal leading-normal md:w-2/3 md:pl-4">
+          <p className="pl-4 font-normal leading-normal md:w-2/3">
             ul. Powstańców Śląskich 5, pokój 610, Wrocław
           </p>
         </div>

@@ -29,7 +29,7 @@ export function FormTextarea({
       </label>
       <div className="flex flex-row items-center">
         <textarea
-          className="form-textarea block h-[314px] rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
+          className="form-textarea block h-[314px] w-full rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
           {...register('message', { required: 'To pole jest wymagane' })}
           placeholder={placeholder}
         />
