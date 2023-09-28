@@ -45,7 +45,6 @@ export function FormJoin() {
           errors={errors}
           content="E-mail"
           touched={touchedFields.email}
-          dirty={dirtyFields.email}
         />
         <FormSelect
           register={register}

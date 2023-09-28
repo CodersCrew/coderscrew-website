@@ -10,19 +10,12 @@ type InputProps = {
   errors: FieldErrors;
   register: UseFormRegister<Inputs>;
   content: string;
-  dirty?: boolean;
   touched?: boolean;
 };
 
 const emailFormat = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
 
-export function FormEmail({
-  register,
-  errors,
-  content,
-  dirty,
-  touched
-}: InputProps) {
+export function FormEmail({ register, errors, content, touched }: InputProps) {
   return (
     <div className="mb-5">
       <label
@@ -31,7 +24,7 @@ export function FormEmail({
       >
         {content}
       </label>
-      <div className="flex flex-row items-center">
+      <div className="m-auto flex flex-row items-center">
         <input
           type="email"
           className="form-input w-full rounded-2xl border-hidden bg-formField px-4 py-3 leading-10 text-tetriary md:w-4/6"
@@ -45,8 +38,8 @@ export function FormEmail({
         />
         <FieldStateIndicator
           error={errors.email as FieldError}
-          dirty={dirty}
           touched={touched}
+          className="ml-2"
         />
       </div>
       {errors.email && (
@@ -60,15 +53,18 @@ export function FormEmail({
 
 function FieldStateIndicator({
   error,
-  dirty,
-  touched
+  touched,
+  className
 }: {
   error: FieldError;
-  dirty?: boolean;
   touched?: boolean;
+  className?: string;
 }) {
-  // console.log({error, dirty, touched});
-  if (dirty === undefined && touched) return <RedCross />;
-  if (dirty === undefined) return null;
-  return !error ? <GreenCheck /> : <RedCross />;
+  console.log({ error, touched });
+  if (touched === undefined) return null;
+  return !error ? (
+    <GreenCheck className={className} />
+  ) : (
+    <RedCross className={className} />
+  );
 }
