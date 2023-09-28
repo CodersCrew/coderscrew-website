@@ -11,7 +11,7 @@ type InputProps = {
   htmlFor: any;
   content: string;
   placeholder: string;
-  touched?: boolean;
+  dirty?: boolean;
 };
 
 export function FormTextarea({
@@ -20,7 +20,7 @@ export function FormTextarea({
   htmlFor,
   content,
   placeholder,
-  touched
+  dirty
 }: InputProps) {
   return (
     <div className="mb-5 flex flex-col">
@@ -29,13 +29,13 @@ export function FormTextarea({
       </label>
       <div className="flex flex-row items-center">
         <textarea
-          className="form-textarea mb-3 mr-1 block h-[314px] rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
+          className="form-textarea block h-[314px] rounded-2xl border-hidden bg-formField p-4 px-4 py-3 leading-10 text-tetriary placeholder:text-tetriary md:w-4/6"
           {...register('message', { required: 'To pole jest wymagane' })}
           placeholder={placeholder}
         />
         <FieldStateIndicator
-          error={errors.email as FieldError}
-          touched={touched}
+          error={errors.message as FieldError}
+          dirty={dirty}
           className="ml-2"
         />
       </div>

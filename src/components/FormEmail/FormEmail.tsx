@@ -8,12 +8,12 @@ type InputProps = {
   errors: FieldErrors;
   register: UseFormRegister<Inputs>;
   content: string;
-  touched?: boolean;
+  dirty?: boolean;
 };
 
 const emailFormat = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
 
-export function FormEmail({ register, errors, content, touched }: InputProps) {
+export function FormEmail({ register, errors, content, dirty }: InputProps) {
   return (
     <div className="mb-5">
       <label
@@ -36,8 +36,8 @@ export function FormEmail({ register, errors, content, touched }: InputProps) {
         />
         <FieldStateIndicator
           error={errors.email as FieldError}
-          touched={touched}
-          className="ml-2"
+          dirty={dirty}
+          className="ml-3"
         />
       </div>
       {errors.email && (

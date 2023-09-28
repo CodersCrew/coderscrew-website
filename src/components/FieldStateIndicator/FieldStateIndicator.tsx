@@ -6,16 +6,16 @@ import RedCross from '@/assets/form-red-cross-error.svg';
 
 export function FieldStateIndicator({
   error,
-  touched,
+  dirty,
   className
 }: {
   error: FieldError;
-  touched?: boolean;
+  dirty?: boolean;
   className?: string;
 }) {
-  console.log({ error, touched });
-  if (touched === undefined) return null;
-  return !error ? (
+  console.log({ error, dirty });
+  if (dirty === undefined && !error) return null;
+  return dirty && !error ? (
     <GreenCheck className={className} />
   ) : (
     <RedCross className={className} />
