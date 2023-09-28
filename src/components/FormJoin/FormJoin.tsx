@@ -39,6 +39,7 @@ export function FormJoin() {
           register={register}
           errors={errors}
           content="Imię i nazwsiko"
+          touched={touchedFields.name}
         />
         <FormEmail
           register={register}

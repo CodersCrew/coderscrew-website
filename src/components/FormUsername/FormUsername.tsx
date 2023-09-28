@@ -1,18 +1,25 @@
 import React from 'react';
-import { FieldErrors, UseFormRegister } from 'react-hook-form';
+import { FieldError, FieldErrors, UseFormRegister } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
 
+import { FieldStateIndicator } from '../FieldStateIndicator';
 import { Inputs } from '../FormJoin/FormJoin';
 
 type InputProps = {
   errors: FieldErrors;
   register: UseFormRegister<Inputs>;
   content: string;
+  touched?: boolean;
 };
 
 const watch = useForm<Inputs>;
 
-export function FormUsername({ register, errors, content }: InputProps) {
+export function FormUsername({
+  register,
+  errors,
+  content,
+  touched
+}: InputProps) {
   const watchUsername = watch();
   return (
     <div className="mb-5">
@@ -22,7 +29,7 @@ export function FormUsername({ register, errors, content }: InputProps) {
       <div className="flex flex-row items-center">
         <input
           type="name"
-          className="form-input mr-1 w-full rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary md:w-4/6 "
+          className="form-input mr-1 w-full rounded-2xl border-hidden bg-formField px-4	py-3 leading-10 text-tetriary md:w-4/6"
           {...register('name', {
             pattern: {
               value:
@@ -31,6 +38,11 @@ export function FormUsername({ register, errors, content }: InputProps) {
             },
             required: 'To pole jest wymagane'
           })}
+        />
+        <FieldStateIndicator
+          error={errors.name as FieldError}
+          touched={touched}
+          className="ml-2"
         />
       </div>
       {errors['name'] && (
