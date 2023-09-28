@@ -1,7 +1,7 @@
 import React from 'react';
-import { FieldErrors, UseFormRegister } from 'react-hook-form';
+import { FieldError, FieldErrors, UseFormRegister } from 'react-hook-form';
 
-import RedCross from '@/assets/form-red-cross-error.svg';
+import { FieldStateIndicator } from '@/components/FieldStateIndicator/FieldStateIndicator';
 
 import { Inputs } from '../FormJoin/FormJoin';
 
@@ -11,6 +11,7 @@ type InputProps = {
   htmlFor: any;
   content: string;
   placeholder: string;
+  touched?: boolean;
 };
 
 export function FormTextarea({
@@ -18,7 +19,8 @@ export function FormTextarea({
   errors,
   htmlFor,
   content,
-  placeholder
+  placeholder,
+  touched
 }: InputProps) {
   return (
     <div className="mb-5 flex flex-col">
@@ -31,7 +33,11 @@ export function FormTextarea({
           {...register('message', { required: 'To pole jest wymagane' })}
           placeholder={placeholder}
         />
-        {errors.message && <RedCross />}
+        <FieldStateIndicator
+          error={errors.email as FieldError}
+          touched={touched}
+          className="ml-2"
+        />
       </div>
       {errors.message && (
         <span className="text-formAlert">

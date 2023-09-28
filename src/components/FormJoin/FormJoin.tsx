@@ -22,7 +22,7 @@ export function FormJoin() {
   const {
     register,
     handleSubmit,
-    formState: { errors, touchedFields, dirtyFields }
+    formState: { errors, touchedFields }
   } = useForm<Inputs>({ mode: 'onTouched' });
 
   const onSubmit = (data: Inputs) => {
@@ -58,6 +58,7 @@ export function FormJoin() {
           htmlFor="message"
           content="Wiadomość:"
           placeholder="Parę słów o Tobie i Twoim doświadczeniu"
+          touched={touchedFields.message}
         />
         <FormCheckbox
           register={register}
