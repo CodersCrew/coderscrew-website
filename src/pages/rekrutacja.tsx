@@ -46,7 +46,7 @@ const Rekrutacja = () => (
       </div>
       <div className="flex-col items-center pt-15 md:flex-row">
         <div className="flex flex-col">
-          <h2 className="pb-6 text-3.5xl font-bold leading-10 md:text-5xl">
+          <h2 className="pb-12 text-3.5xl font-bold leading-10 md:text-5xl">
             Dlaczego warto?
           </h2>
           <div className="flex flex-row items-center pb-5">
@@ -64,8 +64,13 @@ const Rekrutacja = () => (
           <div className="flex flex-row items-center pb-5">
             <Thic className="min-w-max" />
             <p className="pb-2 pr-12 text-2xl font-bold leading-8 md:text-3.5xl">
-              Będziesz uczestniczył w ambitnych projektach, które staną się
-              wspaniałym wpisem do Twojego CV
+              Będziesz uczestniczył w ambitnych projektach
+            </p>
+          </div>
+          <div className="flex flex-row items-center pb-5">
+            <Thic className="min-w-max" />
+            <p className="pb-2 pr-12 text-2xl font-bold leading-8 md:text-3.5xl">
+              Zbudujesz swoje CV
             </p>
           </div>
         </div>

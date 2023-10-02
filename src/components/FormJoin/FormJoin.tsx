@@ -111,7 +111,7 @@ export function FormJoin() {
         <h2 className="pt-19 text-2xl font-bold md:pl-10 md:text-3.5xl">
           Masz pytania?
         </h2>
-        <h2 className="pb-5 text-2xl font-bold md:w-4/5 md:pb-10  md:pl-10 md:text-3.5xl">
+        <h2 className="pb-5 text-2xl font-bold md:w-4/5 md:pb-10 md:pl-10 md:text-3.5xl">
           Skontaktuj się z nami!
         </h2>
         <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
