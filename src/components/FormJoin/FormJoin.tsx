@@ -111,7 +111,7 @@ export function FormJoin() {
         <h2 className="pt-19 text-2xl font-bold md:pl-10 md:text-3.5xl">
           Masz pytania?
         </h2>
-        <h2 className="w-full pb-5 text-2xl font-bold md:w-4/5 md:pb-10 md:pl-10 md:text-3.5xl">
+        <h2 className="pb-5 text-2xl font-bold md:w-4/5 md:pb-10  md:pl-10 md:text-3.5xl">
           Skontaktuj się z nami!
         </h2>
         <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
@@ -122,7 +122,7 @@ export function FormJoin() {
         </div>
         <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
           <Pinezka />
-          <p className="pl-4 font-normal leading-normal md:w-2/3">
+          <p className="pl-4 font-normal leading-normal md:w-2/3 ">
             ul. Powstańców Śląskich 5, pokój 610, Wrocław
           </p>
         </div>
