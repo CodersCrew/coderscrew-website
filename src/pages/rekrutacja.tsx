@@ -95,75 +95,79 @@ const Rekrutacja = () => (
     <div className="bg-[#F5F5F5]">
       <SectionWrapper className="relative items-center justify-center bg-lightGrey px-0">
         <section>
-          <h1 className="pb-4 pt-8 text-4xl font-bold leading-10">
-            Nasz proces rekrutacyjny
-          </h1>
-          <div className="flex flex-col gap-6 md:flex-row">
-            <div className="flex flex-col">
-              <RecruitCard
-                src={Files}
-                alt="File logo"
-                title="1. Wypełnienie formularza."
-                text="Na początek poprosimy Cię o wypełnienie poniższego formularza.
+          <div>
+            <h1 className="pb-4 pt-8 text-4xl font-bold leading-10">
+              Nasz proces rekrutacyjny
+            </h1>
+            <div className="flex flex-col gap-6 md:flex-row">
+              <div className="flex flex-col">
+                <RecruitCard
+                  src={Files}
+                  alt="File logo"
+                  title="1. Wypełnienie formularza."
+                  text="Na początek poprosimy Cię o wypełnienie poniższego formularza.
             Zajmie Ci to maksymalnie 10 minut."
-              />
-            </div>
-            <div className="invisible flex items-center justify-center md:visible">
-              <HandArrow1 />
-            </div>
-            <div className="flex flex-col pt-6">
-              <RecruitCard
-                src={Eye}
-                alt="Eye logo"
-                title="2. Rozpatrzenie zgłoszenia"
-                text="Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
+                />
+              </div>
+              <div className="invisible flex items-center justify-center md:visible">
+                <HandArrow1 />
+              </div>
+              <div className="flex flex-col pt-6">
+                <RecruitCard
+                  src={Eye}
+                  alt="Eye logo"
+                  title="2. Rozpatrzenie zgłoszenia"
+                  text="Dzięki niemu lepiej Cię poznamy. Dowiemy się, czy Twoje zdolności
             odpowiadają naszym aktualnym potrzebom."
-              />
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-6 md:flex-row">
-            <div className="flex flex-col">
-              <RecruitCard
-                src={Dialog}
-                alt="Dialog logo"
-                title="3. Rozmowa kwalifikacyjna"
-                text="Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
+            <div className="flex flex-col gap-6 md:flex-row">
+              <div className="flex flex-col">
+                <RecruitCard
+                  src={Dialog}
+                  alt="Dialog logo"
+                  title="3. Rozmowa kwalifikacyjna"
+                  text="Porozmawiamy o Twoim doświadczeniu, oczekiwaniach, dyspozycyjności.
             Odpowiemy także na wszystkie pytania, jakie Ci się nasuną."
-              />
-            </div>
-            <div className="flex flex-row">
-              <div className="invisible flex items-start justify-center md:visible">
-                <HandArrow2 />
+                />
               </div>
-              <div className="invisible flex items-center justify-center pt-15 md:visible">
-                <HandArrow3 />
+              <div className="flex flex-row">
+                <div className="invisible flex items-start justify-center md:visible">
+                  <HandArrow2 />
+                </div>
+                <div className="invisible flex items-center justify-center pt-15 md:visible">
+                  <HandArrow3 />
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col pt-15">
-              <RecruitCard
-                src={Confetti}
-                alt="Confetti logo"
-                title="4. Dołączenie do nas"
-                text="Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
+              <div className="flex flex-col pt-15">
+                <RecruitCard
+                  src={Confetti}
+                  alt="Confetti logo"
+                  title="4. Dołączenie do nas"
+                  text="Jeśli rozmowa wypadnie pomyślnie, zostaniesz jednym z nas. Od teraz
             możemy razem zmieniać świat na lepsze!"
-              />
+                />
+              </div>
             </div>
           </div>
         </section>
-        <div
-          className="pb-10 pt-15 text-2xl font-bold leading-tight md:w-3/5 md:pl-20 md:text-3.5xl"
-          id="formular"
-        >
-          <h2>Cześć!</h2>
-          <h2>Cieszymy się, że chcesz zostać członkiem CodersCrew!</h2>
-        </div>
-        <div className="flex w-full flex-col sm:pl-20 md:flex-row">
-          <div className="w-ful flex flex-col">
-            <FormJoin />
-          </div>
-        </div>
       </SectionWrapper>
     </div>
+    <SectionWrapper>
+      <div
+        className="pb-10 pt-15 text-2xl font-bold leading-tight md:w-3/5 md:pl-20 md:text-3.5xl"
+        id="formular"
+      >
+        <h2>Cześć!</h2>
+        <h2>Cieszymy się, że chcesz zostać członkiem CodersCrew!</h2>
+      </div>
+      <div className="flex w-full flex-col sm:pl-20 md:flex-row">
+        <div className="w-ful flex flex-col">
+          <FormJoin />
+        </div>
+      </div>
+    </SectionWrapper>
   </div>
 );
 
