@@ -115,7 +115,7 @@ export function FormJoin() {
           Skontaktuj się z nami!
         </h2>
         <div className="flex flex-row items-center pb-5 font-normal md:pl-10">
-          <Koperta className="min-w-max" />
+          <Koperta />
           <p className="pl-4 font-normal leading-normal">
             kontakt @ coderscrew.pl
           </p>

@@ -58,25 +58,25 @@ const Rekrutacja = () => (
                 Dlaczego warto?
               </h2>
               <div className="flex flex-row items-center pb-5">
-                <Thic className="min-w-max" />
+                <Thic className="min-w-[122px]" />
                 <p className="pb-6 text-2xl font-bold leading-8 md:text-3.5xl">
                   Postawisz pierwsze kroki w IT
                 </p>
               </div>
               <div className="flex flex-row items-center pb-5">
-                <Thic className="min-w-max" />
+                <Thic className="min-w-[122px]" />
                 <p className="pb-6 text-2xl font-bold leading-8 md:text-3.5xl">
                   Wykorzystasz swój potencjał
                 </p>
               </div>
               <div className="flex flex-row items-center pb-5">
-                <Thic className="min-w-max" />
+                <Thic className="min-w-[122px]" />
                 <p className="pb-6 pr-12 text-2xl font-bold leading-8 md:text-3.5xl">
                   Będziesz uczestniczył w ambitnych projektach
                 </p>
               </div>
               <div className="flex flex-row items-center pb-5">
-                <Thic className="min-w-max" />
+                <Thic className="min-w-[122px]" />
                 <p className="pb-6 pr-12 text-2xl font-bold leading-8 md:text-3.5xl">
                   Zbudujesz swoje CV
                 </p>
