@@ -93,19 +93,19 @@ const Rekrutacja = () => (
       </section>
     </SectionWrapper>
     <div className="bg-[#F5F5F5]">
-      <SectionWrapper className="">
+      <SectionWrapper>
         <section>
           <h1 className="pb-4 pt-8 text-center text-4xl font-bold leading-10 md:text-left">
             Nasz proces rekrutacyjny
           </h1>
           <div className="flex flex-col items-center">
-            <div className="flex flex-col md:flex-row md:gap-6">
+            <div className="flex flex-col md:flex-row md:gap-15 xl:gap-23">
               <div className="flex flex-col">
                 <RecruitCard
                   src={Files}
                   alt="File logo"
                   itemNumber="1"
-                  title="Wypełnienie formularza."
+                  title="Wypełnienie formularza"
                   text="Na początek poprosimy Cię o wypełnienie poniższego formularza.
             Zajmie Ci to maksymalnie 10 minut."
                 />
@@ -113,7 +113,7 @@ const Rekrutacja = () => (
               <div className="hidden items-center justify-center md:flex">
                 <HandArrow1 viewBox="0 0 67 21" />
               </div>
-              <div className="flex flex-col md:pt-6">
+              <div className="flex flex-col md:pt-10">
                 <RecruitCard
                   src={Eye}
                   alt="Eye logo"
@@ -124,7 +124,7 @@ const Rekrutacja = () => (
                 />
               </div>
             </div>
-            <div className="flex flex-col md:flex-row md:gap-6">
+            <div className="flex flex-col md:flex-row md:gap-8 xl:gap-17 ">
               <div className="flex flex-col">
                 <RecruitCard
                   src={Dialog}
@@ -143,7 +143,7 @@ const Rekrutacja = () => (
                   <HandArrow3 />
                 </div>
               </div>
-              <div className="flex flex-col md:pt-15">
+              <div className="flex flex-col md:pt-11">
                 <RecruitCard
                   src={Confetti}
                   alt="Confetti logo"
