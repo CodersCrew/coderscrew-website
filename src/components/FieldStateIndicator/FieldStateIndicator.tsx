@@ -13,8 +13,8 @@ export function FieldStateIndicator({
   dirty?: boolean;
   className?: string;
 }) {
-  console.log({ error, dirty });
-  if (dirty === undefined && !error) return null;
+  if (dirty === undefined && !error)
+    return <RedCross className={`${className} invisible`} />;
   return dirty && !error ? (
     <GreenCheck className={className} />
   ) : (

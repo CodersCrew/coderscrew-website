@@ -15,7 +15,7 @@ const emailFormat = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
 
 export function FormEmail({ register, errors, content, dirty }: InputProps) {
   return (
-    <div className="mb-5">
+    <div className="mb-3">
       <label
         htmlFor="email"
         className="flex font-normal leading-10 text-tetriary"
@@ -40,10 +40,12 @@ export function FormEmail({ register, errors, content, dirty }: InputProps) {
           className="ml-3"
         />
       </div>
-      {errors.email && (
+      {errors['email'] ? (
         <span className="text-formAlert">
           {errors.email.message?.toString()}
         </span>
+      ) : (
+        <span className="invisible text-formAlert">{'error place'}</span>
       )}
     </div>
   );

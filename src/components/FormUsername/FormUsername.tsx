@@ -13,7 +13,7 @@ type InputProps = {
 
 export function FormUsername({ register, errors, content, dirty }: InputProps) {
   return (
-    <div className="mb-5">
+    <div className="mb-3">
       <label htmlFor="name" className="font-normal leading-10 text-tetriary">
         {content}
       </label>
@@ -36,10 +36,12 @@ export function FormUsername({ register, errors, content, dirty }: InputProps) {
           className="ml-3"
         />
       </div>
-      {errors['name'] && (
+      {errors['name'] ? (
         <span className="text-formAlert">
           {errors.name.message?.toString()}
         </span>
+      ) : (
+        <span className="invisible text-formAlert">{'error place'}</span>
       )}
     </div>
   );

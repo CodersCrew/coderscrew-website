@@ -23,7 +23,7 @@ export function FormTextarea({
   dirty
 }: InputProps) {
   return (
-    <div className="mb-5 flex flex-col">
+    <div className="flex flex-col">
       <label htmlFor={htmlFor} className="font-normal leading-10 text-tetriary">
         {content}
       </label>
@@ -39,10 +39,12 @@ export function FormTextarea({
           className="ml-2"
         />
       </div>
-      {errors.message && (
+      {errors['message'] ? (
         <span className="text-formAlert">
-          {errors[htmlFor]?.message?.toString()}
+          {errors.message.message?.toString()}
         </span>
+      ) : (
+        <span className="invisible text-formAlert">{'error place'}</span>
       )}
     </div>
   );
