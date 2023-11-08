@@ -31,7 +31,7 @@ export function FormJoin() {
 
   return (
     <form
-      className="flex w-full flex-col md:flex-row"
+      className="flex w-full flex-col lg:flex-row"
       onSubmit={handleSubmit(onSubmit)}
     >
       <main className="flex w-full flex-col">

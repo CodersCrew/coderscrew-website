@@ -18,7 +18,7 @@ import { RecruitCard } from '@/components/RecruitCard';
 const Rekrutacja = () => (
   <div>
     <SectionWrapper>
-      <section className="pt-2">
+      <section className="">
         <Zespol
           className="mb-10 mt-5 h-full max-w-full md:hidden"
           alt="Obraz zespołu"
