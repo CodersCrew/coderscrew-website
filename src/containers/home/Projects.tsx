@@ -4,7 +4,10 @@ import Untitled3 from '@/assets/Untitled3.png';
 import { ImageCard, Link, SectionWrapper } from '@/components';
 
 export const Projects = () => (
-  <SectionWrapper className="flex flex-col items-center gap-12 lg:gap-30">
+  <SectionWrapper
+    className="flex flex-col items-center gap-12 lg:gap-30"
+    id="projects"
+  >
     <div className="flex flex-col gap-4">
       <p className="text-center text-2xl font-semibold uppercase text-quaternary">
         Nasze projekty
@@ -23,7 +26,7 @@ export const Projects = () => (
         style={{ objectFit: 'cover' }}
         title="Coders Camp"
         text="Największy otwarty kurs programowania webowego"
-        link="#"
+        link="/projekty"
       />
       <ImageCard
         src={Untitled1}
@@ -33,7 +36,7 @@ export const Projects = () => (
         style={{ objectFit: 'cover' }}
         title="Przejście centrum innowacji"
         text="Warsztaty z podstaw programowania webowego"
-        link="#"
+        link="/projekty"
       />
       <ImageCard
         src={Untitled3}
@@ -43,7 +46,7 @@ export const Projects = () => (
         style={{ objectFit: 'cover' }}
         title="Jira Sticky Notes"
         text="Add-on do największego narzędzia do zarządzania projektami IT"
-        link="#"
+        link="/projekty"
       />
     </div>
     <Link href="/projekty" variant="filled">
