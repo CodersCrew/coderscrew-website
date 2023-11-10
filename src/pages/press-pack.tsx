@@ -53,8 +53,7 @@ const PressPack = () => (
             <h2 className="mb-4 items-center text-2xl font-bold">
               Kolory CodersCrew
             </h2>
-            <div className="align-center flex	flex-col items-center gap-10 ">
-              <div className=" flex flex-col gap-10 p-4 md:flex-row">
+              <div className="flex flex-col gap-10 p-4 md:flex-row">
                 {colorData.map(({ title, hex }) => (
                   <PressColors
                     key={hex}
@@ -64,7 +63,6 @@ const PressPack = () => (
                   />
                 ))}
               </div>
-            </div>
           </div>
         </div>
       </div>
