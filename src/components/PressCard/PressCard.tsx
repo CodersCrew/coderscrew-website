@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 type PressCardProps = { title: string; alt: string; src: string };
 
 export const PressCard = ({ title, alt, src }: PressCardProps) => (
