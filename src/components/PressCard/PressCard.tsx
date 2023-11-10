@@ -1,6 +1,10 @@
 import Image from 'next/image';
 
-type PressCardProps = { title: string; alt: string; src: string };
+type PressCardProps = {
+  title: string;
+  alt: string;
+  src: string;
+};
 
 export const PressCard = ({ title, alt, src }: PressCardProps) => (
   <div className="w-360 h-263 rounded-8 flex flex-col items-center justify-center gap-4 bg-white p-0 pb-8">

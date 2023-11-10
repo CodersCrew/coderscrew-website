@@ -17,6 +17,8 @@ module.exports = {
       ux: '#FA8A43',
       hr: '#AC6DE8',
       codersCamp: '#FEC43D',
+      formField: '#EDEDED',
+      formAlert: '#F44336',
       black: '#000000',
       white: '#FFFFFF',
       grey: '#E0E0E0',
@@ -30,7 +32,8 @@ module.exports = {
       eerieBlack: '#1C1C1C',
       linkWater: '#D1E9FF',
       lightGrey: '#F5F5F5',
-      darkGrey: '#383838'
+      darkGrey: '#383838',
+      textGrey: '#6B7280'
     },
     spacing: {
       0: '0px',
@@ -101,5 +104,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwind-clip-path')]
+  plugins: [require('tailwind-clip-path'), require('@tailwindcss/forms')]
 };
