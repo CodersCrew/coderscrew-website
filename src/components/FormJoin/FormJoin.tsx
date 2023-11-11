@@ -8,6 +8,7 @@ import { FormEmail } from '@/components/FormEmail';
 import { FormSelect } from '@/components/FormSelect';
 import { FormTextarea } from '@/components/FormTextarea';
 import { FormUsername } from '@/components/FormUsername';
+import contactHandler from '@/pages/api/contact';
 
 export type Inputs = {
   name: string;
@@ -25,8 +26,12 @@ export function FormJoin() {
     formState: { errors, dirtyFields }
   } = useForm<Inputs>({ mode: 'onChange' });
 
-  const onSubmit = (data: Inputs) => {
-    console.log(data);
+  const onSubmit = async (data: Inputs) => {
+    const resopnse = await fetch(`${location.origin}/api/contact`, {
+      body: JSON.stringify(data),
+      method: 'POST'
+    });
+    console.log(resopnse);
   };
 
   return (
