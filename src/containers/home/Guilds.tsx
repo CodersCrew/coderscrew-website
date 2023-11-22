@@ -7,7 +7,7 @@ import { GuildCard, Link, SectionWrapper, Separator } from '@/components';
 
 export const Guilds = () => (
   <SectionWrapper
-    className="relative flex flex-col items-center justify-center gap-8 overflow-hidden bg-primary text-lightGrey lg:grid lg:grid-cols-[3fr_2fr] lg:grid-rows-[180px_40px_180px_40px_180px_40px_180px_40px_180px] lg:gap-3"
+    className=" max-w-screen-3xl relative mx-0 flex flex-col items-center justify-center gap-8 overflow-hidden bg-primary text-lightGrey lg:grid lg:grid-cols-[3fr_2fr] lg:grid-rows-[180px_40px_180px_40px_180px_40px_180px_40px_180px] lg:gap-3"
     id="guilds"
   >
     <section className="mb-8 flex max-w-[305px] flex-col justify-center gap-3 pt-10 text-left lg:col-start-1 lg:row-start-3 lg:ml-9 lg:max-w-[470px] lg:self-start lg:pt-0">
