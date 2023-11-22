@@ -14,6 +14,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const { name, email, guild, message } = req.body;
     const response = schema.safeParse(req.body);
+    console.log(req.body);
 
     if (!response.success) {
       const { errors } = response.error;
@@ -26,10 +27,14 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const apiUrl = 'https://api.brevo.com/v3/smtp/email';
 
     const emailData = {
-      sender: { name, email },
+      sender: {
+        name: 'Formularz',
+        email: 'jedrzej.ratajczak@coderscrew.pl',
+        replayTo: { email, name }
+      },
       to: [
         {
-          email: 'kontakt@coderscrew.pl',
+          email: 'jedrzej.ratajczak@coderscrew.pl',
           name: 'Coders Crew'
         }
       ],
